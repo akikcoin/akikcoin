@@ -1,3 +1,4 @@
-Akik Project is created to give cryptocurrency masternode solution in one platform. Akik provides cryptocurrency related services such as Masternode Monitoring, masternodes & price statistics, exchange from fiat to cryptocurrencies and also cryptocurrency exchange.
+A Community Driven POS Coin
+A Utility coin for any purpose with Masternode capability
 
-For complete information, please visit our website at: https://akik.online/
+Visit our website at: https://akikcoin.com/
