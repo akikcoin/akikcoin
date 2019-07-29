@@ -55,10 +55,7 @@ static void convertSeed6(std::vector<CAddress>& vSeedsOut, const SeedSpec6* data
 
 static Checkpoints::MapCheckpoints mapCheckpoints =
     boost::assign::map_list_of
-    (0, uint256("0xeaaaea7d13c08bff5ba2be83cb558de02a5f872af48a67a9802dd4bc95f0a399"))
-    (50000,uint256("06466ca82b589f87682a84be2055ab487a5b305b10b3ff89db70fed9b169b34c"))
-    (100000,uint256("870b056fde9975f0b8d81eb800dd7533b446095d26518acdadce098c65b5a964"))
-    (140000,uint256("ec916ebba4184b3936d081cff5a3fad56a80672c9f71c359c83d8f96ba97fc33"));
+    (0, uint256("0xeaaaea7d13c08bff5ba2be83cb558de02a5f872af48a67a9802dd4bc95f0a399"));
 static const Checkpoints::CCheckpointData data = {
     &mapCheckpoints,
     1557117733, // * UNIX timestamp of last checkpoint block
@@ -125,9 +122,9 @@ public:
         nMaxMoneyOut = 100000000 * COIN;
 
         /** Height or Time Based Activations **/
-        nLastPOWBlock = 600;
+        nLastPOWBlock = 200;
         nModifierUpdateBlock = 1;
-        nZerocoinStartHeight = 601;
+        nZerocoinStartHeight = 201;
         nAccumulatorStartHeight = 1;
         nZerocoinStartTime = 1537607855; // 1537760280
         nBlockEnforceSerialRange = 1; //Enforce serial range starting this block
@@ -135,10 +132,7 @@ public:
         nBlockFirstFraudulent = ~1; //First block that bad serials emerged
         nBlockLastGoodCheckpoint = ~1; //Last valid accumulator checkpoint
 
-        nEnforceNewSporkKey = 1564056000; //!> Sporks signed after (GMT): Thursday, July 25, 2019 12:00:00 PM GMT must use the new spork key
-        nRejectOldSporkKey = 1564315200; //!> Fully reject old spork key after (GMT): Monday, July 29, 2019 12:00:00 PM
-
-        const char* pszTimestamp = "Akik Project Started";
+        const char* pszTimestamp = "Let it be me";
         CMutableTransaction txNew;
         txNew.vin.resize(1);
         txNew.vout.resize(1);
@@ -160,16 +154,7 @@ public:
 		vFixedSeeds.clear();
 		vSeeds.clear();
 		
-        vSeeds.push_back(CDNSSeedData("1.akik.online", "1.akik.online"));
-        vSeeds.push_back(CDNSSeedData("2.akik.online", "2.akik.online"));
-        vSeeds.push_back(CDNSSeedData("3.akik.online", "3.akik.online"));
-        vSeeds.push_back(CDNSSeedData("4.akik.online", "4.akik.online"));
-        vSeeds.push_back(CDNSSeedData("5.akik.online", "5.akik.online"));
-        vSeeds.push_back(CDNSSeedData("6.akik.online", "6.akik.online"));
-        vSeeds.push_back(CDNSSeedData("7.akik.online", "7.akik.online"));
-        vSeeds.push_back(CDNSSeedData("8.akik.online", "8.akik.online"));
-        vSeeds.push_back(CDNSSeedData("9.akik.online", "9.akik.online"));
-        vSeeds.push_back(CDNSSeedData("10.akik.online", "10.akik.online"));
+        vSeeds.push_back(CDNSSeedData("seed1.akikcoin.com", "seed2.akikcoin.com"));
 
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 31); // D
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1, 48); // L
@@ -193,7 +178,6 @@ public:
 
         nPoolMaxTransactions = 3;
         strSporkKey = "04b2fe44535740084d1df6b93fb044000ba018f1c35ec5196c4d918498e108bd436389225d9a83db72bbe473d6ba373fabf8fc68038ff87463e97cee8caaccb28e";
-        strSporkKeyOld = "0484698d3ba6ba6e7423fa5cbd6a89e0a9a5348f88d332b44a5cb1a8b7ed2c1eaa335fc8dc4f012cb8241cc0bdafd6ca70c5f5448916e4e6f511bcd746ed57dc50";
         strObfuscationPoolDummyAddress  = "D87q2gC9j6nNrnzCsg4aY6bHMLsT9nUhEw";
         nStartMasternodePayments = 1403728576; //Wed, 25 Jun 2014 20:36:16 GMT
         
