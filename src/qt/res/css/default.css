@@ -878,7 +878,7 @@ QLabel#labelOverviewHeaderLeft {
 
 QLabel#labelOverviewHeaderRight {
 	qproperty-alignment: 'AlignVCenter | AlignRight';
-	background-image: url(':/images/delion_logo_horizontal');
+	background-image: url(':/images/akik_logo_horizontal');
 	background-repeat: no-repeat;
 }
 

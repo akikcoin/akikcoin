@@ -80,28 +80,28 @@ enum AvailableCoinsType {
     ALL_COINS = 1,
     ONLY_DENOMINATED = 2,
     ONLY_NOT10000IFMN = 3,
-    ONLY_NONDENOMINATED_NOT10000IFMN = 4, // ONLY_NONDENOMINATED and not 10000 DLN at the same time
+    ONLY_NONDENOMINATED_NOT10000IFMN = 4, // ONLY_NONDENOMINATED and not 10000 AKC at the same time
     ONLY_10000 = 5,                        // find masternode outputs including locked ones (use with caution)
     STAKABLE_COINS = 6                          // UTXO's that are valid for staking
 };
 
-// Possible states for zDELION send
+// Possible states for zAKIK send
 enum ZerocoinSpendStatus {
-    ZDELION_SPEND_OKAY = 0,                            // No error
-    ZDELION_SPEND_ERROR = 1,                           // Unspecified class of errors, more details are (hopefully) in the returning text
-    ZDELION_WALLET_LOCKED = 2,                         // Wallet was locked
-    ZDELION_COMMIT_FAILED = 3,                         // Commit failed, reset status
-    ZDELION_ERASE_SPENDS_FAILED = 4,                   // Erasing spends during reset failed
-    ZDELION_ERASE_NEW_MINTS_FAILED = 5,                // Erasing new mints during reset failed
-    ZDELION_TRX_FUNDS_PROBLEMS = 6,                    // Everything related to available funds
-    ZDELION_TRX_CREATE = 7,                            // Everything related to create the transaction
-    ZDELION_TRX_CHANGE = 8,                            // Everything related to transaction change
-    ZDELION_TXMINT_GENERAL = 9,                        // General errors in MintToTxIn
-    ZDELION_INVALID_COIN = 10,                         // Selected mint coin is not valid
-    ZDELION_FAILED_ACCUMULATOR_INITIALIZATION = 11,    // Failed to initialize witness
-    ZDELION_INVALID_WITNESS = 12,                      // Spend coin transaction did not verify
-    ZDELION_BAD_SERIALIZATION = 13,                    // Transaction verification failed
-    ZDELION_SPENT_USED_ZDELION = 14                       // Coin has already been spend
+    ZAKIK_SPEND_OKAY = 0,                            // No error
+    ZAKIK_SPEND_ERROR = 1,                           // Unspecified class of errors, more details are (hopefully) in the returning text
+    ZAKIK_WALLET_LOCKED = 2,                         // Wallet was locked
+    ZAKIK_COMMIT_FAILED = 3,                         // Commit failed, reset status
+    ZAKIK_ERASE_SPENDS_FAILED = 4,                   // Erasing spends during reset failed
+    ZAKIK_ERASE_NEW_MINTS_FAILED = 5,                // Erasing new mints during reset failed
+    ZAKIK_TRX_FUNDS_PROBLEMS = 6,                    // Everything related to available funds
+    ZAKIK_TRX_CREATE = 7,                            // Everything related to create the transaction
+    ZAKIK_TRX_CHANGE = 8,                            // Everything related to transaction change
+    ZAKIK_TXMINT_GENERAL = 9,                        // General errors in MintToTxIn
+    ZAKIK_INVALID_COIN = 10,                         // Selected mint coin is not valid
+    ZAKIK_FAILED_ACCUMULATOR_INITIALIZATION = 11,    // Failed to initialize witness
+    ZAKIK_INVALID_WITNESS = 12,                      // Spend coin transaction did not verify
+    ZAKIK_BAD_SERIALIZATION = 13,                    // Transaction verification failed
+    ZAKIK_SPENT_USED_ZAKIK = 14                       // Coin has already been spend
 };
 
 struct CompactTallyItem {
@@ -206,7 +206,7 @@ public:
     std::string ResetMintZerocoin(bool fExtendedSearch);
     std::string ResetSpentZerocoin();
     void ReconsiderZerocoins(std::list<CZerocoinMint>& listMintsRestored);
-    void ZDelionBackupWallet();
+    void ZAkikBackupWallet();
 
     /** Zerocin entry changed.
     * @note called with lock cs_wallet held.
@@ -309,7 +309,7 @@ public:
         return fEnableZeromint;
     }
 
-    void setZDelionAutoBackups(bool fEnabled)
+    void setZAkikAutoBackups(bool fEnabled)
     {
         fBackupMints = fEnabled;
     }

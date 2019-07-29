@@ -62,12 +62,12 @@
         <translation>Endereços de recebimento</translation>
     </message>
     <message>
-        <source>These are your Delion addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Esses são seus endereços Delion para envio de pagamentos. Sempre verifique a quantia e os endereços de recebimento antes de enviar moedas.</translation>
+        <source>These are your Akik addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Esses são seus endereços Akik para envio de pagamentos. Sempre verifique a quantia e os endereços de recebimento antes de enviar moedas.</translation>
     </message>
     <message>
-        <source>These are your Delion addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Esses são seus endereços Delion para recebimento de pagamentos. É recomendado usar um novo endereço para cada transação.</translation>
+        <source>These are your Akik addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>Esses são seus endereços Akik para recebimento de pagamentos. É recomendado usar um novo endereço para cada transação.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -172,16 +172,16 @@
         <translation>Confirmar criptografia de carteira</translation>
     </message>
     <message>
-        <source>Delion will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your DLNs from being stolen by malware infecting your computer.</source>
-        <translation>Delion vai fechar agora para finalizar o processo de criptografia. Lembre-se que encriptar sua carteira não pode proteger totalmente suas DLNs de serem roubadas por malwares infectando seu computador.</translation>
+        <source>Akik will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your AKCs from being stolen by malware infecting your computer.</source>
+        <translation>Akik vai fechar agora para finalizar o processo de criptografia. Lembre-se que encriptar sua carteira não pode proteger totalmente suas AKCs de serem roubadas por malwares infectando seu computador.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
         <translation>Você tem certeza que deseja criptografar sua carteira?</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR DLN&lt;/b&gt;!</source>
-        <translation>Aviso: se você criptografar sua carteira e perder sua senha você &lt;b&gt;PERDERÁ TODAS AS SUAS DLN&lt;b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR AKC&lt;/b&gt;!</source>
+        <translation>Aviso: se você criptografar sua carteira e perder sua senha você &lt;b&gt;PERDERÁ TODAS AS SUAS AKC&lt;b&gt;!</translation>
     </message>
     <message>
         <source>Wallet encrypted</source>
@@ -235,7 +235,7 @@
         <translation>&amp;Encriptação BIP 38</translation>
     </message>
     <message>
-        <source>Enter a Delion Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
+        <source>Enter a Akik Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
         <translation>Insira um endereço que você deseja criptografar usando a BIP 38. Insira a palavra-chave na caixa do meio. Pressione criptografar para computar a chave privada criptografada.</translation>
     </message>
     <message>
@@ -243,8 +243,8 @@
         <translation>Endereço:</translation>
     </message>
     <message>
-        <source>The Delion address to sign the message with</source>
-        <translation>O endereço Delion para assinar a mensagem</translation>
+        <source>The Akik address to sign the message with</source>
+        <translation>O endereço Akik para assinar a mensagem</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -275,8 +275,8 @@
         <translation>Copia a assinatura atual do sistema de transferência</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this Delion address</source>
-        <translation>Assine a mensagem para provar que você possui este endereço Delion</translation>
+        <source>Sign the message to prove you own this Akik address</source>
+        <translation>Assine a mensagem para provar que você possui este endereço Akik</translation>
     </message>
     <message>
         <source>Encrypt &amp;Key</source>
@@ -291,12 +291,12 @@
         <translation>Limpar &amp;Tudo</translation>
     </message>
     <message>
-        <source>The Delion address the message was signed with</source>
-        <translation>O endereço Delion que assinou a mensagem</translation>
+        <source>The Akik address the message was signed with</source>
+        <translation>O endereço Akik que assinou a mensagem</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified Delion address</source>
-        <translation>Verifique a mensagem para ter certeza que foi assinada com o endereço Delion especificado.</translation>
+        <source>Verify the message to ensure it was signed with the specified Akik address</source>
+        <translation>Verifique a mensagem para ter certeza que foi assinada com o endereço Akik especificado.</translation>
     </message>
     <message>
         <source>Decrypt &amp;Key</source>
@@ -586,16 +586,16 @@
         <translation>Ferramentas de abas</translation>
     </message>
     <message>
-        <source>Delion Core</source>
-        <translation>Delion Core</translation>
+        <source>Akik Core</source>
+        <translation>Akik Core</translation>
     </message>
     <message>
-        <source>Send coins to a Delion address</source>
-        <translation>Enviar moedas para um endereço Delion</translation>
+        <source>Send coins to a Akik address</source>
+        <translation>Enviar moedas para um endereço Akik</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and delion: URIs)</source>
-        <translation>Requisitar pagamentos (gera códigos QR e delion: URIs)</translation>
+        <source>Request payments (generates QR codes and akik: URIs)</source>
+        <translation>Requisitar pagamentos (gera códigos QR e akik: URIs)</translation>
     </message>
     <message>
         <source>&amp;Masternodes</source>
@@ -606,24 +606,24 @@
         <translation>Procurar masternodes</translation>
     </message>
     <message>
-        <source>&amp;About Delion Core</source>
-        <translation>&amp;Sobre o Delion Core</translation>
+        <source>&amp;About Akik Core</source>
+        <translation>&amp;Sobre o Akik Core</translation>
     </message>
     <message>
-        <source>Show information about Delion Core</source>
-        <translation>Mostra informação sobre o Delion Core</translation>
+        <source>Show information about Akik Core</source>
+        <translation>Mostra informação sobre o Akik Core</translation>
     </message>
     <message>
-        <source>Modify configuration options for Delion</source>
-        <translation>Modificar opções de configuração para Delion</translation>
+        <source>Modify configuration options for Akik</source>
+        <translation>Modificar opções de configuração para Akik</translation>
     </message>
     <message>
-        <source>Sign messages with your Delion addresses to prove you own them</source>
-        <translation>Assine mensagens com seus endereços Delion para provar que você os detém</translation>
+        <source>Sign messages with your Akik addresses to prove you own them</source>
+        <translation>Assine mensagens com seus endereços Akik para provar que você os detém</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified Delion addresses</source>
-        <translation>Verifique as mensagens para ter certeza que estão assinadas com os endereços Delion especificados</translation>
+        <source>Verify messages to ensure they were signed with specified Akik addresses</source>
+        <translation>Verifique as mensagens para ter certeza que estão assinadas com os endereços Akik especificados</translation>
     </message>
     <message>
         <source>&amp;BIP38 tool</source>
@@ -654,8 +654,8 @@
         <translation>Abrir arquivo de configuração de Masternode</translation>
     </message>
     <message>
-        <source>Open a Delion: URI or payment request</source>
-        <translation>Abrir um Delion: URI ou requisição de pagamento</translation>
+        <source>Open a Akik: URI or payment request</source>
+        <translation>Abrir um Akik: URI ou requisição de pagamento</translation>
     </message>
     <message>
         <source>&amp;Blockchain explorer</source>
@@ -666,12 +666,12 @@
         <translation>Janela de exploração de blocos</translation>
     </message>
     <message>
-        <source>Show the Delion Core help message to get a list with possible Delion command-line options</source>
-        <translation>Mostra a ajuda da Delion Core para receber uma lista com possíveis opções de linha de comando Delion</translation>
+        <source>Show the Akik Core help message to get a list with possible Akik command-line options</source>
+        <translation>Mostra a ajuda da Akik Core para receber uma lista com possíveis opções de linha de comando Akik</translation>
     </message>
     <message>
-        <source>Delion Core client</source>
-        <translation>Cliente Core Delion</translation>
+        <source>Akik Core client</source>
+        <translation>Cliente Core Akik</translation>
     </message>
     <message>
         <source>Synchronizing with network...</source>
@@ -806,8 +806,8 @@ MultiSend: %1</translation>
         <translation>Rótulo</translation>
     </message>
     <message>
-        <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (delion.conf).</source>
-        <translation>Nem todas as transações serão exibidas. Para visualizar todas as transações você precisa definir txindex=1 no arquivo de configuração (delion.conf). </translation>
+        <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (akik.conf).</source>
+        <translation>Nem todas as transações serão exibidas. Para visualizar todas as transações você precisa definir txindex=1 no arquivo de configuração (akik.conf). </translation>
     </message>
 </context>
 <context>
@@ -1083,8 +1083,8 @@ MultiSend: %1</translation>
         <translation>Editar endereço remetente</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid Delion address.</source>
-        <translation>O endereço que você selecionou, "%1" , não é um endereço válido de Delion</translation>
+        <source>The entered address "%1" is not a valid Akik address.</source>
+        <translation>O endereço que você selecionou, "%1" , não é um endereço válido de Akik</translation>
     </message>
     <message>
         <source>The entered address "%1" is already in the address book.</source>
@@ -1129,16 +1129,16 @@ MultiSend: %1</translation>
         <translation>versão</translation>
     </message>
     <message>
-        <source>Delion Core</source>
-        <translation>Delion Core</translation>
+        <source>Akik Core</source>
+        <translation>Akik Core</translation>
     </message>
     <message>
         <source>(%1-bit)</source>
         <translation>(%1-bit)</translation>
     </message>
     <message>
-        <source>About Delion Core</source>
-        <translation>Sobre o Delion Core</translation>
+        <source>About Akik Core</source>
+        <translation>Sobre o Akik Core</translation>
     </message>
     <message>
         <source>Command-line options</source>
@@ -1172,16 +1172,16 @@ MultiSend: %1</translation>
         <translation>Bem-vindo</translation>
     </message>
     <message>
-        <source>Welcome to Delion Core.</source>
-        <translation>Bem-vindo ao Delion Core.</translation>
+        <source>Welcome to Akik Core.</source>
+        <translation>Bem-vindo ao Akik Core.</translation>
     </message>
     <message>
-        <source>As this is the first time the program is launched, you can choose where Delion Core will store its data.</source>
-        <translation>Como essa é a primeira vez que o programa é utilizado, você pode escolher onde Delion Core vai armazenar os seus dados.</translation>
+        <source>As this is the first time the program is launched, you can choose where Akik Core will store its data.</source>
+        <translation>Como essa é a primeira vez que o programa é utilizado, você pode escolher onde Akik Core vai armazenar os seus dados.</translation>
     </message>
     <message>
-        <source>Delion Core will download and store a copy of the Delion block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
-        <translation>Delion Core vai baixar e armazenar uma cópia da blockchain Delion. Pelo menos %1GB de informação será armazenado neste diretório e irá aumentar com o tempo. A carteira também será armazenada neste diretório.</translation>
+        <source>Akik Core will download and store a copy of the Akik block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <translation>Akik Core vai baixar e armazenar uma cópia da blockchain Akik. Pelo menos %1GB de informação será armazenado neste diretório e irá aumentar com o tempo. A carteira também será armazenada neste diretório.</translation>
     </message>
     <message>
         <source>Use the default data directory</source>
@@ -1192,8 +1192,8 @@ MultiSend: %1</translation>
         <translation>Usar um diretório personalizado de dados:</translation>
     </message>
     <message>
-        <source>Delion Core</source>
-        <translation>Delion Core</translation>
+        <source>Akik Core</source>
+        <translation>Akik Core</translation>
     </message>
     <message>
         <source>Error: Specified data directory "%1" cannot be created.</source>
@@ -1448,48 +1448,48 @@ Favor verificar o endereço e tente novamente.</translation>
         <translation>Favor selecionar o nível de privacidade.</translation>
     </message>
     <message>
-        <source>Use 2 separate masternodes to mix funds up to 10000 DLN</source>
-        <translation>Use 2 masternodes separados para embaralhar fundos até 10000 DLN</translation>
+        <source>Use 2 separate masternodes to mix funds up to 10000 AKC</source>
+        <translation>Use 2 masternodes separados para embaralhar fundos até 10000 AKC</translation>
     </message>
     <message>
-        <source>Use 8 separate masternodes to mix funds up to 10000 DLN</source>
-        <translation>Use 8 masternodes separados para embaralhar fundos até 10000 DLN</translation>
+        <source>Use 8 separate masternodes to mix funds up to 10000 AKC</source>
+        <translation>Use 8 masternodes separados para embaralhar fundos até 10000 AKC</translation>
     </message>
     <message>
         <source>Use 16 separate masternodes</source>
         <translation>Use 16 masternodes separados</translation>
     </message>
     <message>
-        <source>This option is the quickest and will cost about ~0.025 DLN to anonymize 10000 DLN</source>
-        <translation>Está opção é a mais rápida e vai custar em torno de ~0.025 DLN para anonimizar 10000 DLN</translation>
+        <source>This option is the quickest and will cost about ~0.025 AKC to anonymize 10000 AKC</source>
+        <translation>Está opção é a mais rápida e vai custar em torno de ~0.025 AKC para anonimizar 10000 AKC</translation>
     </message>
     <message>
-        <source>This option is moderately fast and will cost about 0.05 DLN to anonymize 10000 DLN</source>
-        <translation>Está opção moderamente rápida e vai custar em torno de ~0.05 DLN para anonimizar 10000 DLN</translation>
+        <source>This option is moderately fast and will cost about 0.05 AKC to anonymize 10000 AKC</source>
+        <translation>Está opção moderamente rápida e vai custar em torno de ~0.05 AKC para anonimizar 10000 AKC</translation>
     </message>
     <message>
         <source>This is the slowest and most secure option. Using maximum anonymity will cost</source>
         <translation>Esta é a opção mais lenta e mais segura. Usando a anonimização máxima vai custar</translation>
     </message>
     <message>
-        <source>0.1 DLN per 10000 DLN you anonymize.</source>
-        <translation>0.1 DLN por 10000 DLN que deixar anônima.</translation>
+        <source>0.1 AKC per 10000 AKC you anonymize.</source>
+        <translation>0.1 AKC por 10000 AKC que deixar anônima.</translation>
     </message>
     <message>
         <source>Obfuscation Configuration</source>
         <translation>Configuração de ofuscação</translation>
     </message>
     <message>
-        <source>Obfuscation was successfully set to basic (%1 and 2 rounds). You can change this at any time by opening Delion's configuration screen.</source>
-        <translation>Ofuscação foi definida com sucesso para o básico (%1 e 2 rodadas) Você pode mudar isto a qualquer tempo ao abrir a configuração de tela Delion's.</translation>
+        <source>Obfuscation was successfully set to basic (%1 and 2 rounds). You can change this at any time by opening Akik's configuration screen.</source>
+        <translation>Ofuscação foi definida com sucesso para o básico (%1 e 2 rodadas) Você pode mudar isto a qualquer tempo ao abrir a configuração de tela Akik's.</translation>
     </message>
     <message>
-        <source>Obfuscation was successfully set to high (%1 and 8 rounds). You can change this at any time by opening Delion's configuration screen.</source>
-        <translation>Ofuscação foi definida com sucesso para alto (%1 e 8 rodadas). Você pode mudar isto a qualquer tempo ao abrir a configuração de tela Delion's.</translation>
+        <source>Obfuscation was successfully set to high (%1 and 8 rounds). You can change this at any time by opening Akik's configuration screen.</source>
+        <translation>Ofuscação foi definida com sucesso para alto (%1 e 8 rodadas). Você pode mudar isto a qualquer tempo ao abrir a configuração de tela Akik's.</translation>
     </message>
     <message>
-        <source>Obfuscation was successfully set to maximum (%1 and 16 rounds). You can change this at any time by opening Delion's configuration screen.</source>
-        <translation>Ofuscação foi definida com sucesso para máxima (%1 e 16 rodadas). Você pode mudar isto a qualquer tempo ao abrir a configuração de tela Delion's.</translation>
+        <source>Obfuscation was successfully set to maximum (%1 and 16 rounds). You can change this at any time by opening Akik's configuration screen.</source>
+        <translation>Ofuscação foi definida com sucesso para máxima (%1 e 16 rodadas). Você pode mudar isto a qualquer tempo ao abrir a configuração de tela Akik's.</translation>
     </message>
 </context>
 <context>
@@ -1542,8 +1542,8 @@ Favor verificar o endereço e tente novamente.</translation>
         <translation>C&amp;arteira</translation>
     </message>
     <message>
-        <source>Automatically open the Delion client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Abrir automaticamente a porta do cliente Delion no roteador. Isto somente funciona quando seu roteador suporta UPnP e este esteja habilitado.</translation>
+        <source>Automatically open the Akik client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Abrir automaticamente a porta do cliente Akik no roteador. Isto somente funciona quando seu roteador suporta UPnP e este esteja habilitado.</translation>
     </message>
     <message>
         <source>Accept connections from outside</source>
@@ -1562,12 +1562,12 @@ Favor verificar o endereço e tente novamente.</translation>
         <translation>Expert</translation>
     </message>
     <message>
-        <source>Automatically start Delion after logging in to the system.</source>
-        <translation>Iniciar automaticamente Delion depois de logar no sistema.</translation>
+        <source>Automatically start Akik after logging in to the system.</source>
+        <translation>Iniciar automaticamente Akik depois de logar no sistema.</translation>
     </message>
     <message>
-        <source>&amp;Start Delion on system login</source>
-        <translation>&amp;Iniciar Delion ao logar no sistema</translation>
+        <source>&amp;Start Akik on system login</source>
+        <translation>&amp;Iniciar Akik ao logar no sistema</translation>
     </message>
     <message>
         <source>Enable coin &amp;control features</source>
@@ -1582,18 +1582,18 @@ Favor verificar o endereço e tente novamente.</translation>
         <translation>&amp;Rede</translation>
     </message>
     <message>
-        <source>The user interface language can be set here. This setting will take effect after restarting Delion.</source>
-        <translation>A linguagem da interface pode ser definida aqui. Está configuração terá efeito após reinício do Delion.</translation>
+        <source>The user interface language can be set here. This setting will take effect after restarting Akik.</source>
+        <translation>A linguagem da interface pode ser definida aqui. Está configuração terá efeito após reinício do Akik.</translation>
     </message>
     <message>
         <source>Language missing or translation incomplete? Help contributing translations here:
-https://www.transifex.com/delion-project/delion-project-translations</source>
+https://www.transifex.com/akik-project/akik-project-translations</source>
         <translation>Linguagem não encontrada ou tradução incompleta? Ajude contribuido com traduções aqui:
-https://www.transifex.com/delion-project/delion-project-translations</translation>
+https://www.transifex.com/akik-project/akik-project-translations</translation>
     </message>
     <message>
-        <source>Connect to the Delion network through a SOCKS5 proxy.</source>
-        <translation>Conectar à rede Delion através de um proxy SOCKS5</translation>
+        <source>Connect to the Akik network through a SOCKS5 proxy.</source>
+        <translation>Conectar à rede Akik através de um proxy SOCKS5</translation>
     </message>
     <message>
         <source>Proxy &amp;IP:</source>
@@ -1727,8 +1727,8 @@ https://www.transifex.com/delion-project/delion-project-translations</translatio
         <translation>Imaturo:</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Delion network after a connection is established, but this process has not completed yet.</source>
-        <translation>A informação mostrada pode estar desatualizada. A sua carteira se sincroniza automaticamente com a rede Delion após estabelecer uma conexão, mas esse processo ainda não foi concluído.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Akik network after a connection is established, but this process has not completed yet.</source>
+        <translation>A informação mostrada pode estar desatualizada. A sua carteira se sincroniza automaticamente com a rede Akik após estabelecer uma conexão, mas esse processo ainda não foi concluído.</translation>
     </message>
     <message>
         <source>Unconfirmed transactions to watch-only addresses</source>
@@ -1816,8 +1816,8 @@ https://www.transifex.com/delion-project/delion-project-translations</translatio
 <context>
     <name>PrivacyDialog</name>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Delion network after a connection is established, but this process has not completed yet.</source>
-        <translation>A informação mostrada pode estar desatualizada. A sua carteira se sincroniza automaticamente com a rede Delion após estabelecer uma conexão, mas esse processo ainda não foi concluído.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Akik network after a connection is established, but this process has not completed yet.</source>
+        <translation>A informação mostrada pode estar desatualizada. A sua carteira se sincroniza automaticamente com a rede Akik após estabelecer uma conexão, mas esse processo ainda não foi concluído.</translation>
     </message>
     <message>
         <source>0</source>
@@ -1923,8 +1923,8 @@ https://www.transifex.com/delion-project/delion-project-translations</translatio
         <translation>Quantidade</translation>
     </message>
     <message>
-        <source>Enter a Delion address (e.g. %1)</source>
-        <translation>Insira um endereço Delion (e.g. %1)</translation>
+        <source>Enter a Akik address (e.g. %1)</source>
+        <translation>Insira um endereço Akik (e.g. %1)</translation>
     </message>
     <message>
         <source>%1 d</source>
@@ -2173,8 +2173,8 @@ https://www.transifex.com/delion-project/delion-project-translations</translatio
         <translation>saída:</translation>
     </message>
     <message>
-        <source>Welcome to the Delion RPC console.</source>
-        <translation>Bem-vindo ao console da Delion RPC</translation>
+        <source>Welcome to the Akik RPC console.</source>
+        <translation>Bem-vindo ao console da Akik RPC</translation>
     </message>
     <message>
         <source>Use up and down arrows to navigate history, and &lt;b&gt;Ctrl-L&lt;/b&gt; to clear screen.</source>
@@ -2425,8 +2425,8 @@ https://www.transifex.com/delion-project/delion-project-translations</translatio
         <translation>Tamanho UTXO:</translation>
     </message>
     <message>
-        <source>0 DLN</source>
-        <translation>0 DLN</translation>
+        <source>0 AKC</source>
+        <translation>0 AKC</translation>
     </message>
     <message>
         <source>Transaction Fee:</source>
@@ -2465,12 +2465,12 @@ https://www.transifex.com/delion-project/delion-project-translations</translatio
         <translation>Tempo de confirmação:</translation>
     </message>
     <message>
-        <source>If the custom fee is set to 1000 uDLNs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uDLNs in fee,&lt;br /&gt;while "at least" pays 1000 uDLNs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
-        <translation>Se a taxa padrão estiver definida para 1000 uDLNs e a transação for somente de 250 bytes, então "por kilobyte" pagará somente 250 uDLNs em taxa,&lt;br /&gt; pagará pelo menos 1000 uDLNs. Para transações maiores que um kilobyte ambas pagam por kilobyte.</translation>
+        <source>If the custom fee is set to 1000 uAKCs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uAKCs in fee,&lt;br /&gt;while "at least" pays 1000 uAKCs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
+        <translation>Se a taxa padrão estiver definida para 1000 uAKCs e a transação for somente de 250 bytes, então "por kilobyte" pagará somente 250 uAKCs em taxa,&lt;br /&gt; pagará pelo menos 1000 uAKCs. Para transações maiores que um kilobyte ambas pagam por kilobyte.</translation>
     </message>
     <message>
-        <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks.&lt;br /&gt;But be aware that this can end up in a never confirming transaction once there is more demand for Delion transactions than the network can process.</source>
-        <translation>Pagar a taxa mínima é aceitável desde que existe menos volume de transações que espaço nos blocos. &lt;br/&gt; Mas fique atento que isso pode acabar em uma transação que nunca será confirmada caso haja mais demanda por transações de Delion do que a rede pode processar.</translation>
+        <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks.&lt;br /&gt;But be aware that this can end up in a never confirming transaction once there is more demand for Akik transactions than the network can process.</source>
+        <translation>Pagar a taxa mínima é aceitável desde que existe menos volume de transações que espaço nos blocos. &lt;br/&gt; Mas fique atento que isso pode acabar em uma transação que nunca será confirmada caso haja mais demanda por transações de Akik do que a rede pode processar.</translation>
     </message>
     <message>
         <source>normal</source>
@@ -2557,8 +2557,8 @@ https://www.transifex.com/delion-project/delion-project-translations</translatio
         <translation>fundos anônimos</translation>
     </message>
     <message>
-        <source>Warning: Invalid Delion address</source>
-        <translation>Aviso: endereço Delion inválido</translation>
+        <source>Warning: Invalid Akik address</source>
+        <translation>Aviso: endereço Akik inválido</translation>
     </message>
     <message>
         <source>any available funds (not recommended)</source>
@@ -2652,8 +2652,8 @@ https://www.transifex.com/delion-project/delion-project-translations</translatio
         <translation>Pagar &amp;Para:</translation>
     </message>
     <message>
-        <source>The Delion address to send the payment to</source>
-        <translation>O endereço Delion para enviar o pagamento</translation>
+        <source>The Akik address to send the payment to</source>
+        <translation>O endereço Akik para enviar o pagamento</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -2715,8 +2715,8 @@ https://www.transifex.com/delion-project/delion-project-translations</translatio
 <context>
     <name>ShutdownWindow</name>
     <message>
-        <source>Delion Core is shutting down...</source>
-        <translation>Delion Core está desligando...</translation>
+        <source>Akik Core is shutting down...</source>
+        <translation>Akik Core está desligando...</translation>
     </message>
     <message>
         <source>Do not shut down the computer until this window disappears.</source>
@@ -2734,8 +2734,8 @@ https://www.transifex.com/delion-project/delion-project-translations</translatio
         <translation>&amp;Assinar mensagem</translation>
     </message>
     <message>
-        <source>The Delion address to sign the message with</source>
-        <translation>O endereço Delion para assinar a mensagem</translation>
+        <source>The Akik address to sign the message with</source>
+        <translation>O endereço Akik para assinar a mensagem</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -2766,16 +2766,16 @@ https://www.transifex.com/delion-project/delion-project-translations</translatio
         <translation>Copia a assinatura atual do sistema de transferência</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this Delion address</source>
-        <translation>Assine a mensagem para provar que você possui este endereço Delion</translation>
+        <source>Sign the message to prove you own this Akik address</source>
+        <translation>Assine a mensagem para provar que você possui este endereço Akik</translation>
     </message>
     <message>
-        <source>The Delion address the message was signed with</source>
-        <translation>O endereço Delion que assinou a mensagem</translation>
+        <source>The Akik address the message was signed with</source>
+        <translation>O endereço Akik que assinou a mensagem</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified Delion address</source>
-        <translation>Verifique a mensagem para ter certeza que foi assinada com o endereço Delion especificado.</translation>
+        <source>Verify the message to ensure it was signed with the specified Akik address</source>
+        <translation>Verifique a mensagem para ter certeza que foi assinada com o endereço Akik especificado.</translation>
     </message>
     <message>
         <source>Sign &amp;Message</source>
@@ -2857,8 +2857,8 @@ https://www.transifex.com/delion-project/delion-project-translations</translatio
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>Delion Core</source>
-        <translation>Delion Core</translation>
+        <source>Akik Core</source>
+        <translation>Akik Core</translation>
     </message>
     <message>
         <source>Version %1</source>
@@ -2873,8 +2873,8 @@ https://www.transifex.com/delion-project/delion-project-translations</translatio
         <translation>Os desenvolvedores do Dash Core</translation>
     </message>
     <message>
-        <source>The Delion Core developers</source>
-        <translation>Os desenvolvedores do Delion Core</translation>
+        <source>The Akik Core developers</source>
+        <translation>Os desenvolvedores do Akik Core</translation>
     </message>
     <message>
         <source>[testnet]</source>
@@ -3357,8 +3357,8 @@ https://www.transifex.com/delion-project/delion-project-translations</translatio
         <translation>Enviar Moedas</translation>
     </message>
     <message>
-        <source>SwiftTX doesn't support sending values that high yet. Transactions are currently limited to %1 DLN.</source>
-        <translation>SwiftTX ainda não suporta o envio de valores altos assim. As transações atualmente são limitadas a %1 DLN.</translation>
+        <source>SwiftTX doesn't support sending values that high yet. Transactions are currently limited to %1 AKC.</source>
+        <translation>SwiftTX ainda não suporta o envio de valores altos assim. As transações atualmente são limitadas a %1 AKC.</translation>
     </message>
 </context>
 <context>
@@ -3401,21 +3401,21 @@ https://www.transifex.com/delion-project/delion-project-translations</translatio
     </message>
 </context>
 <context>
-    <name>ZDelionControlDialog</name>
+    <name>ZAkikControlDialog</name>
     <message>
         <source>0</source>
         <translation>0</translation>
     </message>
     </context>
 <context>
-    <name>delion-core</name>
+    <name>akik-core</name>
     <message>
         <source>Delete all wallet transactions and only recover those parts of the blockchain through -rescan on startup</source>
         <translation>Deletar todas as transações da carteira e somente recuperar aquelas partes da blockchain através de -rescan na inicialização</translation>
     </message>
     <message>
-        <source>Disable all Delion specific functionality (Masternodes, Obfuscation, SwiftTX, Budgeting) (0-1, default: %u)</source>
-        <translation>Desabilitar todas as funcionalidades específicas Delion (Masternodes, Ofuscação, SwiftTX, Budgeting) (0-1, padrão: %u)</translation>
+        <source>Disable all Akik specific functionality (Masternodes, Obfuscation, SwiftTX, Budgeting) (0-1, default: %u)</source>
+        <translation>Desabilitar todas as funcionalidades específicas Akik (Masternodes, Ofuscação, SwiftTX, Budgeting) (0-1, padrão: %u)</translation>
     </message>
     <message>
         <source>Error: Unsupported argument -socks found. Setting SOCKS version isn't possible anymore, only SOCKS5 proxies are supported.</source>
@@ -3430,12 +3430,12 @@ https://www.transifex.com/delion-project/delion-project-translations</translatio
         <translation>Executar o comando quando uma transação da carteira mudar (%s no cmd será substituído pela TxID)</translation>
     </message>
     <message>
-        <source>Fees (in DLN/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
-        <translation>Taxas (em DLN/Kb) menores que isso serão consideradas taxa zero para propagação (padrão: %s)</translation>
+        <source>Fees (in AKC/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
+        <translation>Taxas (em AKC/Kb) menores que isso serão consideradas taxa zero para propagação (padrão: %s)</translation>
     </message>
     <message>
-        <source>Fees (in DLN/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
-        <translation>Taxas (em DLN/Kb) menores que isso serão consideradas taxa zero para a criação da transação (padrão: %s)</translation>
+        <source>Fees (in AKC/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
+        <translation>Taxas (em AKC/Kb) menores que isso serão consideradas taxa zero para a criação da transação (padrão: %s)</translation>
     </message>
     <message>
         <source>In this mode -genproclimit controls how many blocks are generated immediately.</source>
@@ -3458,8 +3458,8 @@ https://www.transifex.com/delion-project/delion-project-translations</translatio
         <translation>SwiftTX requer inputs com pelo menos 6 confirmações, você precisar aguardar alguns minutos e tentar novamente.</translation>
     </message>
     <message>
-        <source>Unable to locate enough funds for this transaction that are not equal 10000 DLN.</source>
-        <translation>Incapaz de localizar fundos para esta transação que não são iguais a 10000 DLN.</translation>
+        <source>Unable to locate enough funds for this transaction that are not equal 10000 AKC.</source>
+        <translation>Incapaz de localizar fundos para esta transação que não são iguais a 10000 AKC.</translation>
     </message>
     <message>
         <source>Use separate SOCKS5 proxy to reach peers via Tor hidden services (default: %s)</source>
@@ -3474,8 +3474,8 @@ https://www.transifex.com/delion-project/delion-project-translations</translatio
         <translation>Aviso: -paytxfee está definido como muito alto! Está e a taxa de transação que você irá pagar se enviar uma transação.</translation>
     </message>
     <message>
-        <source>Warning: Please check that your computer's date and time are correct! If your clock is wrong Delion Core will not work properly.</source>
-        <translation>Aviso: Favor verificar se o horário e data de seu computador estão corretos! Se o seu relógio estiver errado o Core Delion não vai funcionar corretamente.</translation>
+        <source>Warning: Please check that your computer's date and time are correct! If your clock is wrong Akik Core will not work properly.</source>
+        <translation>Aviso: Favor verificar se o horário e data de seu computador estão corretos! Se o seu relógio estiver errado o Core Akik não vai funcionar corretamente.</translation>
     </message>
     <message>
         <source>Warning: The network does not appear to fully agree! Some miners appear to be experiencing issues.</source>
@@ -3554,8 +3554,8 @@ https://www.transifex.com/delion-project/delion-project-translations</translatio
         <translation>Todos os direitos reservados (C) 2014-%i aos Desenvolvedores do Dash Core</translation>
     </message>
     <message>
-        <source>Copyright (C) 2015-%i The Delion Core Developers</source>
-        <translation>Todos os direitos reservados (C) 2015-%i aos Desenvolvedores do Delion Core</translation>
+        <source>Copyright (C) 2015-%i The Akik Core Developers</source>
+        <translation>Todos os direitos reservados (C) 2015-%i aos Desenvolvedores do Akik Core</translation>
     </message>
     <message>
         <source>Corrupted block database detected</source>
@@ -3606,8 +3606,8 @@ https://www.transifex.com/delion-project/delion-project-translations</translatio
         <translation>Erro no carregamento da wallet.dat: Carteira corrompida</translation>
     </message>
     <message>
-        <source>Error loading wallet.dat: Wallet requires newer version of Delion Core</source>
-        <translation>Erro ao carregar wallet.dat: A Carteira requer uma nova versão da Delion Core</translation>
+        <source>Error loading wallet.dat: Wallet requires newer version of Akik Core</source>
+        <translation>Erro ao carregar wallet.dat: A Carteira requer uma nova versão da Akik Core</translation>
     </message>
     <message>
         <source>Error opening block database</source>
@@ -3646,8 +3646,8 @@ https://www.transifex.com/delion-project/delion-project-translations</translatio
         <translation>Falhou em ler o bloco</translation>
     </message>
     <message>
-        <source>Fee (in DLN/kB) to add to transactions you send (default: %s)</source>
-        <translation>Taxa (em DLN/kB) a adicionar em transações que você enviar (padrão: %s)</translation>
+        <source>Fee (in AKC/kB) to add to transactions you send (default: %s)</source>
+        <translation>Taxa (em AKC/kB) a adicionar em transações que você enviar (padrão: %s)</translation>
     </message>
     <message>
         <source>Finalizing transaction.</source>
@@ -4078,8 +4078,8 @@ https://www.transifex.com/delion-project/delion-project-translations</translatio
         <translation>Carteira está travada.</translation>
     </message>
     <message>
-        <source>Wallet needed to be rewritten: restart Delion Core to complete</source>
-        <translation>A carteira precisa ser reescrita: reinicia o Delion Core para completar</translation>
+        <source>Wallet needed to be rewritten: restart Akik Core to complete</source>
+        <translation>A carteira precisa ser reescrita: reinicia o Akik Core para completar</translation>
     </message>
     <message>
         <source>Wallet options:</source>

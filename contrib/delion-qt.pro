@@ -78,7 +78,7 @@ HEADERS += src/activemasternode.h \
            src/crypter.h \
            src/obfuscation-relay.h \
            src/obfuscation.h \
-           src/delion-config.h \
+           src/akik-config.h \
            src/db.h \
            src/eccryptoverify.h \
            src/ecwrapper.h \
@@ -131,7 +131,7 @@ HEADERS += src/activemasternode.h \
            src/wallet_ismine.h \
            src/walletdb.h \
            src/compat/sanity.h \
-           src/config/delion-config.h \
+           src/config/akik-config.h \
            src/crypto/common.h \
            src/crypto/hmac_sha256.h \
            src/crypto/hmac_sha512.h \
@@ -333,7 +333,7 @@ HEADERS += src/activemasternode.h \
            src/secp256k1/src/java/org_bitcoin_NativeSecp256k1.h \
            src/crypto/aes_helper.c \
            src/qt/bitcoinamountfield.moc \
-           src/qt/delion.moc \
+           src/qt/akik.moc \
            src/qt/intro.moc \
            src/qt/overviewpage.moc \
            src/qt/rpcconsole.moc \
@@ -374,9 +374,9 @@ SOURCES += src/activemasternode.cpp \
            src/crypter.cpp \
            src/obfuscation-relay.cpp \
            src/obfuscation.cpp \
-           src/delion-cli.cpp \
-           src/delion-tx.cpp \
-           src/delion.cpp \
+           src/akik-cli.cpp \
+           src/akik-tx.cpp \
+           src/akik.cpp \
            src/db.cpp \
            src/eccryptoverify.cpp \
            src/ecwrapper.cpp \
@@ -471,8 +471,8 @@ SOURCES += src/activemasternode.cpp \
            src/qt/coincontroltreewidget.cpp \
            src/qt/csvmodelwriter.cpp \
            src/qt/obfuscationconfig.cpp \
-           src/qt/delion.cpp \
-           src/qt/delionstrings.cpp \
+           src/qt/akik.cpp \
+           src/qt/akikstrings.cpp \
            src/qt/editaddressdialog.cpp \
            src/qt/guiutil.cpp \
            src/qt/intro.cpp \
@@ -550,7 +550,7 @@ SOURCES += src/activemasternode.cpp \
            src/test/sighash_tests.cpp \
            src/test/sigopcount_tests.cpp \
            src/test/skiplist_tests.cpp \
-           src/test/test_delion.cpp \
+           src/test/test_akik.cpp \
            src/test/timedata_tests.cpp \
            src/test/transaction_tests.cpp \
            src/test/uint256_tests.cpp \
@@ -641,21 +641,21 @@ SOURCES += src/activemasternode.cpp \
            src/leveldb/helpers/memenv/memenv.cc \
            src/leveldb/helpers/memenv/memenv_test.cc \
            src/secp256k1/src/java/org_bitcoin_NativeSecp256k1.c
-RESOURCES += src/qt/delion.qrc src/qt/delion_locale.qrc
+RESOURCES += src/qt/akik.qrc src/qt/akik_locale.qrc
 
-TRANSLATIONS += src/qt/locale/delion_bg.ts \
-                src/qt/locale/delion_de.ts \
-                src/qt/locale/delion_en.ts \
-                src/qt/locale/delion_es.ts \
-                src/qt/locale/delion_fi.ts \
-                src/qt/locale/delion_fr.ts \
-                src/qt/locale/delion_it.ts \
-                src/qt/locale/delion_ja.ts \
-                src/qt/locale/delion_pl.ts \
-                src/qt/locale/delion_pt.ts \
-                src/qt/locale/delion_ru.ts \
-                src/qt/locale/delion_sk.ts \
-                src/qt/locale/delion_sv.ts \
-                src/qt/locale/delion_vi.ts \
-                src/qt/locale/delion_zh_CN.ts \
-                src/qt/locale/delion_zh_TW.ts
+TRANSLATIONS += src/qt/locale/akik_bg.ts \
+                src/qt/locale/akik_de.ts \
+                src/qt/locale/akik_en.ts \
+                src/qt/locale/akik_es.ts \
+                src/qt/locale/akik_fi.ts \
+                src/qt/locale/akik_fr.ts \
+                src/qt/locale/akik_it.ts \
+                src/qt/locale/akik_ja.ts \
+                src/qt/locale/akik_pl.ts \
+                src/qt/locale/akik_pt.ts \
+                src/qt/locale/akik_ru.ts \
+                src/qt/locale/akik_sk.ts \
+                src/qt/locale/akik_sv.ts \
+                src/qt/locale/akik_vi.ts \
+                src/qt/locale/akik_zh_CN.ts \
+                src/qt/locale/akik_zh_TW.ts

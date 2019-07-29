@@ -6,13 +6,13 @@ and tests weren't explicitly disabled.
 
 After configuring, they can be run with 'make check'.
 
-To run the deliond tests manually, launch src/test/test_delion .
+To run the akikd tests manually, launch src/test/test_akik .
 
-To add more deliond tests, add `BOOST_AUTO_TEST_CASE` functions to the existing
+To add more akikd tests, add `BOOST_AUTO_TEST_CASE` functions to the existing
 .cpp files in the test/ directory or add new .cpp files that
 implement new BOOST_AUTO_TEST_SUITE sections.
 
-To run the delion-qt tests manually, launch src/qt/test/delion-qt_test
+To run the akik-qt tests manually, launch src/qt/test/akik-qt_test
 
-To add more delion-qt tests, add them to the `src/qt/test/` directory and
+To add more akik-qt tests, add them to the `src/qt/test/` directory and
 the `src/qt/test/test_main.cpp` file.

@@ -2,7 +2,7 @@
 // Copyright (c) 2009-2014 The Bitcoin developers
 // Copyright (c) 2014-2015 The Dash developers
 // Copyright (c) 2015-2017 The PIVX developers
-// Copyright (c) 2017 The Delion developers
+// Copyright (c) 2017 The Akik developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -238,10 +238,10 @@ Value stop(const Array& params, bool fHelp)
     if (fHelp || params.size() > 1)
         throw runtime_error(
             "stop\n"
-            "\nStop Delion server.");
+            "\nStop Akik server.");
     // Shutdown will take long enough that the response should get back
     StartShutdown();
-    return "Delion server stopping";
+    return "Akik server stopping";
 }
 
 
@@ -318,36 +318,36 @@ static const CRPCCommand vRPCCommands[] =
         {"hidden", "reconsiderblock", &reconsiderblock, true, true, false},
         {"hidden", "setmocktime", &setmocktime, true, false, false},
 
-        /* Delion features */
-        {"delion", "masternode", &masternode, true, true, false},
-        {"delion", "listmasternodes", &listmasternodes, true, true, false},
-        {"delion", "getmasternodecount", &getmasternodecount, true, true, false},
-        {"delion", "masternodeconnect", &masternodeconnect, true, true, false},
-        {"delion", "masternodecurrent", &masternodecurrent, true, true, false},
-        {"delion", "masternodedebug", &masternodedebug, true, true, false},
-        {"delion", "startmasternode", &startmasternode, true, true, false},
-        {"delion", "createmasternodekey", &createmasternodekey, true, true, false},
-        {"delion", "getmasternodeoutputs", &getmasternodeoutputs, true, true, false},
-        {"delion", "listmasternodeconf", &listmasternodeconf, true, true, false},
-        {"delion", "getmasternodestatus", &getmasternodestatus, true, true, false},
-        {"delion", "getmasternodewinners", &getmasternodewinners, true, true, false},
-        {"delion", "getmasternodescores", &getmasternodescores, true, true, false},
-        {"delion", "mnbudget", &mnbudget, true, true, false},
-        {"delion", "preparebudget", &preparebudget, true, true, false},
-        {"delion", "submitbudget", &submitbudget, true, true, false},
-        {"delion", "mnbudgetvote", &mnbudgetvote, true, true, false},
-        {"delion", "getbudgetvotes", &getbudgetvotes, true, true, false},
-        {"delion", "getnextsuperblock", &getnextsuperblock, true, true, false},
-        {"delion", "getbudgetprojection", &getbudgetprojection, true, true, false},
-        {"delion", "getbudgetinfo", &getbudgetinfo, true, true, false},
-        {"delion", "mnbudgetrawvote", &mnbudgetrawvote, true, true, false},
-        {"delion", "mnfinalbudget", &mnfinalbudget, true, true, false},
-        {"delion", "checkbudgets", &checkbudgets, true, true, false},
-        {"delion", "mnsync", &mnsync, true, true, false},
-        {"delion", "spork", &spork, true, true, false},
-        {"delion", "getpoolinfo", &getpoolinfo, true, true, false},
+        /* Akik features */
+        {"akik", "masternode", &masternode, true, true, false},
+        {"akik", "listmasternodes", &listmasternodes, true, true, false},
+        {"akik", "getmasternodecount", &getmasternodecount, true, true, false},
+        {"akik", "masternodeconnect", &masternodeconnect, true, true, false},
+        {"akik", "masternodecurrent", &masternodecurrent, true, true, false},
+        {"akik", "masternodedebug", &masternodedebug, true, true, false},
+        {"akik", "startmasternode", &startmasternode, true, true, false},
+        {"akik", "createmasternodekey", &createmasternodekey, true, true, false},
+        {"akik", "getmasternodeoutputs", &getmasternodeoutputs, true, true, false},
+        {"akik", "listmasternodeconf", &listmasternodeconf, true, true, false},
+        {"akik", "getmasternodestatus", &getmasternodestatus, true, true, false},
+        {"akik", "getmasternodewinners", &getmasternodewinners, true, true, false},
+        {"akik", "getmasternodescores", &getmasternodescores, true, true, false},
+        {"akik", "mnbudget", &mnbudget, true, true, false},
+        {"akik", "preparebudget", &preparebudget, true, true, false},
+        {"akik", "submitbudget", &submitbudget, true, true, false},
+        {"akik", "mnbudgetvote", &mnbudgetvote, true, true, false},
+        {"akik", "getbudgetvotes", &getbudgetvotes, true, true, false},
+        {"akik", "getnextsuperblock", &getnextsuperblock, true, true, false},
+        {"akik", "getbudgetprojection", &getbudgetprojection, true, true, false},
+        {"akik", "getbudgetinfo", &getbudgetinfo, true, true, false},
+        {"akik", "mnbudgetrawvote", &mnbudgetrawvote, true, true, false},
+        {"akik", "mnfinalbudget", &mnfinalbudget, true, true, false},
+        {"akik", "checkbudgets", &checkbudgets, true, true, false},
+        {"akik", "mnsync", &mnsync, true, true, false},
+        {"akik", "spork", &spork, true, true, false},
+        {"akik", "getpoolinfo", &getpoolinfo, true, true, false},
 #ifdef ENABLE_WALLET
-        {"delion", "obfuscation", &obfuscation, false, false, true}, /* not threadSafe because of SendMoney */
+        {"akik", "obfuscation", &obfuscation, false, false, true}, /* not threadSafe because of SendMoney */
 
         /* Wallet */
         {"wallet", "addmultisigaddress", &addmultisigaddress, true, false, true},
@@ -626,16 +626,16 @@ void StartRPCThreads()
         unsigned char rand_pwd[32];
         GetRandBytes(rand_pwd, 32);
         uiInterface.ThreadSafeMessageBox(strprintf(
-                                             _("To use deliond, or the -server option to delion-qt, you must set an rpcpassword in the configuration file:\n"
+                                             _("To use akikd, or the -server option to akik-qt, you must set an rpcpassword in the configuration file:\n"
                                                "%s\n"
                                                "It is recommended you use the following random password:\n"
-                                               "rpcuser=delionrpc\n"
+                                               "rpcuser=akikrpc\n"
                                                "rpcpassword=%s\n"
                                                "(you do not need to remember this password)\n"
                                                "The username and password MUST NOT be the same.\n"
                                                "If the file does not exist, create it with owner-readable-only file permissions.\n"
                                                "It is also recommended to set alertnotify so you are notified of problems;\n"
-                                               "for example: alertnotify=echo %%s | mail -s \"Delion Alert\" admin@foo.com\n"),
+                                               "for example: alertnotify=echo %%s | mail -s \"Akik Alert\" admin@foo.com\n"),
                                              GetConfigFile().string(),
                                              EncodeBase58(&rand_pwd[0], &rand_pwd[0] + 32)),
             "", CClientUIInterface::MSG_ERROR | CClientUIInterface::SECURE);
@@ -1086,7 +1086,7 @@ std::vector<std::string> CRPCTable::listCommands() const
 
 std::string HelpExampleCli(string methodname, string args)
 {
-    return "> delion-cli " + methodname + " " + args + "\n";
+    return "> akik-cli " + methodname + " " + args + "\n";
 }
 
 std::string HelpExampleRpc(string methodname, string args)

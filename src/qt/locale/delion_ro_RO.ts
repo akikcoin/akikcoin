@@ -183,9 +183,9 @@
     </message>
     </context>
 <context>
-    <name>ZDelionControlDialog</name>
+    <name>ZAkikControlDialog</name>
     </context>
 <context>
-    <name>delion-core</name>
+    <name>akik-core</name>
     </context>
 </TS>

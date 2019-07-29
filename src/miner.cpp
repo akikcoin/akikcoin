@@ -2,7 +2,7 @@
 // Copyright (c) 2009-2014 The Bitcoin developers
 // Copyright (c) 2014-2015 The Dash developers
 // Copyright (c) 2015-2017 The PIVX developers
-// Copyright (c) 2017 The Delion developers
+// Copyright (c) 2017 The Akik developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -33,7 +33,7 @@ using namespace std;
 
 //////////////////////////////////////////////////////////////////////////////
 //
-// DelionMiner
+// AkikMiner
 //
 
 //
@@ -313,7 +313,7 @@ CBlockTemplate* CreateNewBlock(const CScript& scriptPubKeyIn, CWallet* pwallet, 
             if (!view.HaveInputs(tx))
                 continue;
 
-            // double check that there are no double spent zDLN spends in this block or tx
+            // double check that there are no double spent zAKC spends in this block or tx
             if (tx.IsZerocoinSpend()) {
                 int nHeightTx = 0;
                 if (IsTransactionInChain(tx.GetHash(), nHeightTx))
@@ -334,7 +334,7 @@ CBlockTemplate* CreateNewBlock(const CScript& scriptPubKeyIn, CWallet* pwallet, 
                         vTxSerials.emplace_back(spend.getCoinSerialNumber());
                     }
                 }
-                //This zDLN serial has already been included in the block, do not add this tx.
+                //This zAKC serial has already been included in the block, do not add this tx.
                 if (fDoubleSerial)
                     continue;
             }
@@ -480,7 +480,7 @@ bool ProcessBlockFound(CBlock* pblock, CWallet& wallet, CReserveKey& reservekey)
     {
         LOCK(cs_main);
         if (pblock->hashPrevBlock != chainActive.Tip()->GetBlockHash())
-            return error("DelionMiner : generated block is stale");
+            return error("AkikMiner : generated block is stale");
     }
 
     // Remove key from key pool
@@ -495,7 +495,7 @@ bool ProcessBlockFound(CBlock* pblock, CWallet& wallet, CReserveKey& reservekey)
     // Process this block the same as if we had received it from another node
     CValidationState state;
     if (!ProcessNewBlock(state, NULL, pblock))
-        return error("DelionMiner : ProcessNewBlock, block not accepted");
+        return error("AkikMiner : ProcessNewBlock, block not accepted");
 
     for (CNode* node : vNodes) {
         node->PushInventory(CInv(MSG_BLOCK, pblock->GetHash()));
@@ -510,9 +510,9 @@ bool fGenerateBitcoins = false;
 
 void BitcoinMiner(CWallet* pwallet, bool fProofOfStake)
 {
-    LogPrintf("DelionMiner started\n");
+    LogPrintf("AkikMiner started\n");
     SetThreadPriority(THREAD_PRIORITY_LOWEST);
-    RenameThread("delion-miner");
+    RenameThread("akik-miner");
 
     // Each thread has its own key and counter
     CReserveKey reservekey(pwallet);
@@ -586,7 +586,7 @@ void BitcoinMiner(CWallet* pwallet, bool fProofOfStake)
             continue;
         }
 
-        LogPrintf("Running DelionMiner with %u transactions in block (%u bytes)\n", pblock->vtx.size(),
+        LogPrintf("Running AkikMiner with %u transactions in block (%u bytes)\n", pblock->vtx.size(),
             ::GetSerializeSize(*pblock, SER_NETWORK, PROTOCOL_VERSION));
 
         //

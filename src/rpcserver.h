@@ -96,7 +96,7 @@ public:
 };
 
 /**
- * Delion RPC command dispatcher.
+ * Akik RPC command dispatcher.
  */
 class CRPCTable
 {

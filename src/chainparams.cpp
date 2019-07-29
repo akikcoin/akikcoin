@@ -2,7 +2,7 @@
 // Copyright (c) 2009-2014 The Bitcoin developers
 // Copyright (c) 2014-2015 The Dash developers
 // Copyright (c) 2015-2018 The PIVX Developers
-// Copyright (c) 2018-2019 The Delion Developers
+// Copyright (c) 2018-2019 The Akik Developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -110,16 +110,16 @@ public:
         pchMessageStart[3] = 0x57;
         vAlertPubKey = ParseHex("0480e0e72c17b6205828d44d080648e9c27ab1e2a17ecbaf80962e4f6c2c89ac42862352bf459271886b752cb64784e8b66c01341a9973ada2a7c3b1dc99d32631");
         nDefaultPort = 15858;
-        bnProofOfWorkLimit = ~uint256(0) >> 20; // Delion starting difficulty is 1 / 2^12
+        bnProofOfWorkLimit = ~uint256(0) >> 20; // Akik starting difficulty is 1 / 2^12
         nSubsidyHalvingInterval = 210000;
         nMaxReorganizationDepth = 100;
         nEnforceBlockUpgradeMajority = 750;
         nRejectBlockOutdatedMajority = 950;
         nToCheckBlockUpgradeMajority = 1000;
         nMinerThreads = 0;
-        nTargetTimespan = 1 * 60; // Delion: 60 seconds
+        nTargetTimespan = 1 * 60; // Akik: 60 seconds
         nTargetSpacingSlowLaunch = 1 * 60;
-        nTargetSpacing = 1 * 60;  // Delion: 60 Seconds
+        nTargetSpacing = 1 * 60;  // Akik: 60 Seconds
         nMaturity = 20;
         nMasternodeCountDrift = 20;
         nMaxMoneyOut = 100000000 * COIN;
@@ -138,7 +138,7 @@ public:
         nEnforceNewSporkKey = 1564056000; //!> Sporks signed after (GMT): Thursday, July 25, 2019 12:00:00 PM GMT must use the new spork key
         nRejectOldSporkKey = 1564315200; //!> Fully reject old spork key after (GMT): Monday, July 29, 2019 12:00:00 PM
 
-        const char* pszTimestamp = "Delion Project Started";
+        const char* pszTimestamp = "Akik Project Started";
         CMutableTransaction txNew;
         txNew.vin.resize(1);
         txNew.vout.resize(1);
@@ -160,16 +160,16 @@ public:
 		vFixedSeeds.clear();
 		vSeeds.clear();
 		
-        vSeeds.push_back(CDNSSeedData("1.delion.online", "1.delion.online"));
-        vSeeds.push_back(CDNSSeedData("2.delion.online", "2.delion.online"));
-        vSeeds.push_back(CDNSSeedData("3.delion.online", "3.delion.online"));
-        vSeeds.push_back(CDNSSeedData("4.delion.online", "4.delion.online"));
-        vSeeds.push_back(CDNSSeedData("5.delion.online", "5.delion.online"));
-        vSeeds.push_back(CDNSSeedData("6.delion.online", "6.delion.online"));
-        vSeeds.push_back(CDNSSeedData("7.delion.online", "7.delion.online"));
-        vSeeds.push_back(CDNSSeedData("8.delion.online", "8.delion.online"));
-        vSeeds.push_back(CDNSSeedData("9.delion.online", "9.delion.online"));
-        vSeeds.push_back(CDNSSeedData("10.delion.online", "10.delion.online"));
+        vSeeds.push_back(CDNSSeedData("1.akik.online", "1.akik.online"));
+        vSeeds.push_back(CDNSSeedData("2.akik.online", "2.akik.online"));
+        vSeeds.push_back(CDNSSeedData("3.akik.online", "3.akik.online"));
+        vSeeds.push_back(CDNSSeedData("4.akik.online", "4.akik.online"));
+        vSeeds.push_back(CDNSSeedData("5.akik.online", "5.akik.online"));
+        vSeeds.push_back(CDNSSeedData("6.akik.online", "6.akik.online"));
+        vSeeds.push_back(CDNSSeedData("7.akik.online", "7.akik.online"));
+        vSeeds.push_back(CDNSSeedData("8.akik.online", "8.akik.online"));
+        vSeeds.push_back(CDNSSeedData("9.akik.online", "9.akik.online"));
+        vSeeds.push_back(CDNSSeedData("10.akik.online", "10.akik.online"));
 
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 31); // D
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1, 48); // L
@@ -235,8 +235,8 @@ public:
         nRejectBlockOutdatedMajority = 75;
         nToCheckBlockUpgradeMajority = 100;
         nMinerThreads = 0;
-        nTargetTimespan = 1 * 60; // Delion: 1 day
-        nTargetSpacing = 1 * 60;  // Delion: 1 minute
+        nTargetTimespan = 1 * 60; // Akik: 1 day
+        nTargetSpacing = 1 * 60;  // Akik: 1 minute
         nLastPOWBlock = 200;
         nMaturity = 15;
         nMasternodeCountDrift = 4;
@@ -260,17 +260,17 @@ public:
         vFixedSeeds.clear();
         vSeeds.clear();
         
-        vSeeds.push_back(CDNSSeedData("test.delion.online", "test.delion.online"));
+        vSeeds.push_back(CDNSSeedData("test.akik.online", "test.akik.online"));
 
 
-        base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 126); // Testnet delion addresses start with 'x' or 'y'
-        base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1, 19);  // Testnet delion script addresses start with '8' or '9'
+        base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 126); // Testnet akik addresses start with 'x' or 'y'
+        base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1, 19);  // Testnet akik script addresses start with '8' or '9'
         base58Prefixes[SECRET_KEY] = std::vector<unsigned char>(1, 239);     // Testnet private keys start with '9' or 'c' (Bitcoin defaults)
-        // Testnet delion BIP32 pubkeys start with 'DRKV'
+        // Testnet akik BIP32 pubkeys start with 'DRKV'
         base58Prefixes[EXT_PUBLIC_KEY] = boost::assign::list_of(0x3a)(0x80)(0x61)(0xa0).convert_to_container<std::vector<unsigned char> >();
-        // Testnet delion BIP32 prvkeys start with 'DRKP'
+        // Testnet akik BIP32 prvkeys start with 'DRKP'
         base58Prefixes[EXT_SECRET_KEY] = boost::assign::list_of(0x3a)(0x80)(0x58)(0x37).convert_to_container<std::vector<unsigned char> >();
-        // Testnet delion BIP44 coin type is '1' (All coin's testnet default)
+        // Testnet akik BIP44 coin type is '1' (All coin's testnet default)
         base58Prefixes[EXT_COIN_TYPE] = boost::assign::list_of(0x80)(0x00)(0x00)(0x01).convert_to_container<std::vector<unsigned char> >();
 
         convertSeed6(vFixedSeeds, pnSeed6_test, ARRAYLEN(pnSeed6_test));
@@ -317,8 +317,8 @@ public:
         nRejectBlockOutdatedMajority = 950;
         nToCheckBlockUpgradeMajority = 1000;
         nMinerThreads = 1;
-        nTargetTimespan = 24 * 60 * 60; // Delion: 1 day
-        nTargetSpacing = 1 * 60;        // Delion: 1 minutes
+        nTargetTimespan = 24 * 60 * 60; // Akik: 1 day
+        nTargetSpacing = 1 * 60;        // Akik: 1 minutes
         bnProofOfWorkLimit = ~uint256(0) >> 1;
         genesis.nTime = 1537602753;
         genesis.nBits = 0x1e0ffff0;

@@ -1,31 +1,31 @@
 #!/bin/bash
 #
-#  deliond The Delion core server.
+#  akikd The Akik core server.
 #
 #
 # chkconfig: 345 80 20
-# description: deliond
-# processname: deliond
+# description: akikd
+# processname: akikd
 #
 
 # Source function library.
 . /etc/init.d/functions
 
-# you can override defaults in /etc/sysconfig/deliond, see below
-if [ -f /etc/sysconfig/deliond ]; then
-        . /etc/sysconfig/deliond
+# you can override defaults in /etc/sysconfig/akikd, see below
+if [ -f /etc/sysconfig/akikd ]; then
+        . /etc/sysconfig/akikd
 fi
 
 RETVAL=0
 
-prog=deliond
-# you can override the lockfile via BITCOIND_LOCKFILE in /etc/sysconfig/deliond
-lockfile=${BITCOIND_LOCKFILE-/var/lock/subsys/deliond}
+prog=akikd
+# you can override the lockfile via BITCOIND_LOCKFILE in /etc/sysconfig/akikd
+lockfile=${BITCOIND_LOCKFILE-/var/lock/subsys/akikd}
 
-# deliond defaults to /usr/bin/deliond, override with BITCOIND_BIN
-bitcoind=${BITCOIND_BIN-/usr/bin/deliond}
+# akikd defaults to /usr/bin/akikd, override with BITCOIND_BIN
+bitcoind=${BITCOIND_BIN-/usr/bin/akikd}
 
-# deliond opts default to -disablewallet, override with BITCOIND_OPTS
+# akikd opts default to -disablewallet, override with BITCOIND_OPTS
 bitcoind_opts=${BITCOIND_OPTS}
 
 start() {

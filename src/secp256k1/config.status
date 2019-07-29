@@ -437,7 +437,7 @@ Copyright (C) 2012 Free Software Foundation, Inc.
 This config.status script is free software; the Free Software Foundation
 gives unlimited permission to copy, distribute and modify it."
 
-ac_pwd='/root/delion/src/secp256k1'
+ac_pwd='/root/akik/src/secp256k1'
 srcdir='.'
 INSTALL='/usr/bin/install -c'
 MKDIR_P='/bin/mkdir -p'
@@ -570,8 +570,8 @@ Xsed='/bin/sed -e 1s/^X//'
 GREP='/bin/grep'
 EGREP='/bin/grep -E'
 FGREP='/bin/grep -F'
-LD='/root/delion/depends/x86_64-apple-darwin11/native/bin/x86_64-apple-darwin11-ld'
-NM='/root/delion/depends/x86_64-apple-darwin11/native/bin/x86_64-apple-darwin11-nm'
+LD='/root/akik/depends/x86_64-apple-darwin11/native/bin/x86_64-apple-darwin11-ld'
+NM='/root/akik/depends/x86_64-apple-darwin11/native/bin/x86_64-apple-darwin11-nm'
 LN_S='ln -s'
 max_cmd_len='1572864'
 ac_objext='o'
@@ -590,18 +590,18 @@ file_magic_glob=''
 want_nocaseglob='no'
 DLLTOOL='false'
 sharedlib_from_linklib_cmd='printf %s\n'
-AR='/root/delion/depends/x86_64-apple-darwin11/native/bin/x86_64-apple-darwin11-ar'
+AR='/root/akik/depends/x86_64-apple-darwin11/native/bin/x86_64-apple-darwin11-ar'
 AR_FLAGS='cru'
 archiver_list_spec=''
-STRIP='/root/delion/depends/x86_64-apple-darwin11/share/../native/bin/x86_64-apple-darwin11-strip'
-RANLIB='/root/delion/depends/x86_64-apple-darwin11/native/bin/x86_64-apple-darwin11-ranlib'
+STRIP='/root/akik/depends/x86_64-apple-darwin11/share/../native/bin/x86_64-apple-darwin11-strip'
+RANLIB='/root/akik/depends/x86_64-apple-darwin11/native/bin/x86_64-apple-darwin11-ranlib'
 old_postinstall_cmds='chmod 644 $oldlib~$RANLIB $tool_oldlib'
 old_postuninstall_cmds=''
 old_archive_cmds='$AR $AR_FLAGS $oldlib$oldobjs~$RANLIB $tool_oldlib'
 lock_old_archive_extraction='yes'
-CC='/root/delion/depends/x86_64-apple-darwin11/native/bin/clang -target x86_64-apple-darwin11 -mmacosx-version-min=10.8 --sysroot /root/delion/depends/SDKs/MacOSX10.11.sdk -mlinker-version=253.9'
+CC='/root/akik/depends/x86_64-apple-darwin11/native/bin/clang -target x86_64-apple-darwin11 -mmacosx-version-min=10.8 --sysroot /root/akik/depends/SDKs/MacOSX10.11.sdk -mlinker-version=253.9'
 CFLAGS='-pipe -O2  -W -Wall -Wextra -Wcast-align -Wnested-externs -Wshadow -Wstrict-prototypes -Wno-unused-function'
-compiler='/root/delion/depends/x86_64-apple-darwin11/native/bin/clang -target x86_64-apple-darwin11 -mmacosx-version-min=10.8 --sysroot /root/delion/depends/SDKs/MacOSX10.11.sdk -mlinker-version=253.9'
+compiler='/root/akik/depends/x86_64-apple-darwin11/native/bin/clang -target x86_64-apple-darwin11 -mmacosx-version-min=10.8 --sysroot /root/akik/depends/SDKs/MacOSX10.11.sdk -mlinker-version=253.9'
 GCC='yes'
 lt_cv_sys_global_symbol_pipe='sed -n -e '\''s/^.*[	 ]\([BCDEGRST][BCDEGRST]*\)[	 ][	 ]*_\([_A-Za-z][_A-Za-z0-9]*\)$/\1 _\2 \2/p'\'' | sed '\''/ __gnu_lto/d'\'''
 lt_cv_sys_global_symbol_to_cdecl='sed -n -e '\''s/^T .* \(.*\)$/extern int \1();/p'\'' -e '\''s/^[BCDEGRST][BCDEGRST]* .* \(.*\)$/extern char \1;/p'\'''
@@ -675,7 +675,7 @@ postuninstall_cmds=''
 finish_cmds=''
 finish_eval=''
 hardcode_into_libs='no'
-sys_lib_search_path_spec='/root/delion/depends/x86_64-apple-darwin11/native/lib/clang/3.7.1  /usr/local/lib'
+sys_lib_search_path_spec='/root/akik/depends/x86_64-apple-darwin11/native/lib/clang/3.7.1  /usr/local/lib'
 configure_time_dlsearch_path='/usr/local/lib /lib /usr/lib'
 configure_time_lt_sys_library_path=''
 hardcode_action='immediate'
@@ -685,9 +685,9 @@ enable_dlopen_self_static='unknown'
 old_striplib='x86_64-apple-darwin11-strip -S'
 striplib='x86_64-apple-darwin11-strip -x'
 
-LTCC='/root/delion/depends/x86_64-apple-darwin11/native/bin/clang -target x86_64-apple-darwin11 -mmacosx-version-min=10.8 --sysroot /root/delion/depends/SDKs/MacOSX10.11.sdk -mlinker-version=253.9'
+LTCC='/root/akik/depends/x86_64-apple-darwin11/native/bin/clang -target x86_64-apple-darwin11 -mmacosx-version-min=10.8 --sysroot /root/akik/depends/SDKs/MacOSX10.11.sdk -mlinker-version=253.9'
 LTCFLAGS='-pipe -O2 '
-compiler='/root/delion/depends/x86_64-apple-darwin11/native/bin/clang -target x86_64-apple-darwin11 -mmacosx-version-min=10.8 --sysroot /root/delion/depends/SDKs/MacOSX10.11.sdk -mlinker-version=253.9'
+compiler='/root/akik/depends/x86_64-apple-darwin11/native/bin/clang -target x86_64-apple-darwin11 -mmacosx-version-min=10.8 --sysroot /root/akik/depends/SDKs/MacOSX10.11.sdk -mlinker-version=253.9'
 
 # A function that is used when there is no print builtin or printf.
 func_fallback_echo ()
@@ -830,10 +830,10 @@ S["SECP_LIBS"]=""
 S["SECP_INCLUDES"]=""
 S["PORT"]="no"
 S["BREW"]="no"
-S["PKG_CONFIG_LIBDIR"]="/root/delion/depends/x86_64-apple-darwin11/share/../lib/pkgconfig"
-S["PKG_CONFIG_PATH"]="/root/delion/depends/x86_64-apple-darwin11/share/../share/pkgconfig"
+S["PKG_CONFIG_LIBDIR"]="/root/akik/depends/x86_64-apple-darwin11/share/../lib/pkgconfig"
+S["PKG_CONFIG_PATH"]="/root/akik/depends/x86_64-apple-darwin11/share/../share/pkgconfig"
 S["PKG_CONFIG"]="/usr/bin/pkg-config --static"
-S["CPP"]="/root/delion/depends/x86_64-apple-darwin11/native/bin/clang -target x86_64-apple-darwin11 -mmacosx-version-min=10.8 --sysroot /root/delion/depends/SDK"\
+S["CPP"]="/root/akik/depends/x86_64-apple-darwin11/native/bin/clang -target x86_64-apple-darwin11 -mmacosx-version-min=10.8 --sysroot /root/akik/depends/SDK"\
 "s/MacOSX10.11.sdk -mlinker-version=253.9 -E"
 S["LT_SYS_LIBRARY_PATH"]=""
 S["OTOOL64"]=":"
@@ -842,16 +842,16 @@ S["LIPO"]="x86_64-apple-darwin11-lipo"
 S["NMEDIT"]="x86_64-apple-darwin11-nmedit"
 S["DSYMUTIL"]="x86_64-apple-darwin11-dsymutil"
 S["MANIFEST_TOOL"]=":"
-S["RANLIB"]="/root/delion/depends/x86_64-apple-darwin11/native/bin/x86_64-apple-darwin11-ranlib"
+S["RANLIB"]="/root/akik/depends/x86_64-apple-darwin11/native/bin/x86_64-apple-darwin11-ranlib"
 S["ac_ct_AR"]=""
-S["AR"]="/root/delion/depends/x86_64-apple-darwin11/native/bin/x86_64-apple-darwin11-ar"
+S["AR"]="/root/akik/depends/x86_64-apple-darwin11/native/bin/x86_64-apple-darwin11-ar"
 S["DLLTOOL"]="false"
 S["OBJDUMP"]="objdump"
 S["LN_S"]="ln -s"
-S["NM"]="/root/delion/depends/x86_64-apple-darwin11/native/bin/x86_64-apple-darwin11-nm"
+S["NM"]="/root/akik/depends/x86_64-apple-darwin11/native/bin/x86_64-apple-darwin11-nm"
 S["ac_ct_DUMPBIN"]=""
 S["DUMPBIN"]=""
-S["LD"]="/root/delion/depends/x86_64-apple-darwin11/native/bin/x86_64-apple-darwin11-ld"
+S["LD"]="/root/akik/depends/x86_64-apple-darwin11/native/bin/x86_64-apple-darwin11-ld"
 S["FGREP"]="/bin/grep -F"
 S["EGREP"]="/bin/grep -E"
 S["GREP"]="/bin/grep"
@@ -869,10 +869,10 @@ S["DEPDIR"]=".deps"
 S["OBJEXT"]="o"
 S["EXEEXT"]=""
 S["ac_ct_CC"]=""
-S["CPPFLAGS"]="-I/root/delion/depends/x86_64-apple-darwin11/share/../include/ "
-S["LDFLAGS"]="-L/root/delion/depends/x86_64-apple-darwin11/share/../lib "
+S["CPPFLAGS"]="-I/root/akik/depends/x86_64-apple-darwin11/share/../include/ "
+S["LDFLAGS"]="-L/root/akik/depends/x86_64-apple-darwin11/share/../lib "
 S["CFLAGS"]="-pipe -O2  -W -Wall -Wextra -Wcast-align -Wnested-externs -Wshadow -Wstrict-prototypes -Wno-unused-function"
-S["CC"]="/root/delion/depends/x86_64-apple-darwin11/native/bin/clang -target x86_64-apple-darwin11 -mmacosx-version-min=10.8 --sysroot /root/delion/depends/SDK"\
+S["CC"]="/root/akik/depends/x86_64-apple-darwin11/native/bin/clang -target x86_64-apple-darwin11 -mmacosx-version-min=10.8 --sysroot /root/akik/depends/SDK"\
 "s/MacOSX10.11.sdk -mlinker-version=253.9"
 S["LIBTOOL"]="$(SHELL) $(top_builddir)/libtool"
 S["AM_BACKSLASH"]="\\"
@@ -888,13 +888,13 @@ S["AWK"]="gawk"
 S["mkdir_p"]="$(MKDIR_P)"
 S["MKDIR_P"]="/bin/mkdir -p"
 S["INSTALL_STRIP_PROGRAM"]="$(install_sh) -c -s"
-S["STRIP"]="/root/delion/depends/x86_64-apple-darwin11/share/../native/bin/x86_64-apple-darwin11-strip"
-S["install_sh"]="${SHELL} /root/delion/src/secp256k1/build-aux/install-sh"
-S["MAKEINFO"]="${SHELL} /root/delion/src/secp256k1/build-aux/missing makeinfo"
-S["AUTOHEADER"]="${SHELL} /root/delion/src/secp256k1/build-aux/missing autoheader"
-S["AUTOMAKE"]="${SHELL} /root/delion/src/secp256k1/build-aux/missing automake-1.15"
-S["AUTOCONF"]="${SHELL} /root/delion/src/secp256k1/build-aux/missing autoconf"
-S["ACLOCAL"]="${SHELL} /root/delion/src/secp256k1/build-aux/missing aclocal-1.15"
+S["STRIP"]="/root/akik/depends/x86_64-apple-darwin11/share/../native/bin/x86_64-apple-darwin11-strip"
+S["install_sh"]="${SHELL} /root/akik/src/secp256k1/build-aux/install-sh"
+S["MAKEINFO"]="${SHELL} /root/akik/src/secp256k1/build-aux/missing makeinfo"
+S["AUTOHEADER"]="${SHELL} /root/akik/src/secp256k1/build-aux/missing autoheader"
+S["AUTOMAKE"]="${SHELL} /root/akik/src/secp256k1/build-aux/missing automake-1.15"
+S["AUTOCONF"]="${SHELL} /root/akik/src/secp256k1/build-aux/missing autoconf"
+S["ACLOCAL"]="${SHELL} /root/akik/src/secp256k1/build-aux/missing aclocal-1.15"
 S["VERSION"]="0.1"
 S["PACKAGE"]="libsecp256k1"
 S["CYGPATH_W"]="echo"

@@ -62,12 +62,12 @@
         <translation>Prijímacia adresa</translation>
     </message>
     <message>
-        <source>These are your Delion addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Toto sú vaše Delion adresy na odosielanie platieb. Pred odoslaním vždy skontrolujte výšku a adresu prijemcu.</translation>
+        <source>These are your Akik addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Toto sú vaše Akik adresy na odosielanie platieb. Pred odoslaním vždy skontrolujte výšku a adresu prijemcu.</translation>
     </message>
     <message>
-        <source>These are your Delion addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Toto sú vaše Delion adresy na prijímanie platieb. Pre každú transakciu sa odporúča použiť novú prijímaciu adresu.</translation>
+        <source>These are your Akik addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>Toto sú vaše Akik adresy na prijímanie platieb. Pre každú transakciu sa odporúča použiť novú prijímaciu adresu.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -176,16 +176,16 @@
         <translation>Potvrďte šifrovanie peňaženky</translation>
     </message>
     <message>
-        <source>Delion will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your DLNs from being stolen by malware infecting your computer.</source>
-        <translation>Delion sa teraz ukončí, aby dokončil proces šifrovania. Nezabudnite, že šifrovanie peňaženky nemôže úplne ochrániť vaše DLN pred odcudzením škodlivým softvérom, ktorý infikuje váš počítač.</translation>
+        <source>Akik will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your AKCs from being stolen by malware infecting your computer.</source>
+        <translation>Akik sa teraz ukončí, aby dokončil proces šifrovania. Nezabudnite, že šifrovanie peňaženky nemôže úplne ochrániť vaše AKC pred odcudzením škodlivým softvérom, ktorý infikuje váš počítač.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
         <translation>Naozaj chcete zašifrovať svoju peňaženku?</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR DLN&lt;/b&gt;!</source>
-        <translation>Upozornenie: Ak zašifrujete svoju peňaženku a stratíte svoju prístupovú frázu, &lt;b&gt; PRÍDETE O VŠETKY DLN &lt;/ b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR AKC&lt;/b&gt;!</source>
+        <translation>Upozornenie: Ak zašifrujete svoju peňaženku a stratíte svoju prístupovú frázu, &lt;b&gt; PRÍDETE O VŠETKY AKC &lt;/ b&gt;!</translation>
     </message>
     <message>
         <source>Wallet encrypted</source>
@@ -239,16 +239,16 @@
         <translation>BIP 38 Šifrovanie</translation>
     </message>
     <message>
-        <source>Enter a Delion Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
-        <translation>Zadajte adresu Delion, ktorú chcete zašifrovať pomocou BIP 38. Zadajte prístupovú frázu do stredného poľa. Stlačte šifrovanie na výpočet šifrovaného privátneho kľúča.</translation>
+        <source>Enter a Akik Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
+        <translation>Zadajte adresu Akik, ktorú chcete zašifrovať pomocou BIP 38. Zadajte prístupovú frázu do stredného poľa. Stlačte šifrovanie na výpočet šifrovaného privátneho kľúča.</translation>
     </message>
     <message>
         <source>Address:</source>
         <translation>Adresa:</translation>
     </message>
     <message>
-        <source>The Delion address to sign the message with</source>
-        <translation>Adresa Delion, ktorou chcete správu podpísať</translation>
+        <source>The Akik address to sign the message with</source>
+        <translation>Adresa Akik, ktorou chcete správu podpísať</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -279,8 +279,8 @@
         <translation>Skopírujte aktuálny podpis do schránky</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this Delion address</source>
-        <translation>Podpíšte správu, aby ste preukázali, že ste vlastníkom tejto Delion adresy</translation>
+        <source>Sign the message to prove you own this Akik address</source>
+        <translation>Podpíšte správu, aby ste preukázali, že ste vlastníkom tejto Akik adresy</translation>
     </message>
     <message>
         <source>Encrypt &amp;Key</source>
@@ -303,12 +303,12 @@
         <translation>Zadajte súkromný kľúč zašifrovaný BIP 38. Zadajte prístupovú frázu do stredného poľa. Kliknite na Dešifrovať kľúč, ak chcete vypočítať privátny kľúč. Po dešifrovaní kľúča pridáte do peňaženky tento súkromný kľúč kliknutím na položku 'Importovať adresu'.</translation>
     </message>
     <message>
-        <source>The Delion address the message was signed with</source>
-        <translation>Delion adresa, ktorou bola správa podpísaná</translation>
+        <source>The Akik address the message was signed with</source>
+        <translation>Akik adresa, ktorou bola správa podpísaná</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified Delion address</source>
-        <translation>Skontrolujte správu, aby ste sa uistili, že bola podpísaná zadanou Delion adresou</translation>
+        <source>Verify the message to ensure it was signed with the specified Akik address</source>
+        <translation>Skontrolujte správu, aby ste sa uistili, že bola podpísaná zadanou Akik adresou</translation>
     </message>
     <message>
         <source>Decrypt &amp;Key</source>
@@ -598,16 +598,16 @@
         <translation>Panel nástrojov Záložky</translation>
     </message>
     <message>
-        <source>Delion Core</source>
-        <translation>Delion Core</translation>
+        <source>Akik Core</source>
+        <translation>Akik Core</translation>
     </message>
     <message>
-        <source>Send coins to a Delion address</source>
-        <translation>Odoslať mince na adresu Delion</translation>
+        <source>Send coins to a Akik address</source>
+        <translation>Odoslať mince na adresu Akik</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and delion: URIs)</source>
-        <translation>Vyžiadať platby (generuje QR kódy a delion: identifikátory URI)</translation>
+        <source>Request payments (generates QR codes and akik: URIs)</source>
+        <translation>Vyžiadať platby (generuje QR kódy a akik: identifikátory URI)</translation>
     </message>
     <message>
         <source>&amp;Masternodes</source>
@@ -618,24 +618,24 @@
         <translation>Prezrieť masternody</translation>
     </message>
     <message>
-        <source>&amp;About Delion Core</source>
-        <translation>O Delion Core</translation>
+        <source>&amp;About Akik Core</source>
+        <translation>O Akik Core</translation>
     </message>
     <message>
-        <source>Show information about Delion Core</source>
-        <translation>Zobraziť informácie o Delion Core</translation>
+        <source>Show information about Akik Core</source>
+        <translation>Zobraziť informácie o Akik Core</translation>
     </message>
     <message>
-        <source>Modify configuration options for Delion</source>
-        <translation>Zmeňte možnosti konfigurácie pre Delion</translation>
+        <source>Modify configuration options for Akik</source>
+        <translation>Zmeňte možnosti konfigurácie pre Akik</translation>
     </message>
     <message>
-        <source>Sign messages with your Delion addresses to prove you own them</source>
-        <translation>Podpíšte správy pomocou adresy Delion, aby ste preukázali, že ich vlastníte</translation>
+        <source>Sign messages with your Akik addresses to prove you own them</source>
+        <translation>Podpíšte správy pomocou adresy Akik, aby ste preukázali, že ich vlastníte</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified Delion addresses</source>
-        <translation>Overte správy, aby sa zabezpečilo, že boli podpísané zadanými Delion adresami</translation>
+        <source>Verify messages to ensure they were signed with specified Akik addresses</source>
+        <translation>Overte správy, aby sa zabezpečilo, že boli podpísané zadanými Akik adresami</translation>
     </message>
     <message>
         <source>&amp;BIP38 tool</source>
@@ -666,8 +666,8 @@
         <translation>Otvoriť konfiguračný súbor masternodu</translation>
     </message>
     <message>
-        <source>Open a Delion: URI or payment request</source>
-        <translation>Otvorte Delion: URI alebo žiadosť o platbu</translation>
+        <source>Open a Akik: URI or payment request</source>
+        <translation>Otvorte Akik: URI alebo žiadosť o platbu</translation>
     </message>
     <message>
         <source>&amp;Blockchain explorer</source>
@@ -678,12 +678,12 @@
         <translation>Okno blockchain prehliadača</translation>
     </message>
     <message>
-        <source>Show the Delion Core help message to get a list with possible Delion command-line options</source>
-        <translation>Zobraziť pomocnú správu programu Delion Core a získajte zoznam možností príkazového riadka Delion</translation>
+        <source>Show the Akik Core help message to get a list with possible Akik command-line options</source>
+        <translation>Zobraziť pomocnú správu programu Akik Core a získajte zoznam možností príkazového riadka Akik</translation>
     </message>
     <message>
-        <source>Delion Core client</source>
-        <translation>Delion Core klient</translation>
+        <source>Akik Core client</source>
+        <translation>Akik Core klient</translation>
     </message>
     <message>
         <source>Synchronizing with network...</source>
@@ -813,8 +813,8 @@ MultiSend: %1</translation>
         <translation>TextLabel</translation>
     </message>
     <message>
-        <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (delion.conf).</source>
-        <translation>Nie všetky transakcie sa zobrazia. Ak chcete zobraziť všetky transakcie, musíte v konfiguračnom súbore (delion.conf) nastaviť txindex = 1.</translation>
+        <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (akik.conf).</source>
+        <translation>Nie všetky transakcie sa zobrazia. Ak chcete zobraziť všetky transakcie, musíte v konfiguračnom súbore (akik.conf) nastaviť txindex = 1.</translation>
     </message>
 </context>
 <context>
@@ -904,15 +904,15 @@ MultiSend: %1</translation>
 <context>
     <name>HelpMessageDialog</name>
     <message>
-        <source>Delion Core</source>
-        <translation>Delion Core</translation>
+        <source>Akik Core</source>
+        <translation>Akik Core</translation>
     </message>
     </context>
 <context>
     <name>Intro</name>
     <message>
-        <source>Delion Core</source>
-        <translation>Delion Core</translation>
+        <source>Akik Core</source>
+        <translation>Akik Core</translation>
     </message>
     <message>
         <source>Error</source>
@@ -1136,8 +1136,8 @@ MultiSend: %1</translation>
 <context>
     <name>SignVerifyMessageDialog</name>
     <message>
-        <source>The Delion address to sign the message with</source>
-        <translation>Adresa Delion, ktorou chcete správu podpísať</translation>
+        <source>The Akik address to sign the message with</source>
+        <translation>Adresa Akik, ktorou chcete správu podpísať</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -1160,16 +1160,16 @@ MultiSend: %1</translation>
         <translation>Skopírujte aktuálny podpis do schránky</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this Delion address</source>
-        <translation>Podpíšte správu, aby ste preukázali, že ste vlastníkom tejto Delion adresy</translation>
+        <source>Sign the message to prove you own this Akik address</source>
+        <translation>Podpíšte správu, aby ste preukázali, že ste vlastníkom tejto Akik adresy</translation>
     </message>
     <message>
-        <source>The Delion address the message was signed with</source>
-        <translation>Delion adresa, ktorou bola správa podpísaná</translation>
+        <source>The Akik address the message was signed with</source>
+        <translation>Akik adresa, ktorou bola správa podpísaná</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified Delion address</source>
-        <translation>Skontrolujte správu, aby ste sa uistili, že bola podpísaná zadanou Delion adresou</translation>
+        <source>Verify the message to ensure it was signed with the specified Akik address</source>
+        <translation>Skontrolujte správu, aby ste sa uistili, že bola podpísaná zadanou Akik adresou</translation>
     </message>
     <message>
         <source>Reset all sign message fields</source>
@@ -1207,8 +1207,8 @@ MultiSend: %1</translation>
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>Delion Core</source>
-        <translation>Delion Core</translation>
+        <source>Akik Core</source>
+        <translation>Akik Core</translation>
     </message>
     </context>
 <context>
@@ -1303,10 +1303,10 @@ MultiSend: %1</translation>
     </message>
     </context>
 <context>
-    <name>ZDelionControlDialog</name>
+    <name>ZAkikControlDialog</name>
     </context>
 <context>
-    <name>delion-core</name>
+    <name>akik-core</name>
     <message>
         <source>Error</source>
         <translation>Chyba</translation>

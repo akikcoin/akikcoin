@@ -62,12 +62,12 @@
         <translation>Adreces de recepció</translation>
     </message>
     <message>
-        <source>These are your Delion addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Aquestes són les teves adreces Delion per fer enviar pagaments. Sempre comprova l'import i l'adreça de recepció abans d'enviar les monedes.</translation>
+        <source>These are your Akik addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Aquestes són les teves adreces Akik per fer enviar pagaments. Sempre comprova l'import i l'adreça de recepció abans d'enviar les monedes.</translation>
     </message>
     <message>
-        <source>These are your Delion addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Aquestes són les teves adreces Delion per rebre pagaments. Es recomana utilitzar noves adreces de recepció per cada transacció.</translation>
+        <source>These are your Akik addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>Aquestes són les teves adreces Akik per rebre pagaments. Es recomana utilitzar noves adreces de recepció per cada transacció.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -168,16 +168,16 @@
         <translation>Confirma l'encriptació del moneder</translation>
     </message>
     <message>
-        <source>Delion will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your DLNs from being stolen by malware infecting your computer.</source>
-        <translation>Delion es tancarà per finalitzar el procés d'encriptació. Recorda que encriptant el teu moneder no protegeix els teus DLN de ser robats si el teu ordinador està infectat amb programari maliciós.</translation>
+        <source>Akik will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your AKCs from being stolen by malware infecting your computer.</source>
+        <translation>Akik es tancarà per finalitzar el procés d'encriptació. Recorda que encriptant el teu moneder no protegeix els teus AKC de ser robats si el teu ordinador està infectat amb programari maliciós.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
         <translation>Estàs segur que vols encriptar el moneder?</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR DLN&lt;/b&gt;!</source>
-        <translation>Avís: Si encripteu el vostre moneder i perdeu la contrasenya, &lt;b&gt;PERDREU TOTS ELS VOSTRES DLNS&lt;/b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR AKC&lt;/b&gt;!</source>
+        <translation>Avís: Si encripteu el vostre moneder i perdeu la contrasenya, &lt;b&gt;PERDREU TOTS ELS VOSTRES AKCS&lt;/b&gt;!</translation>
     </message>
     <message>
         <source>Wallet encrypted</source>
@@ -418,12 +418,12 @@
         <translation>A&amp;juda</translation>
     </message>
     <message>
-        <source>Delion Core</source>
-        <translation>Delion Core</translation>
+        <source>Akik Core</source>
+        <translation>Akik Core</translation>
     </message>
     <message>
-        <source>Send coins to a Delion address</source>
-        <translation>Envia monedes a una adreça Delion</translation>
+        <source>Send coins to a Akik address</source>
+        <translation>Envia monedes a una adreça Akik</translation>
     </message>
     <message>
         <source>&amp;Privacy</source>
@@ -434,8 +434,8 @@
         <translation>&amp;Masternodes</translation>
     </message>
     <message>
-        <source>&amp;About Delion Core</source>
-        <translation>&amp;Sobre Delion Core</translation>
+        <source>&amp;About Akik Core</source>
+        <translation>&amp;Sobre Akik Core</translation>
     </message>
     <message>
         <source>&amp;BIP38 tool</source>
@@ -458,12 +458,12 @@
         <translation>Obre el fitxer de configuració del Masternode</translation>
     </message>
     <message>
-        <source>Delion Core client</source>
-        <translation>Client Delion core</translation>
+        <source>Akik Core client</source>
+        <translation>Client Akik core</translation>
     </message>
     <message numerus="yes">
-        <source>%n active connection(s) to Delion network</source>
-        <translation><numerusform>%n connexió activa a la xarxa Delion</numerusform><numerusform>%n connexions actives a la xarxa Delion</numerusform></translation>
+        <source>%n active connection(s) to Akik network</source>
+        <translation><numerusform>%n connexió activa a la xarxa Akik</numerusform><numerusform>%n connexions actives a la xarxa Akik</numerusform></translation>
     </message>
     <message>
         <source>Synchronizing with network...</source>
@@ -814,8 +814,8 @@
         <translation>Edita l'adreça d'enviament</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid Delion address.</source>
-        <translation>L'adreça introduïda "%1" no és una adreça Delion vàlida.</translation>
+        <source>The entered address "%1" is not a valid Akik address.</source>
+        <translation>L'adreça introduïda "%1" no és una adreça Akik vàlida.</translation>
     </message>
     <message>
         <source>The entered address "%1" is already in the address book.</source>
@@ -860,16 +860,16 @@
         <translation>versió</translation>
     </message>
     <message>
-        <source>Delion Core</source>
-        <translation>Delion Core</translation>
+        <source>Akik Core</source>
+        <translation>Akik Core</translation>
     </message>
     <message>
         <source>(%1-bit)</source>
         <translation>(%1-bit)</translation>
     </message>
     <message>
-        <source>About Delion Core</source>
-        <translation>Sobre Delion Core</translation>
+        <source>About Akik Core</source>
+        <translation>Sobre Akik Core</translation>
     </message>
     <message>
         <source>Command-line options</source>
@@ -915,12 +915,12 @@
         <translation>Benvingut</translation>
     </message>
     <message>
-        <source>Welcome to Delion Core.</source>
-        <translation>Benvingut a Delion Core.</translation>
+        <source>Welcome to Akik Core.</source>
+        <translation>Benvingut a Akik Core.</translation>
     </message>
     <message>
-        <source>As this is the first time the program is launched, you can choose where Delion Core will store its data.</source>
-        <translation>Al ser el primer cop que s'inicia el programa, pots escollir on es desaran les dades del Delion Core.</translation>
+        <source>As this is the first time the program is launched, you can choose where Akik Core will store its data.</source>
+        <translation>Al ser el primer cop que s'inicia el programa, pots escollir on es desaran les dades del Akik Core.</translation>
     </message>
     <message>
         <source>Use the default data directory</source>
@@ -931,8 +931,8 @@
         <translation>Usar una carpeta de dades personalitzada:</translation>
     </message>
     <message>
-        <source>Delion Core</source>
-        <translation>Delion Core</translation>
+        <source>Akik Core</source>
+        <translation>Akik Core</translation>
     </message>
     <message>
         <source>Error: Specified data directory "%1" cannot be created.</source>
@@ -1142,24 +1142,24 @@
         <translation>Si us plau, selecciona un nivell de privacitat.</translation>
     </message>
     <message>
-        <source>Use 2 separate masternodes to mix funds up to 10000 DLN</source>
-        <translation>Utilitza 2 masternodes diferents per mesclar fons de fins a 10000 DLN</translation>
+        <source>Use 2 separate masternodes to mix funds up to 10000 AKC</source>
+        <translation>Utilitza 2 masternodes diferents per mesclar fons de fins a 10000 AKC</translation>
     </message>
     <message>
-        <source>Use 8 separate masternodes to mix funds up to 10000 DLN</source>
-        <translation>Utilitza 8 masternodes diferents per mesclar fons de fins a 10000 DLN</translation>
+        <source>Use 8 separate masternodes to mix funds up to 10000 AKC</source>
+        <translation>Utilitza 8 masternodes diferents per mesclar fons de fins a 10000 AKC</translation>
     </message>
     <message>
         <source>Use 16 separate masternodes</source>
         <translation>Utilitza 16 masternodes diferents</translation>
     </message>
     <message>
-        <source>This option is the quickest and will cost about ~0.025 DLN to anonymize 10000 DLN</source>
-        <translation>Aquesta opció és la més ràpida i té un cost d'uns ~0.025 DLN per anonimitzar 10000 DLN</translation>
+        <source>This option is the quickest and will cost about ~0.025 AKC to anonymize 10000 AKC</source>
+        <translation>Aquesta opció és la més ràpida i té un cost d'uns ~0.025 AKC per anonimitzar 10000 AKC</translation>
     </message>
     <message>
-        <source>This option is moderately fast and will cost about 0.05 DLN to anonymize 10000 DLN</source>
-        <translation>Aquesta opció és moderadament ràpida i té un cost d'uns 0.05 DLN per anonimitzar 10000 DLN</translation>
+        <source>This option is moderately fast and will cost about 0.05 AKC to anonymize 10000 AKC</source>
+        <translation>Aquesta opció és moderadament ràpida i té un cost d'uns 0.05 AKC per anonimitzar 10000 AKC</translation>
     </message>
     <message>
         <source>This is the slowest and most secure option. Using maximum anonymity will cost</source>
@@ -1208,8 +1208,8 @@
         <translation>Expert</translation>
     </message>
     <message>
-        <source>Automatically start Delion after logging in to the system.</source>
-        <translation>Inicia Delion automàticament després d'identificar-te en el sistema.</translation>
+        <source>Automatically start Akik after logging in to the system.</source>
+        <translation>Inicia Akik automàticament després d'identificar-te en el sistema.</translation>
     </message>
     <message>
         <source>Whether to show coin control features or not.</source>
@@ -1271,12 +1271,12 @@
         <translation>Total:</translation>
     </message>
     <message>
-        <source>DELION:</source>
-        <translation>DELION:</translation>
+        <source>AKIK:</source>
+        <translation>AKIK:</translation>
     </message>
     <message>
-        <source>zDELION:</source>
-        <translation>zDELION:</translation>
+        <source>zAKIK:</source>
+        <translation>zAKIK:</translation>
     </message>
     <message>
         <source>0 %</source>
@@ -1304,20 +1304,20 @@
 <context>
     <name>PrivacyDialog</name>
     <message>
-        <source>Zerocoin DLN (zDLN)</source>
-        <translation>Zerocoin DLN (zDLN)</translation>
+        <source>Zerocoin AKC (zAKC)</source>
+        <translation>Zerocoin AKC (zAKC)</translation>
     </message>
     <message>
         <source>0</source>
         <translation>0</translation>
     </message>
     <message>
-        <source>zDLN</source>
-        <translation>zDLN</translation>
+        <source>zAKC</source>
+        <translation>zAKC</translation>
     </message>
     <message>
-        <source>0.000 000 00 DLN</source>
-        <translation>0.000 000 00 DLN</translation>
+        <source>0.000 000 00 AKC</source>
+        <translation>0.000 000 00 AKC</translation>
     </message>
     <message>
         <source>Reset</source>
@@ -1332,8 +1332,8 @@
         <translation>Import:</translation>
     </message>
     <message>
-        <source>0 zDLN</source>
-        <translation>0 zDLN</translation>
+        <source>0 zAKC</source>
+        <translation>0 zAKC</translation>
     </message>
     <message>
         <source>Alt+A</source>
@@ -1719,8 +1719,8 @@
 <context>
     <name>ShutdownWindow</name>
     <message>
-        <source>Delion Core is shutting down...</source>
-        <translation>Delion Core s'està tancant...</translation>
+        <source>Akik Core is shutting down...</source>
+        <translation>Akik Core s'està tancant...</translation>
     </message>
     <message>
         <source>Do not shut down the computer until this window disappears.</source>
@@ -1785,8 +1785,8 @@
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>Delion Core</source>
-        <translation>Delion Core</translation>
+        <source>Akik Core</source>
+        <translation>Akik Core</translation>
     </message>
     <message>
         <source>Version %1</source>
@@ -1969,7 +1969,7 @@
     </message>
     </context>
 <context>
-    <name>ZDelionControlDialog</name>
+    <name>ZAkikControlDialog</name>
     <message>
         <source>Quantity</source>
         <translation>Quantitat</translation>
@@ -1979,12 +1979,12 @@
         <translation>0</translation>
     </message>
     <message>
-        <source>zDLN</source>
-        <translation>zDLN</translation>
+        <source>zAKC</source>
+        <translation>zAKC</translation>
     </message>
     </context>
 <context>
-    <name>delion-core</name>
+    <name>akik-core</name>
     <message>
         <source>Can't mix while sync in progress.</source>
         <translation>No es pot mesclar mentre s'està sincronitzant.</translation>

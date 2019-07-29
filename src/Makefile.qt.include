@@ -1,34 +1,34 @@
-bin_PROGRAMS += qt/delion-qt
+bin_PROGRAMS += qt/akik-qt
 EXTRA_LIBRARIES += qt/libbitcoinqt.a
 
-# delion qt core #
+# akik qt core #
 QT_TS = \
-  qt/locale/delion_bg.ts \
-  qt/locale/delion_ca.ts \
-  qt/locale/delion_cs.ts \
-  qt/locale/delion_da.ts \
-  qt/locale/delion_de.ts \
-  qt/locale/delion_en.ts \
-  qt/locale/delion_en_US.ts \
-  qt/locale/delion_es.ts \
-  qt/locale/delion_fi.ts \
-  qt/locale/delion_fr_FR.ts \
-  qt/locale/delion_hr.ts \
-  qt/locale/delion_it.ts \
-  qt/locale/delion_ja.ts \
-  qt/locale/delion_ko_KR.ts \
-  qt/locale/delion_nl.ts \
-  qt/locale/delion_pl.ts \
-  qt/locale/delion_pt.ts \
-  qt/locale/delion_pt_BR.ts \
-  qt/locale/delion_ro_RO.ts \
-  qt/locale/delion_ru.ts \
-  qt/locale/delion_sk.ts \
-  qt/locale/delion_sv.ts \
-  qt/locale/delion_tr.ts \
-  qt/locale/delion_uk.ts \
-  qt/locale/delion_zh_CN.ts \
-  qt/locale/delion_zh_TW.ts
+  qt/locale/akik_bg.ts \
+  qt/locale/akik_ca.ts \
+  qt/locale/akik_cs.ts \
+  qt/locale/akik_da.ts \
+  qt/locale/akik_de.ts \
+  qt/locale/akik_en.ts \
+  qt/locale/akik_en_US.ts \
+  qt/locale/akik_es.ts \
+  qt/locale/akik_fi.ts \
+  qt/locale/akik_fr_FR.ts \
+  qt/locale/akik_hr.ts \
+  qt/locale/akik_it.ts \
+  qt/locale/akik_ja.ts \
+  qt/locale/akik_ko_KR.ts \
+  qt/locale/akik_nl.ts \
+  qt/locale/akik_pl.ts \
+  qt/locale/akik_pt.ts \
+  qt/locale/akik_pt_BR.ts \
+  qt/locale/akik_ro_RO.ts \
+  qt/locale/akik_ru.ts \
+  qt/locale/akik_sk.ts \
+  qt/locale/akik_sv.ts \
+  qt/locale/akik_tr.ts \
+  qt/locale/akik_uk.ts \
+  qt/locale/akik_zh_CN.ts \
+  qt/locale/akik_zh_TW.ts
 
 QT_FORMS_UI = \
   qt/forms/addressbookpage.ui \
@@ -54,7 +54,7 @@ QT_FORMS_UI = \
   qt/forms/sendcoinsentry.ui \
   qt/forms/signverifymessagedialog.ui \
   qt/forms/transactiondescdialog.ui \
-  qt/forms/zdelioncontroldialog.ui
+  qt/forms/zakikcontroldialog.ui
 
 QT_MOC_CPP = \
   qt/moc_addressbookpage.cpp \
@@ -107,23 +107,23 @@ QT_MOC_CPP = \
   qt/moc_walletframe.cpp \
   qt/moc_walletmodel.cpp \
   qt/moc_walletview.cpp \
-  qt/moc_zdelioncontroldialog.cpp
+  qt/moc_zakikcontroldialog.cpp
 
 BITCOIN_MM = \
   qt/macdockiconhandler.mm \
   qt/macnotificationhandler.mm
 
 QT_MOC = \
-  qt/delion.moc \
+  qt/akik.moc \
   qt/bitcoinamountfield.moc \
   qt/intro.moc \
   qt/overviewpage.moc \
   qt/rpcconsole.moc
 
-QT_QRC_CPP = qt/qrc_delion.cpp
-QT_QRC = qt/delion.qrc
-QT_QRC_LOCALE_CPP = qt/qrc_delion_locale.cpp
-QT_QRC_LOCALE = qt/delion_locale.qrc
+QT_QRC_CPP = qt/qrc_akik.cpp
+QT_QRC = qt/akik.qrc
+QT_QRC_LOCALE_CPP = qt/qrc_akik_locale.cpp
+QT_QRC_LOCALE = qt/akik_locale.qrc
 
 PROTOBUF_CC = qt/paymentrequest.pb.cc
 PROTOBUF_H = qt/paymentrequest.pb.h
@@ -187,7 +187,7 @@ BITCOIN_QT_H = \
   qt/walletmodeltransaction.h \
   qt/walletview.h \
   qt/winshutdownmonitor.h \
-  qt/zdelioncontroldialog.h
+  qt/zakikcontroldialog.h
 
 RES_ICONS = \
   qt/res/icons/add.png \
@@ -242,12 +242,12 @@ RES_ICONS = \
   qt/res/icons/tx_output.png \
   qt/res/icons/tx_mined.png \
   qt/res/icons/tx_mn.png \
-  qt/res/icons/unit_delion.png \
-  qt/res/icons/unit_mdelion.png \
-  qt/res/icons/unit_udelion.png \
-  qt/res/icons/unit_tdelion.png \
-  qt/res/icons/unit_tmdelion.png \
-  qt/res/icons/unit_tudelion.png
+  qt/res/icons/unit_akik.png \
+  qt/res/icons/unit_makik.png \
+  qt/res/icons/unit_uakik.png \
+  qt/res/icons/unit_takik.png \
+  qt/res/icons/unit_tmakik.png \
+  qt/res/icons/unit_tuakik.png
 
 BITCOIN_QT_CPP = \
   qt/bitcoinaddressvalidator.cpp \
@@ -309,7 +309,7 @@ BITCOIN_QT_CPP += \
   qt/walletmodel.cpp \
   qt/walletmodeltransaction.cpp \
   qt/walletview.cpp \
-  qt/zdelioncontroldialog.cpp
+  qt/zakikcontroldialog.cpp
 
 endif
 
@@ -317,7 +317,7 @@ RES_IMAGES = \
   qt/res/images/about.png \
   qt/res/images/splash.png \
   qt/res/images/splash_testnet.png \
-  qt/res/images/delion_logo_horizontal.png \
+  qt/res/images/akik_logo_horizontal.png \
   qt/res/images/downArrow.png \
   qt/res/images/downArrow_small.png \
   qt/res/images/upArrow_small.png \
@@ -333,7 +333,7 @@ RES_CSS = \
 
 RES_MOVIES = $(wildcard $(srcdir)/qt/res/movies/spinner-*.png)
 
-BITCOIN_RC = qt/res/delion-qt-res.rc
+BITCOIN_RC = qt/res/akik-qt-res.rc
 
 BITCOIN_QT_INCLUDES = -I$(builddir)/qt -I$(srcdir)/qt -I$(srcdir)/qt/forms \
   -I$(builddir)/qt/forms
@@ -353,69 +353,69 @@ QT_FORMS_H=$(join $(dir $(QT_FORMS_UI)),$(addprefix ui_, $(notdir $(QT_FORMS_UI:
 # Most files will depend on the forms and moc files as includes. Generate them
 # before anything else.
 $(QT_MOC): $(QT_FORMS_H)
-$(qt_libbitcoinqt_a_OBJECTS) $(qt_delion_qt_OBJECTS) : | $(QT_MOC)
+$(qt_libbitcoinqt_a_OBJECTS) $(qt_akik_qt_OBJECTS) : | $(QT_MOC)
 
 #Generating these with a half-written protobuf header leads to wacky results.
 #This makes sure it's done.
 $(QT_MOC): $(PROTOBUF_H)
 $(QT_MOC_CPP): $(PROTOBUF_H)
 
-# delion-qt binary #
-qt_delion_qt_CPPFLAGS = $(BITCOIN_INCLUDES) $(BITCOIN_QT_INCLUDES) \
+# akik-qt binary #
+qt_akik_qt_CPPFLAGS = $(BITCOIN_INCLUDES) $(BITCOIN_QT_INCLUDES) \
   $(QT_INCLUDES) $(PROTOBUF_CFLAGS) $(QR_CFLAGS)
 
-qt_delion_qt_SOURCES = qt/delion.cpp
+qt_akik_qt_SOURCES = qt/akik.cpp
 if TARGET_DARWIN
-  qt_delion_qt_SOURCES += $(BITCOIN_MM)
+  qt_akik_qt_SOURCES += $(BITCOIN_MM)
 endif
 if TARGET_WINDOWS
-  qt_delion_qt_SOURCES += $(BITCOIN_RC)
+  qt_akik_qt_SOURCES += $(BITCOIN_RC)
 endif
-qt_delion_qt_LDADD = qt/libbitcoinqt.a $(LIBBITCOIN_SERVER)
+qt_akik_qt_LDADD = qt/libbitcoinqt.a $(LIBBITCOIN_SERVER)
 if ENABLE_WALLET
-qt_delion_qt_LDADD += $(LIBBITCOIN_WALLET)
+qt_akik_qt_LDADD += $(LIBBITCOIN_WALLET)
 endif
 if ENABLE_ZMQ
-qt_delion_qt_LDADD += $(LIBBITCOIN_ZMQ) $(ZMQ_LIBS)
+qt_akik_qt_LDADD += $(LIBBITCOIN_ZMQ) $(ZMQ_LIBS)
 endif
-qt_delion_qt_LDADD += $(LIBBITCOIN_CLI) $(LIBBITCOIN_COMMON) $(LIBBITCOIN_UTIL) $(LIBBITCOIN_CRYPTO) $(LIBBITCOIN_UNIVALUE) $(LIBBITCOIN_ZEROCOIN) $(LIBLEVELDB) $(LIBMEMENV) \
+qt_akik_qt_LDADD += $(LIBBITCOIN_CLI) $(LIBBITCOIN_COMMON) $(LIBBITCOIN_UTIL) $(LIBBITCOIN_CRYPTO) $(LIBBITCOIN_UNIVALUE) $(LIBBITCOIN_ZEROCOIN) $(LIBLEVELDB) $(LIBMEMENV) \
   $(BOOST_LIBS) $(QT_LIBS) $(QT_DBUS_LIBS) $(QR_LIBS) $(PROTOBUF_LIBS) $(BDB_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS) $(MINIUPNPC_LIBS) $(LIBSECP256K1) \
   $(EVENT_PTHREADS_LIBS) $(EVENT_LIBS)
-qt_delion_qt_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(QT_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
-qt_delion_qt_LIBTOOLFLAGS = --tag CXX
+qt_akik_qt_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(QT_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
+qt_akik_qt_LIBTOOLFLAGS = --tag CXX
 
 #locale/foo.ts -> locale/foo.qm
 QT_QM=$(QT_TS:.ts=.qm)
 
 .SECONDARY: $(QT_QM)
 
-qt/delionstrings.cpp: $(libbitcoin_server_a_SOURCES) $(libbitcoin_wallet_a_SOURCES) $(libbitcoin_common_a_SOURCES)
+qt/akikstrings.cpp: $(libbitcoin_server_a_SOURCES) $(libbitcoin_wallet_a_SOURCES) $(libbitcoin_common_a_SOURCES)
 	@test -n $(XGETTEXT) || echo "xgettext is required for updating translations"
 	$(AM_V_GEN) cd $(srcdir); XGETTEXT=$(XGETTEXT) $(PYTHON) ../share/qt/extract_strings_qt.py $^
 
-translate: qt/delionstrings.cpp $(QT_FORMS_UI) $(QT_FORMS_UI) $(BITCOIN_QT_CPP) $(BITCOIN_QT_H) $(BITCOIN_MM)
+translate: qt/akikstrings.cpp $(QT_FORMS_UI) $(QT_FORMS_UI) $(BITCOIN_QT_CPP) $(BITCOIN_QT_H) $(BITCOIN_MM)
 	@test -n $(LUPDATE) || echo "lupdate is required for updating translations"
-	$(AM_V_GEN) QT_SELECT=$(QT_SELECT) $(LUPDATE) $^ -locations relative -no-obsolete -ts qt/locale/delion_en.ts
+	$(AM_V_GEN) QT_SELECT=$(QT_SELECT) $(LUPDATE) $^ -locations relative -no-obsolete -ts qt/locale/akik_en.ts
 
 $(QT_QRC_LOCALE_CPP): $(QT_QRC_LOCALE) $(QT_QM)
 	@test -f $(RCC)
 	@test -f $(@D)/$(<F) || cp -f $< $(@D)
-	$(AM_V_GEN) QT_SELECT=$(QT_SELECT) $(RCC) -name delion_locale $(@D)/$(<F) | \
+	$(AM_V_GEN) QT_SELECT=$(QT_SELECT) $(RCC) -name akik_locale $(@D)/$(<F) | \
 	  $(SED) -e '/^\*\*.*Created:/d' -e '/^\*\*.*by:/d' > $@
 
 $(QT_QRC_CPP): $(QT_QRC) $(QT_FORMS_H) $(RES_ICONS) $(RES_IMAGES) $(RES_CSS) $(RES_MOVIES) $(PROTOBUF_H)
 	@test -f $(RCC)
-	$(AM_V_GEN) QT_SELECT=$(QT_SELECT) $(RCC) -name delion $< | \
+	$(AM_V_GEN) QT_SELECT=$(QT_SELECT) $(RCC) -name akik $< | \
 	  $(SED) -e '/^\*\*.*Created:/d' -e '/^\*\*.*by:/d' > $@
 
 CLEAN_QT = $(nodist_qt_libbitcoinqt_a_SOURCES) $(QT_QM) $(QT_FORMS_H) qt/*.gcda qt/*.gcno
 
 CLEANFILES += $(CLEAN_QT)
 
-delion_qt_clean: FORCE
-	rm -f $(CLEAN_QT) $(qt_libbitcoinqt_a_OBJECTS) $(qt_delion_qt_OBJECTS) qt/delion-qt$(EXEEXT) $(LIBBITCOINQT)
+akik_qt_clean: FORCE
+	rm -f $(CLEAN_QT) $(qt_libbitcoinqt_a_OBJECTS) $(qt_akik_qt_OBJECTS) qt/akik-qt$(EXEEXT) $(LIBBITCOINQT)
 
-delion_qt : qt/delion-qt$(EXEEXT)
+akik_qt : qt/akik-qt$(EXEEXT)
 
 ui_%.h: %.ui
 	@test -f $(UIC)

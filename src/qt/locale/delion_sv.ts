@@ -58,12 +58,12 @@
         <translation>Mottagar adresser</translation>
     </message>
     <message>
-        <source>These are your Delion addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Det här är dina Delion adresser för att sända betalningar. Kontrollera alltid summan och mottagaradressen före du sänder mynt.</translation>
+        <source>These are your Akik addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Det här är dina Akik adresser för att sända betalningar. Kontrollera alltid summan och mottagaradressen före du sänder mynt.</translation>
     </message>
     <message>
-        <source>These are your Delion addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Det här är dina Delion adresser för att ta emot betalningar. Det är rekomenderat att använda en ny mottagaradress för varje transaktion.</translation>
+        <source>These are your Akik addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>Det här är dina Akik adresser för att ta emot betalningar. Det är rekomenderat att använda en ny mottagaradress för varje transaktion.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -160,16 +160,16 @@
         <translation>Bekräfta plånboks krypering</translation>
     </message>
     <message>
-        <source>Delion will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your DLNs from being stolen by malware infecting your computer.</source>
-        <translation>Delion kommer att stängas ner nu för att färdigställa kryperingsprocessen. Kom ihåg att kryptering av din plånbok inte kan säkerställa dina DLNs från att bli stulna av skadeprogram som infekterat din dator.</translation>
+        <source>Akik will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your AKCs from being stolen by malware infecting your computer.</source>
+        <translation>Akik kommer att stängas ner nu för att färdigställa kryperingsprocessen. Kom ihåg att kryptering av din plånbok inte kan säkerställa dina AKCs från att bli stulna av skadeprogram som infekterat din dator.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
         <translation>Är du säker på att du vill kryptera din plånbok?</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR DLN&lt;/b&gt;!</source>
-        <translation>Varning: om du krypterar din plånbok och tappar bort din lösenfras kommer du &lt;b&gt; FÖRLORA ALLA DINA DLN&lt;/b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR AKC&lt;/b&gt;!</source>
+        <translation>Varning: om du krypterar din plånbok och tappar bort din lösenfras kommer du &lt;b&gt; FÖRLORA ALLA DINA AKC&lt;/b&gt;!</translation>
     </message>
     <message>
         <source>Wallet encrypted</source>
@@ -223,8 +223,8 @@
         <translation>BIP 38 Kryptering</translation>
     </message>
     <message>
-        <source>Enter a Delion Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
-        <translation>Ange en Delion adress som du vill kryptera med BIP 38.
+        <source>Enter a Akik Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
+        <translation>Ange en Akik adress som du vill kryptera med BIP 38.
 Ange en lösenfras i den mellersta boxen. Tryck kryptera för att beräkna den krypterade privata nyckeln.</translation>
     </message>
     <message>
@@ -232,8 +232,8 @@ Ange en lösenfras i den mellersta boxen. Tryck kryptera för att beräkna den k
         <translation>Adress:</translation>
     </message>
     <message>
-        <source>The Delion address to sign the message with</source>
-        <translation>Delion adressen för signera meddelandet med</translation>
+        <source>The Akik address to sign the message with</source>
+        <translation>Akik adressen för signera meddelandet med</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -264,8 +264,8 @@ Ange en lösenfras i den mellersta boxen. Tryck kryptera för att beräkna den k
         <translation>Kopiera den nuvarande signaturen till systemets urklipp</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this Delion address</source>
-        <translation>Signera meddelandet för att bevisa att du äger denna Delion adress</translation>
+        <source>Sign the message to prove you own this Akik address</source>
+        <translation>Signera meddelandet för att bevisa att du äger denna Akik adress</translation>
     </message>
     <message>
         <source>Encrypt &amp;Key</source>
@@ -288,12 +288,12 @@ Ange en lösenfras i den mellersta boxen. Tryck kryptera för att beräkna den k
         <translation>Ange BIP 38 krypterade privata nyckeln. Ange lösenfrasen i med mittersta boxen. Tryck på krypetra nyckel för att beräkna den privata nyckeln. Efter att nyckeln är avkrypterad, Tryck på 'Importera Adress' kommer att lägga till denna privata nyckel till plånboken.</translation>
     </message>
     <message>
-        <source>The Delion address the message was signed with</source>
-        <translation>Delion adressen meddelandet blev signerat med</translation>
+        <source>The Akik address the message was signed with</source>
+        <translation>Akik adressen meddelandet blev signerat med</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified Delion address</source>
-        <translation>Verifiera meddelandet för att säkerställa att de blev signerat med den specifika Delion adressen.</translation>
+        <source>Verify the message to ensure it was signed with the specified Akik address</source>
+        <translation>Verifiera meddelandet för att säkerställa att de blev signerat med den specifika Akik adressen.</translation>
     </message>
     <message>
         <source>Decrypt &amp;Key</source>
@@ -583,16 +583,16 @@ Ange en lösenfras i den mellersta boxen. Tryck kryptera för att beräkna den k
         <translation>flik vertygsrad</translation>
     </message>
     <message>
-        <source>Delion Core</source>
-        <translation>Delion Kärna</translation>
+        <source>Akik Core</source>
+        <translation>Akik Kärna</translation>
     </message>
     <message>
-        <source>Send coins to a Delion address</source>
-        <translation>Skicka mynt till en Delion adress</translation>
+        <source>Send coins to a Akik address</source>
+        <translation>Skicka mynt till en Akik adress</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and delion: URIs)</source>
-        <translation>Begär betalning (genererar QR kod och delion: URls)</translation>
+        <source>Request payments (generates QR codes and akik: URIs)</source>
+        <translation>Begär betalning (genererar QR kod och akik: URls)</translation>
     </message>
     <message>
         <source>&amp;Masternodes</source>
@@ -603,24 +603,24 @@ Ange en lösenfras i den mellersta boxen. Tryck kryptera för att beräkna den k
         <translation>Utforska masternoder</translation>
     </message>
     <message>
-        <source>&amp;About Delion Core</source>
-        <translation>Om Delion Kärnan</translation>
+        <source>&amp;About Akik Core</source>
+        <translation>Om Akik Kärnan</translation>
     </message>
     <message>
-        <source>Show information about Delion Core</source>
-        <translation>Visa information om Delion Kärnan</translation>
+        <source>Show information about Akik Core</source>
+        <translation>Visa information om Akik Kärnan</translation>
     </message>
     <message>
-        <source>Modify configuration options for Delion</source>
-        <translation>Ändra konfigurationsval för Delion</translation>
+        <source>Modify configuration options for Akik</source>
+        <translation>Ändra konfigurationsval för Akik</translation>
     </message>
     <message>
-        <source>Sign messages with your Delion addresses to prove you own them</source>
-        <translation>Signera meddelanden med din Delion adress för att visa att du äger dem</translation>
+        <source>Sign messages with your Akik addresses to prove you own them</source>
+        <translation>Signera meddelanden med din Akik adress för att visa att du äger dem</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified Delion addresses</source>
-        <translation>Verifiera meddelandet för att säkerställa att de blev signerat med den specifika Delion adressen.</translation>
+        <source>Verify messages to ensure they were signed with specified Akik addresses</source>
+        <translation>Verifiera meddelandet för att säkerställa att de blev signerat med den specifika Akik adressen.</translation>
     </message>
     <message>
         <source>&amp;BIP38 tool</source>
@@ -631,8 +631,8 @@ Ange en lösenfras i den mellersta boxen. Tryck kryptera för att beräkna den k
         <translation>Kryptera och avkryptera privata nycklar genom användning av lösenfras</translation>
     </message>
     <message>
-        <source>Delion Core client</source>
-        <translation>Delion kärn klient</translation>
+        <source>Akik Core client</source>
+        <translation>Akik kärn klient</translation>
     </message>
     <message>
         <source>%1 and %2</source>
@@ -837,15 +837,15 @@ Ange en lösenfras i den mellersta boxen. Tryck kryptera för att beräkna den k
 <context>
     <name>HelpMessageDialog</name>
     <message>
-        <source>Delion Core</source>
-        <translation>Delion Kärna</translation>
+        <source>Akik Core</source>
+        <translation>Akik Kärna</translation>
     </message>
     </context>
 <context>
     <name>Intro</name>
     <message>
-        <source>Delion Core</source>
-        <translation>Delion Kärna</translation>
+        <source>Akik Core</source>
+        <translation>Akik Kärna</translation>
     </message>
     <message>
         <source>Error</source>
@@ -1157,8 +1157,8 @@ Ange en lösenfras i den mellersta boxen. Tryck kryptera för att beräkna den k
 <context>
     <name>SignVerifyMessageDialog</name>
     <message>
-        <source>The Delion address to sign the message with</source>
-        <translation>Delion adressen för signera meddelandet med</translation>
+        <source>The Akik address to sign the message with</source>
+        <translation>Akik adressen för signera meddelandet med</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -1181,16 +1181,16 @@ Ange en lösenfras i den mellersta boxen. Tryck kryptera för att beräkna den k
         <translation>Kopiera den nuvarande signaturen till systemets urklipp</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this Delion address</source>
-        <translation>Signera meddelandet för att bevisa att du äger denna Delion adress</translation>
+        <source>Sign the message to prove you own this Akik address</source>
+        <translation>Signera meddelandet för att bevisa att du äger denna Akik adress</translation>
     </message>
     <message>
-        <source>The Delion address the message was signed with</source>
-        <translation>Delion adressen meddelandet blev signerat med</translation>
+        <source>The Akik address the message was signed with</source>
+        <translation>Akik adressen meddelandet blev signerat med</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified Delion address</source>
-        <translation>Verifiera meddelandet för att säkerställa att de blev signerat med den specifika Delion adressen.</translation>
+        <source>Verify the message to ensure it was signed with the specified Akik address</source>
+        <translation>Verifiera meddelandet för att säkerställa att de blev signerat med den specifika Akik adressen.</translation>
     </message>
     <message>
         <source>Reset all sign message fields</source>
@@ -1232,8 +1232,8 @@ Ange en lösenfras i den mellersta boxen. Tryck kryptera för att beräkna den k
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>Delion Core</source>
-        <translation>Delion Kärna</translation>
+        <source>Akik Core</source>
+        <translation>Akik Kärna</translation>
     </message>
     </context>
 <context>
@@ -1416,10 +1416,10 @@ Ange en lösenfras i den mellersta boxen. Tryck kryptera för att beräkna den k
     </message>
     </context>
 <context>
-    <name>ZDelionControlDialog</name>
+    <name>ZAkikControlDialog</name>
     </context>
 <context>
-    <name>delion-core</name>
+    <name>akik-core</name>
     <message>
         <source>Error</source>
         <translation>Fel</translation>

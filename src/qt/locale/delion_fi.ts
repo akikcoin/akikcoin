@@ -62,12 +62,12 @@
         <translation>Vastaanottavat osoitteet</translation>
     </message>
     <message>
-        <source>These are your Delion addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Nämä ovat sinun Delion osoitteesi maksujen lähetystä varten. Tarkista aina määrä ja vastaanottava osoite ennen kolikoiden lähettämistä.</translation>
+        <source>These are your Akik addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Nämä ovat sinun Akik osoitteesi maksujen lähetystä varten. Tarkista aina määrä ja vastaanottava osoite ennen kolikoiden lähettämistä.</translation>
     </message>
     <message>
-        <source>These are your Delion addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Nämä ovat sinun Delion osoitteesi maksujen vastaanottamista varten. On suositeltavaa käyttää uutta vastaanottavaa osoitetta jokaiselle uudelle rahansiirrolle.</translation>
+        <source>These are your Akik addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>Nämä ovat sinun Akik osoitteesi maksujen vastaanottamista varten. On suositeltavaa käyttää uutta vastaanottavaa osoitetta jokaiselle uudelle rahansiirrolle.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -172,16 +172,16 @@
         <translation>Vahvista lompakon salaus</translation>
     </message>
     <message>
-        <source>Delion will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your DLNs from being stolen by malware infecting your computer.</source>
-        <translation>Delion sulkeutuu salausprosessin ajaksi. Muista, että lompakon salaus ei voi täysin suojella DLNien varkaudelta, jos tietokoneesi sisältää haittaohjelmia.</translation>
+        <source>Akik will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your AKCs from being stolen by malware infecting your computer.</source>
+        <translation>Akik sulkeutuu salausprosessin ajaksi. Muista, että lompakon salaus ei voi täysin suojella AKCien varkaudelta, jos tietokoneesi sisältää haittaohjelmia.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
         <translation>Oletko varma että tahdot salata lompakkosi?</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR DLN&lt;/b&gt;!</source>
-        <translation>Varoitus: Jos salaat lompakkosi ja unohdat salausavaimesi, &lt;b&gt;menetät kaikki DLNisi&lt;/b&gt;</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR AKC&lt;/b&gt;!</source>
+        <translation>Varoitus: Jos salaat lompakkosi ja unohdat salausavaimesi, &lt;b&gt;menetät kaikki AKCisi&lt;/b&gt;</translation>
     </message>
     <message>
         <source>Wallet encrypted</source>
@@ -235,8 +235,8 @@
         <translation>&amp;BIP 38 Salaus</translation>
     </message>
     <message>
-        <source>Enter a Delion Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
-        <translation>Syötä Delion osoite, jonnka tahtoisit salata käyttäen BIP 38.
+        <source>Enter a Akik Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
+        <translation>Syötä Akik osoite, jonnka tahtoisit salata käyttäen BIP 38.
 Syötä salausavain laatikon keskelle. Paina salaa tuottaaksesi salatun yksityisavaimen.</translation>
     </message>
     <message>
@@ -244,8 +244,8 @@ Syötä salausavain laatikon keskelle. Paina salaa tuottaaksesi salatun yksityis
         <translation>Osoite:</translation>
     </message>
     <message>
-        <source>The Delion address to sign the message with</source>
-        <translation>Delion osoite, jolla viesti allekirjoitetaan</translation>
+        <source>The Akik address to sign the message with</source>
+        <translation>Akik osoite, jolla viesti allekirjoitetaan</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -276,8 +276,8 @@ Syötä salausavain laatikon keskelle. Paina salaa tuottaaksesi salatun yksityis
         <translation>Kopioi nykyinen allekirjoitus järjestelmän leikepöydälle</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this Delion address</source>
-        <translation>Allekirjoita viesti todistaaksesi, että omistat tämän Delion osoitteen</translation>
+        <source>Sign the message to prove you own this Akik address</source>
+        <translation>Allekirjoita viesti todistaaksesi, että omistat tämän Akik osoitteen</translation>
     </message>
     <message>
         <source>Encrypt &amp;Key</source>
@@ -300,12 +300,12 @@ Syötä salausavain laatikon keskelle. Paina salaa tuottaaksesi salatun yksityis
         <translation>Syötä BIP 38 salattu yksityisavain. Syötä salausavain laatikkoon. Paina Avaa Salaus tuottaaksesi yksityisavaimen. Kun avain on dekryptattu, painamalla "Import osoite" lisää tämän yksityisavaimen lompakkoon.</translation>
     </message>
     <message>
-        <source>The Delion address the message was signed with</source>
-        <translation>Delion osoite, jolla viesti allekirjoitettiin</translation>
+        <source>The Akik address the message was signed with</source>
+        <translation>Akik osoite, jolla viesti allekirjoitettiin</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified Delion address</source>
-        <translation>Vahvista että viesti on allekirjoitettu kyseessä olevalla Delion osoitteella.</translation>
+        <source>Verify the message to ensure it was signed with the specified Akik address</source>
+        <translation>Vahvista että viesti on allekirjoitettu kyseessä olevalla Akik osoitteella.</translation>
     </message>
     <message>
         <source>Decrypt &amp;Key</source>
@@ -591,16 +591,16 @@ Syötä salausavain laatikon keskelle. Paina salaa tuottaaksesi salatun yksityis
         <translation>&amp;Apua</translation>
     </message>
     <message>
-        <source>Delion Core</source>
-        <translation>Delion Ydin</translation>
+        <source>Akik Core</source>
+        <translation>Akik Ydin</translation>
     </message>
     <message>
-        <source>Send coins to a Delion address</source>
-        <translation>Lähetä kolikkoja Delion osoitteeseen</translation>
+        <source>Send coins to a Akik address</source>
+        <translation>Lähetä kolikkoja Akik osoitteeseen</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and delion: URIs)</source>
-        <translation>Pyydä maksuja (Generoi QR koodeja ja delion: URIja)</translation>
+        <source>Request payments (generates QR codes and akik: URIs)</source>
+        <translation>Pyydä maksuja (Generoi QR koodeja ja akik: URIja)</translation>
     </message>
     <message>
         <source>&amp;Masternodes</source>
@@ -611,24 +611,24 @@ Syötä salausavain laatikon keskelle. Paina salaa tuottaaksesi salatun yksityis
         <translation>Selaa masternodeja</translation>
     </message>
     <message>
-        <source>&amp;About Delion Core</source>
-        <translation>Delion Core &amp;ytimestä</translation>
+        <source>&amp;About Akik Core</source>
+        <translation>Akik Core &amp;ytimestä</translation>
     </message>
     <message>
-        <source>Show information about Delion Core</source>
-        <translation>Näytä tietoja Delion Ytimestä</translation>
+        <source>Show information about Akik Core</source>
+        <translation>Näytä tietoja Akik Ytimestä</translation>
     </message>
     <message>
-        <source>Modify configuration options for Delion</source>
-        <translation>Muokkaa konfiguraatio vaihtoehtoja Delion:lle</translation>
+        <source>Modify configuration options for Akik</source>
+        <translation>Muokkaa konfiguraatio vaihtoehtoja Akik:lle</translation>
     </message>
     <message>
-        <source>Sign messages with your Delion addresses to prove you own them</source>
+        <source>Sign messages with your Akik addresses to prove you own them</source>
         <translation>Allekirjoita viestejä todistaaksesi, että omistat ne.</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified Delion addresses</source>
-        <translation>Vahvista viestit varmistaaksesi, että ne allekirjoitettiin tietyllä Delion osoiteella.</translation>
+        <source>Verify messages to ensure they were signed with specified Akik addresses</source>
+        <translation>Vahvista viestit varmistaaksesi, että ne allekirjoitettiin tietyllä Akik osoiteella.</translation>
     </message>
     <message>
         <source>&amp;BIP38 tool</source>
@@ -659,8 +659,8 @@ Syötä salausavain laatikon keskelle. Paina salaa tuottaaksesi salatun yksityis
         <translation>Avaa Masternode konfiguraatiotiedosto</translation>
     </message>
     <message>
-        <source>Open a Delion: URI or payment request</source>
-        <translation>Avaa Delion: URI tai pyydä maksua</translation>
+        <source>Open a Akik: URI or payment request</source>
+        <translation>Avaa Akik: URI tai pyydä maksua</translation>
     </message>
     <message>
         <source>&amp;Blockchain explorer</source>
@@ -671,12 +671,12 @@ Syötä salausavain laatikon keskelle. Paina salaa tuottaaksesi salatun yksityis
         <translation>Lohkon tutkija näkymä</translation>
     </message>
     <message>
-        <source>Show the Delion Core help message to get a list with possible Delion command-line options</source>
-        <translation>Näytä Delion Ydin apuviesti saadaksesi lista mahdollisista Delion komentolinja komennoista.</translation>
+        <source>Show the Akik Core help message to get a list with possible Akik command-line options</source>
+        <translation>Näytä Akik Ydin apuviesti saadaksesi lista mahdollisista Akik komentolinja komennoista.</translation>
     </message>
     <message>
-        <source>Delion Core client</source>
-        <translation>Delion Ydin asiakasohjelma</translation>
+        <source>Akik Core client</source>
+        <translation>Akik Ydin asiakasohjelma</translation>
     </message>
     <message>
         <source>Synchronizing with network...</source>
@@ -934,8 +934,8 @@ Syötä salausavain laatikon keskelle. Paina salaa tuottaaksesi salatun yksityis
 <context>
     <name>HelpMessageDialog</name>
     <message>
-        <source>Delion Core</source>
-        <translation>Delion Ydin</translation>
+        <source>Akik Core</source>
+        <translation>Akik Ydin</translation>
     </message>
     <message>
         <source>Usage:</source>
@@ -953,12 +953,12 @@ Syötä salausavain laatikon keskelle. Paina salaa tuottaaksesi salatun yksityis
         <translation>Tervetuloa</translation>
     </message>
     <message>
-        <source>Welcome to Delion Core.</source>
-        <translation>Tervetuloa Delion Ytimeen.</translation>
+        <source>Welcome to Akik Core.</source>
+        <translation>Tervetuloa Akik Ytimeen.</translation>
     </message>
     <message>
-        <source>Delion Core</source>
-        <translation>Delion Ydin</translation>
+        <source>Akik Core</source>
+        <translation>Akik Ydin</translation>
     </message>
     <message>
         <source>Error</source>
@@ -1135,32 +1135,32 @@ Please check the address and try again.</source>
         <translation>Valitse yksityisyyden taso.</translation>
     </message>
     <message>
-        <source>Use 2 separate masternodes to mix funds up to 10000 DLN</source>
-        <translation>Käytä 2 erillistä masternodea sekoittaaksesi enintään 10000 Delion</translation>
+        <source>Use 2 separate masternodes to mix funds up to 10000 AKC</source>
+        <translation>Käytä 2 erillistä masternodea sekoittaaksesi enintään 10000 Akik</translation>
     </message>
     <message>
-        <source>Use 8 separate masternodes to mix funds up to 10000 DLN</source>
-        <translation>Käytä 8 erillistä masternodea sekoittaaksesi enintään 10000 Delion</translation>
+        <source>Use 8 separate masternodes to mix funds up to 10000 AKC</source>
+        <translation>Käytä 8 erillistä masternodea sekoittaaksesi enintään 10000 Akik</translation>
     </message>
     <message>
         <source>Use 16 separate masternodes</source>
         <translation>Käytä 16 erillistä masternodea</translation>
     </message>
     <message>
-        <source>This option is the quickest and will cost about ~0.025 DLN to anonymize 10000 DLN</source>
-        <translation>Tämä vaihtoehto on nopein ja maksaa noin ~0.025 DLN anonymoidaksesi 10000 Delion</translation>
+        <source>This option is the quickest and will cost about ~0.025 AKC to anonymize 10000 AKC</source>
+        <translation>Tämä vaihtoehto on nopein ja maksaa noin ~0.025 AKC anonymoidaksesi 10000 Akik</translation>
     </message>
     <message>
-        <source>This option is moderately fast and will cost about 0.05 DLN to anonymize 10000 DLN</source>
-        <translation>Tämä vaihtoehto on suhteellisen nopea ja maksaa 0.05 Delion anonymoidaksesi 10000 Delion</translation>
+        <source>This option is moderately fast and will cost about 0.05 AKC to anonymize 10000 AKC</source>
+        <translation>Tämä vaihtoehto on suhteellisen nopea ja maksaa 0.05 Akik anonymoidaksesi 10000 Akik</translation>
     </message>
     <message>
         <source>This is the slowest and most secure option. Using maximum anonymity will cost</source>
         <translation>Tämä on hitain ja turvallisin vaihtoehto. Täydesti anonymisoiminen ei maksa mitään.</translation>
     </message>
     <message>
-        <source>0.1 DLN per 10000 DLN you anonymize.</source>
-        <translation>0.1 per 10000 Delion, jotka anonymisoit.</translation>
+        <source>0.1 AKC per 10000 AKC you anonymize.</source>
+        <translation>0.1 per 10000 Akik, jotka anonymisoit.</translation>
     </message>
     <message>
         <source>Obfuscation Configuration</source>
@@ -1209,12 +1209,12 @@ Please check the address and try again.</source>
         <translation>Ekspertti</translation>
     </message>
     <message>
-        <source>Automatically start Delion after logging in to the system.</source>
-        <translation>Automaattisesti käynnistä Delion kun kirjaudut sisään.</translation>
+        <source>Automatically start Akik after logging in to the system.</source>
+        <translation>Automaattisesti käynnistä Akik kun kirjaudut sisään.</translation>
     </message>
     <message>
-        <source>&amp;Start Delion on system login</source>
-        <translation>&amp;Aloita Delion järjestelmän kirjautumisessa</translation>
+        <source>&amp;Start Akik on system login</source>
+        <translation>&amp;Aloita Akik järjestelmän kirjautumisessa</translation>
     </message>
     <message>
         <source>Enable coin &amp;control features</source>
@@ -1233,12 +1233,12 @@ Please check the address and try again.</source>
         <translation>&amp;Verkko</translation>
     </message>
     <message>
-        <source>The user interface language can be set here. This setting will take effect after restarting Delion.</source>
+        <source>The user interface language can be set here. This setting will take effect after restarting Akik.</source>
         <translation>Käyttöliittymän kielen voi säätää täällä. Tämä asetus tulee voimaan uudelleenkäynnistettyäsi lompakon.</translation>
     </message>
     <message>
-        <source>Connect to the Delion network through a SOCKS5 proxy.</source>
-        <translation>Yhdistä Delion verkkoon SOCKS5 proxyn kautta</translation>
+        <source>Connect to the Akik network through a SOCKS5 proxy.</source>
+        <translation>Yhdistä Akik verkkoon SOCKS5 proxyn kautta</translation>
     </message>
     <message>
         <source>Proxy &amp;IP:</source>
@@ -1542,8 +1542,8 @@ Please check the address and try again.</source>
         <translation>Lohko ketju</translation>
     </message>
     <message>
-        <source>Open the Delion debug log file from the current data directory. This can take a few seconds for large log files.</source>
-        <translation>Avaa Delion debug loki nykyisestä sijainnista. Tämä voi kestää muutaman sekunnin suurille lokeille</translation>
+        <source>Open the Akik debug log file from the current data directory. This can take a few seconds for large log files.</source>
+        <translation>Avaa Akik debug loki nykyisestä sijainnista. Tämä voi kestää muutaman sekunnin suurille lokeille</translation>
     </message>
     <message>
         <source>Number of Masternodes</source>
@@ -1654,8 +1654,8 @@ Please check the address and try again.</source>
         <translation>Ulos:</translation>
     </message>
     <message>
-        <source>Welcome to the Delion RPC console.</source>
-        <translation>Tervetuloa Delion RPC konsoliin.</translation>
+        <source>Welcome to the Akik RPC console.</source>
+        <translation>Tervetuloa Akik RPC konsoliin.</translation>
     </message>
     <message>
         <source>never</source>
@@ -1697,12 +1697,12 @@ Please check the address and try again.</source>
         <translation>Vaihtoehtoinen nimike uudelle vastaanottavalle osoitteelle</translation>
     </message>
     <message>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Delion network.</source>
-        <translation>Vaihtoehtoinen viesti joka liitetään maksupyyntöön, joka näytetään kun pyyntö avataan. Huomio: Viestiä ei lähetetä maksun mukana Delion verkolle.</translation>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Akik network.</source>
+        <translation>Vaihtoehtoinen viesti joka liitetään maksupyyntöön, joka näytetään kun pyyntö avataan. Huomio: Viestiä ei lähetetä maksun mukana Akik verkolle.</translation>
     </message>
     <message>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened.&lt;br&gt;Note: The message will not be sent with the payment over the Delion network.</source>
-        <translation>Vaihtoehtoinen viesti, joka liitetään maksupyyntöö, joka näytetään kun pyyntö avataan. &lt;br&gt; Huomio: Tätä viestiä ei lähetetä maksun mukana Delion  verkolle.</translation>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened.&lt;br&gt;Note: The message will not be sent with the payment over the Akik network.</source>
+        <translation>Vaihtoehtoinen viesti, joka liitetään maksupyyntöö, joka näytetään kun pyyntö avataan. &lt;br&gt; Huomio: Tätä viestiä ei lähetetä maksun mukana Akik  verkolle.</translation>
     </message>
     <message>
         <source>Use this form to request payments. All fields are &lt;b&gt;optional&lt;/b&gt;.</source>
@@ -1898,8 +1898,8 @@ Please check the address and try again.</source>
         <translation>Muutos:</translation>
     </message>
     <message>
-        <source>0 DLN</source>
-        <translation>0 DLN</translation>
+        <source>0 AKC</source>
+        <translation>0 AKC</translation>
     </message>
     <message>
         <source>Choose...</source>
@@ -1982,8 +1982,8 @@ Please check the address and try again.</source>
         <translation>käyttää</translation>
     </message>
     <message>
-        <source>Warning: Invalid Delion address</source>
-        <translation>Varoitus: Virheellinen Delion osoite</translation>
+        <source>Warning: Invalid Akik address</source>
+        <translation>Varoitus: Virheellinen Akik osoite</translation>
     </message>
     <message>
         <source>Are you sure you want to send?</source>
@@ -2029,8 +2029,8 @@ Please check the address and try again.</source>
         <translation>Tämä on normaali maksu.</translation>
     </message>
     <message>
-        <source>The Delion address to send the payment to</source>
-        <translation>Delion osoite johon maksu lähetetään</translation>
+        <source>The Akik address to send the payment to</source>
+        <translation>Akik osoite johon maksu lähetetään</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -2072,8 +2072,8 @@ Please check the address and try again.</source>
 <context>
     <name>ShutdownWindow</name>
     <message>
-        <source>Delion Core is shutting down...</source>
-        <translation>Delion core sammuu...</translation>
+        <source>Akik Core is shutting down...</source>
+        <translation>Akik core sammuu...</translation>
     </message>
     <message>
         <source>Do not shut down the computer until this window disappears.</source>
@@ -2091,8 +2091,8 @@ Please check the address and try again.</source>
         <translation>Voit allekirjoittaa viestejä osoitteillasi todistaaksesi, että omistat ne. Ole varovainen ettet allekirjoita mitään kummallista, sillä kalasteluyritykset saattavat yrittää huijata sinut luovuttamaan tietoja. Allekirjoita vain täysin yksityiskohtaisia sanomia, jotka hyväksyt.</translation>
     </message>
     <message>
-        <source>The Delion address to sign the message with</source>
-        <translation>Delion osoite, jolla viesti allekirjoitetaan</translation>
+        <source>The Akik address to sign the message with</source>
+        <translation>Akik osoite, jolla viesti allekirjoitetaan</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -2123,16 +2123,16 @@ Please check the address and try again.</source>
         <translation>Kopioi nykyinen allekirjoitus järjestelmän leikepöydälle</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this Delion address</source>
-        <translation>Allekirjoita viesti todistaaksesi, että omistat tämän Delion osoitteen</translation>
+        <source>Sign the message to prove you own this Akik address</source>
+        <translation>Allekirjoita viesti todistaaksesi, että omistat tämän Akik osoitteen</translation>
     </message>
     <message>
-        <source>The Delion address the message was signed with</source>
-        <translation>Delion osoite, jolla viesti allekirjoitettiin</translation>
+        <source>The Akik address the message was signed with</source>
+        <translation>Akik osoite, jolla viesti allekirjoitettiin</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified Delion address</source>
-        <translation>Vahvista että viesti on allekirjoitettu kyseessä olevalla Delion osoitteella.</translation>
+        <source>Verify the message to ensure it was signed with the specified Akik address</source>
+        <translation>Vahvista että viesti on allekirjoitettu kyseessä olevalla Akik osoitteella.</translation>
     </message>
     <message>
         <source>Sign &amp;Message</source>
@@ -2214,8 +2214,8 @@ Please check the address and try again.</source>
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>Delion Core</source>
-        <translation>Delion Ydin</translation>
+        <source>Akik Core</source>
+        <translation>Akik Ydin</translation>
     </message>
     <message>
         <source>Version %1</source>
@@ -2230,8 +2230,8 @@ Please check the address and try again.</source>
         <translation>Dash Core kehittäjät</translation>
     </message>
     <message>
-        <source>The Delion Core developers</source>
-        <translation>Delion core kehittäjät</translation>
+        <source>The Akik Core developers</source>
+        <translation>Akik core kehittäjät</translation>
     </message>
     <message>
         <source>[testnet]</source>
@@ -2534,14 +2534,14 @@ Please check the address and try again.</source>
     </message>
     </context>
 <context>
-    <name>ZDelionControlDialog</name>
+    <name>ZAkikControlDialog</name>
     <message>
         <source>0</source>
         <translation>0</translation>
     </message>
     </context>
 <context>
-    <name>delion-core</name>
+    <name>akik-core</name>
     <message>
         <source>Warning: The network does not appear to fully agree! Some miners appear to be experiencing issues.</source>
         <translation>Varoitus: Verkko ei näytä olevan samaa mieltä! Jotkin mainaajat saattavat kokea ongelmia.</translation>
@@ -2591,8 +2591,8 @@ Please check the address and try again.</source>
         <translation>Virhe ladattaessa wallet.dat tiedostoa: Lompakko korruptoitunut</translation>
     </message>
     <message>
-        <source>Error loading wallet.dat: Wallet requires newer version of Delion Core</source>
-        <translation>Virhe ladattaessa wallet.dat tiedostoa: Lompakko vaatii uudemman version Delion Coresta</translation>
+        <source>Error loading wallet.dat: Wallet requires newer version of Akik Core</source>
+        <translation>Virhe ladattaessa wallet.dat tiedostoa: Lompakko vaatii uudemman version Akik Coresta</translation>
     </message>
     <message>
         <source>Error reading from database, shutting down.</source>

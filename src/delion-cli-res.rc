@@ -16,14 +16,14 @@ BEGIN
     BEGIN
         BLOCK "040904E4" // U.S. English - multilingual (hex)
         BEGIN
-            VALUE "CompanyName",        "Delion"
-            VALUE "FileDescription",    "Delion-cli (OSS RPC client for Delion)"
+            VALUE "CompanyName",        "Akik"
+            VALUE "FileDescription",    "Akik-cli (OSS RPC client for Akik)"
             VALUE "FileVersion",        VER_FILEVERSION_STR
-            VALUE "InternalName",       "delion-cli"
+            VALUE "InternalName",       "akik-cli"
             VALUE "LegalCopyright",     COPYRIGHT_STR
             VALUE "LegalTrademarks1",   "Distributed under the MIT/X11 software license, see the accompanying file COPYING or http://www.opensource.org/licenses/mit-license.php."
-            VALUE "OriginalFilename",   "delion-cli.exe"
-            VALUE "ProductName",        "Delion-cli"
+            VALUE "OriginalFilename",   "akik-cli.exe"
+            VALUE "ProductName",        "Akik-cli"
             VALUE "ProductVersion",     VER_PRODUCTVERSION_STR
         END
     END

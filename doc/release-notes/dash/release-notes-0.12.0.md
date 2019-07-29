@@ -100,4 +100,4 @@ AlexMomo
 snogcel
 bertlebbert
 
-As well as everyone that helped translating on [Transifex](https://www.transifex.com/delion-project/delion-project-translations).
+As well as everyone that helped translating on [Transifex](https://www.transifex.com/akik-project/akik-project-translations).

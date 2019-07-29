@@ -1,10 +1,10 @@
 // Copyright (c) 2017 The PIVX developers
-// Copyright (c) 2017-2018 The Delion developers
+// Copyright (c) 2017-2018 The Akik developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef ZDELIONCONTROLDIALOG_H
-#define ZDELIONCONTROLDIALOG_H
+#ifndef ZAKIKCONTROLDIALOG_H
+#define ZAKIKCONTROLDIALOG_H
 
 #include <QDialog>
 #include <QTreeWidgetItem>
@@ -15,16 +15,16 @@ class CZerocoinMint;
 class WalletModel;
 
 namespace Ui {
-class ZDelionControlDialog;
+class ZAkikControlDialog;
 }
 
-class ZDelionControlDialog : public QDialog
+class ZAkikControlDialog : public QDialog
 {
     Q_OBJECT
 
 public:
-    explicit ZDelionControlDialog(QWidget *parent);
-    ~ZDelionControlDialog();
+    explicit ZAkikControlDialog(QWidget *parent);
+    ~ZAkikControlDialog();
 
     void setModel(WalletModel* model);
 
@@ -33,7 +33,7 @@ public:
     static std::vector<CZerocoinMint> GetSelectedMints();
 
 private:
-    Ui::ZDelionControlDialog *ui;
+    Ui::ZAkikControlDialog *ui;
     WalletModel* model;
     PrivacyDialog* privacyDialog;
 
@@ -53,4 +53,4 @@ private slots:
     void ButtonAllClicked();
 };
 
-#endif // ZDELIONCONTROLDIALOG_H
+#endif // ZAKIKCONTROLDIALOG_H

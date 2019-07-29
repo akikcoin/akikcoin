@@ -74,10 +74,10 @@ am__make_running_with_option = \
   test $$has_opt = yes
 am__make_dryrun = (target_option=n; $(am__make_running_with_option))
 am__make_keepgoing = (target_option=k; $(am__make_running_with_option))
-pkgdatadir = $(datadir)/delion
-pkgincludedir = $(includedir)/delion
-pkglibdir = $(libdir)/delion
-pkglibexecdir = $(libexecdir)/delion
+pkgdatadir = $(datadir)/akik
+pkgincludedir = $(includedir)/akik
+pkglibdir = $(libdir)/akik
+pkglibexecdir = $(libexecdir)/akik
 am__cd = CDPATH="$${ZSH_VERSION+.}$(PATH_SEPARATOR)" && cd
 install_sh_DATA = $(install_sh) -c -m 644
 install_sh_PROGRAM = $(install_sh) -c
@@ -124,7 +124,7 @@ DIST_COMMON = $(srcdir)/Makefile.am $(top_srcdir)/configure \
 am__CONFIG_DISTCLEAN_FILES = config.status config.cache config.log \
  configure.lineno config.status.lineno
 mkinstalldirs = $(install_sh) -d
-CONFIG_HEADER = $(top_builddir)/src/config/delion-config.h
+CONFIG_HEADER = $(top_builddir)/src/config/akik-config.h
 CONFIG_CLEAN_FILES = share/setup.nsi share/qt/Info.plist \
 	src/test/buildenv.py qa/pull-tester/run-bitcoind-for-test.sh \
 	qa/pull-tester/tests-config.sh contrib/devtools/split-debug.sh
@@ -198,7 +198,7 @@ am__DIST_COMMON = $(srcdir)/Makefile.in \
 	$(top_srcdir)/qa/pull-tester/tests-config.sh.in \
 	$(top_srcdir)/share/qt/Info.plist.in \
 	$(top_srcdir)/share/setup.nsi.in \
-	$(top_srcdir)/src/config/delion-config.h.in \
+	$(top_srcdir)/src/config/akik-config.h.in \
 	$(top_srcdir)/src/test/buildenv.py.in COPYING INSTALL \
 	build-aux/compile build-aux/config.guess build-aux/config.sub \
 	build-aux/install-sh build-aux/ltmain.sh build-aux/missing
@@ -243,25 +243,25 @@ distuninstallcheck_listfiles = find . -type f -print
 am__distuninstallcheck_listfiles = $(distuninstallcheck_listfiles) \
   | sed 's|^\./|$(prefix)/|' | grep -v '$(infodir)/dir$$'
 distcleancheck_listfiles = find . -type f -print
-ACLOCAL = ${SHELL} /root/delion/build-aux/missing aclocal-1.15
+ACLOCAL = ${SHELL} /root/akik/build-aux/missing aclocal-1.15
 AMTAR = $${TAR-tar}
 AM_DEFAULT_VERBOSITY = 0
-AR = /root/delion/depends/x86_64-apple-darwin11/native/bin/x86_64-apple-darwin11-ar
-AUTOCONF = ${SHELL} /root/delion/build-aux/missing autoconf
-AUTOHEADER = ${SHELL} /root/delion/build-aux/missing autoheader
-AUTOMAKE = ${SHELL} /root/delion/build-aux/missing automake-1.15
+AR = /root/akik/depends/x86_64-apple-darwin11/native/bin/x86_64-apple-darwin11-ar
+AUTOCONF = ${SHELL} /root/akik/build-aux/missing autoconf
+AUTOHEADER = ${SHELL} /root/akik/build-aux/missing autoheader
+AUTOMAKE = ${SHELL} /root/akik/build-aux/missing automake-1.15
 AWK = gawk
 BDB_CPPFLAGS = 
 BDB_LIBS = -ldb_cxx-4.8
-BITCOIN_CLI_NAME = delion-cli
-BITCOIN_DAEMON_NAME = deliond
-BITCOIN_GUI_NAME = delion-qt
-BITCOIN_TX_NAME = delion-tx
+BITCOIN_CLI_NAME = akik-cli
+BITCOIN_DAEMON_NAME = akikd
+BITCOIN_GUI_NAME = akik-qt
+BITCOIN_TX_NAME = akik-tx
 BOOST_CHRONO_LIB = -lboost_chrono-mt
-BOOST_CPPFLAGS = -pthread -I/root/delion/depends/x86_64-apple-darwin11/share/../include
+BOOST_CPPFLAGS = -pthread -I/root/akik/depends/x86_64-apple-darwin11/share/../include
 BOOST_FILESYSTEM_LIB = -lboost_filesystem-mt
-BOOST_LDFLAGS = -L/root/delion/depends/x86_64-apple-darwin11/share/../lib
-BOOST_LIBS = -L/root/delion/depends/x86_64-apple-darwin11/share/../lib -lboost_system-mt -lboost_filesystem-mt -lboost_program_options-mt -lboost_thread-mt -lboost_chrono-mt
+BOOST_LDFLAGS = -L/root/akik/depends/x86_64-apple-darwin11/share/../lib
+BOOST_LIBS = -L/root/akik/depends/x86_64-apple-darwin11/share/../lib -lboost_system-mt -lboost_filesystem-mt -lboost_program_options-mt -lboost_thread-mt -lboost_chrono-mt
 BOOST_PROGRAM_OPTIONS_LIB = -lboost_program_options-mt
 BOOST_SYSTEM_LIB = -lboost_system-mt
 BOOST_THREAD_LIB = -lboost_thread-mt
@@ -270,8 +270,8 @@ BREW = no
 BUILD_QT = qt
 BUILD_TEST = 
 BUILD_TEST_QT = 
-CC = /root/delion/depends/x86_64-apple-darwin11/share/../native/bin/ccache /root/delion/depends/x86_64-apple-darwin11/native/bin/clang -target x86_64-apple-darwin11 -mmacosx-version-min=10.8 --sysroot /root/delion/depends/SDKs/MacOSX10.11.sdk -mlinker-version=253.9
-CCACHE = /root/delion/depends/x86_64-apple-darwin11/share/../native/bin/ccache
+CC = /root/akik/depends/x86_64-apple-darwin11/share/../native/bin/ccache /root/akik/depends/x86_64-apple-darwin11/native/bin/clang -target x86_64-apple-darwin11 -mmacosx-version-min=10.8 --sysroot /root/akik/depends/SDKs/MacOSX10.11.sdk -mlinker-version=253.9
+CCACHE = /root/akik/depends/x86_64-apple-darwin11/share/../native/bin/ccache
 CCDEPMODE = depmode=gcc3
 CFLAGS = -pipe -O2 
 CLIENT_VERSION_BUILD = 0
@@ -281,13 +281,13 @@ CLIENT_VERSION_MINOR = 0
 CLIENT_VERSION_REVISION = 0
 COMPARISON_TOOL_REORG_TESTS = 0
 COPYRIGHT_YEAR = 2017
-CPP = /root/delion/depends/x86_64-apple-darwin11/native/bin/clang -target x86_64-apple-darwin11 -mmacosx-version-min=10.8 --sysroot /root/delion/depends/SDKs/MacOSX10.11.sdk -mlinker-version=253.9 -E
+CPP = /root/akik/depends/x86_64-apple-darwin11/native/bin/clang -target x86_64-apple-darwin11 -mmacosx-version-min=10.8 --sysroot /root/akik/depends/SDKs/MacOSX10.11.sdk -mlinker-version=253.9 -E
 CPPFILT = /usr/bin/c++filt
-CPPFLAGS = -Qunused-arguments -I/root/delion/depends/x86_64-apple-darwin11/share/../include/  -DBOOST_SPIRIT_THREADSAFE -DHAVE_BUILD_INFO -D__STDC_FORMAT_MACROS -DMAC_OSX  -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2 -DHAVE_QT5
-CRYPTO_CFLAGS = -I/root/delion/depends/x86_64-apple-darwin11/include
-CRYPTO_LIBS = -L/root/delion/depends/x86_64-apple-darwin11/lib -lcrypto
-CXX = /root/delion/depends/x86_64-apple-darwin11/share/../native/bin/ccache /root/delion/depends/x86_64-apple-darwin11/native/bin/clang++ -target x86_64-apple-darwin11 -mmacosx-version-min=10.8 --sysroot /root/delion/depends/SDKs/MacOSX10.11.sdk -mlinker-version=253.9 -stdlib=libc++ -std=c++11
-CXXCPP = /root/delion/depends/x86_64-apple-darwin11/native/bin/clang++ -target x86_64-apple-darwin11 -mmacosx-version-min=10.8 --sysroot /root/delion/depends/SDKs/MacOSX10.11.sdk -mlinker-version=253.9 -stdlib=libc++ -std=c++11 -E
+CPPFLAGS = -Qunused-arguments -I/root/akik/depends/x86_64-apple-darwin11/share/../include/  -DBOOST_SPIRIT_THREADSAFE -DHAVE_BUILD_INFO -D__STDC_FORMAT_MACROS -DMAC_OSX  -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2 -DHAVE_QT5
+CRYPTO_CFLAGS = -I/root/akik/depends/x86_64-apple-darwin11/include
+CRYPTO_LIBS = -L/root/akik/depends/x86_64-apple-darwin11/lib -lcrypto
+CXX = /root/akik/depends/x86_64-apple-darwin11/share/../native/bin/ccache /root/akik/depends/x86_64-apple-darwin11/native/bin/clang++ -target x86_64-apple-darwin11 -mmacosx-version-min=10.8 --sysroot /root/akik/depends/SDKs/MacOSX10.11.sdk -mlinker-version=253.9 -stdlib=libc++ -std=c++11
+CXXCPP = /root/akik/depends/x86_64-apple-darwin11/native/bin/clang++ -target x86_64-apple-darwin11 -mmacosx-version-min=10.8 --sysroot /root/akik/depends/SDKs/MacOSX10.11.sdk -mlinker-version=253.9 -stdlib=libc++ -std=c++11 -E
 CXXDEPMODE = depmode=gcc3
 CXXFLAGS = -pipe -O2   -Wstack-protector -fstack-protector-all -fPIC -fvisibility=hidden
 CYGPATH_W = echo
@@ -300,22 +300,22 @@ ECHO_C =
 ECHO_N = -n
 ECHO_T = 
 EGREP = /bin/grep -E
-EVENT_CFLAGS = -I/root/delion/depends/x86_64-apple-darwin11/include
-EVENT_LIBS = -L/root/delion/depends/x86_64-apple-darwin11/lib -levent
-EVENT_PTHREADS_CFLAGS = -D_THREAD_SAFE -I/root/delion/depends/x86_64-apple-darwin11/include
-EVENT_PTHREADS_LIBS = -L/root/delion/depends/x86_64-apple-darwin11/lib -levent_pthreads -levent
+EVENT_CFLAGS = -I/root/akik/depends/x86_64-apple-darwin11/include
+EVENT_LIBS = -L/root/akik/depends/x86_64-apple-darwin11/lib -levent
+EVENT_PTHREADS_CFLAGS = -D_THREAD_SAFE -I/root/akik/depends/x86_64-apple-darwin11/include
+EVENT_PTHREADS_LIBS = -L/root/akik/depends/x86_64-apple-darwin11/lib -levent_pthreads -levent
 EXEEXT = 
 FGREP = /bin/grep -F
 GCOV = /usr/bin/gcov
 GENHTML = 
-GENISOIMAGE = /root/delion/depends/x86_64-apple-darwin11/share/../native/bin/genisoimage
+GENISOIMAGE = /root/akik/depends/x86_64-apple-darwin11/share/../native/bin/genisoimage
 GIT = /usr/bin/git
 GREP = /bin/grep
 HAVE_CXX11 = 1
 HEXDUMP = /usr/bin/hexdump
 IMAGEMAGICK_CONVERT = /usr/bin/convert
 INSTALL = /usr/bin/install -c
-INSTALLNAMETOOL = /root/delion/depends/x86_64-apple-darwin11/share/../native/bin/x86_64-apple-darwin11-install_name_tool
+INSTALLNAMETOOL = /root/akik/depends/x86_64-apple-darwin11/share/../native/bin/x86_64-apple-darwin11-install_name_tool
 INSTALL_DATA = ${INSTALL} -m 644
 INSTALL_PROGRAM = ${INSTALL}
 INSTALL_SCRIPT = ${INSTALL}
@@ -323,8 +323,8 @@ INSTALL_STRIP_PROGRAM = $(install_sh) -c -s
 JAVA = 
 JAVA_COMPARISON_TOOL = 
 LCOV = 
-LD = /root/delion/depends/x86_64-apple-darwin11/native/bin/x86_64-apple-darwin11-ld
-LDFLAGS = -L/root/delion/depends/x86_64-apple-darwin11/share/../lib  -Wl,-headerpad_max_install_names  -Wl,-dead_strip
+LD = /root/akik/depends/x86_64-apple-darwin11/native/bin/x86_64-apple-darwin11-ld
+LDFLAGS = -L/root/akik/depends/x86_64-apple-darwin11/share/../lib  -Wl,-headerpad_max_install_names  -Wl,-dead_strip
 LEVELDB_CPPFLAGS = 
 LEVELDB_TARGET_FLAGS = TARGET_OS=Darwin
 LIBLEVELDB = 
@@ -335,84 +335,84 @@ LIBTOOL = $(SHELL) $(top_builddir)/libtool
 LIBTOOL_APP_LDFLAGS = 
 LIPO = x86_64-apple-darwin11-lipo
 LN_S = ln -s
-LRELEASE = /root/delion/depends/x86_64-apple-darwin11/share/../native/bin/lrelease
+LRELEASE = /root/akik/depends/x86_64-apple-darwin11/share/../native/bin/lrelease
 LTLIBOBJS = 
 LT_SYS_LIBRARY_PATH = 
 LUPDATE = 
 MAINT = 
-MAKEINFO = ${SHELL} /root/delion/build-aux/missing makeinfo
+MAKEINFO = ${SHELL} /root/akik/build-aux/missing makeinfo
 MAKENSIS = 
 MANIFEST_TOOL = :
 MINIUPNPC_CPPFLAGS = 
 MINIUPNPC_LIBS = -lminiupnpc
 MKDIR_P = /bin/mkdir -p
-MOC = /root/delion/depends/x86_64-apple-darwin11/share/../native/bin/moc
+MOC = /root/akik/depends/x86_64-apple-darwin11/share/../native/bin/moc
 MOC_DEFS = -DHAVE_CONFIG_H -I$(srcdir) -DQ_OS_MAC
-NM = /root/delion/depends/x86_64-apple-darwin11/native/bin/x86_64-apple-darwin11-nm
+NM = /root/akik/depends/x86_64-apple-darwin11/native/bin/x86_64-apple-darwin11-nm
 NMEDIT = x86_64-apple-darwin11-nmedit
 OBJCOPY = /usr/bin/objcopy
-OBJCXX = /root/delion/depends/x86_64-apple-darwin11/native/bin/clang++ -target x86_64-apple-darwin11 -mmacosx-version-min=10.8 --sysroot /root/delion/depends/SDKs/MacOSX10.11.sdk -mlinker-version=253.9 -stdlib=libc++ -std=c++11
+OBJCXX = /root/akik/depends/x86_64-apple-darwin11/native/bin/clang++ -target x86_64-apple-darwin11 -mmacosx-version-min=10.8 --sysroot /root/akik/depends/SDKs/MacOSX10.11.sdk -mlinker-version=253.9 -stdlib=libc++ -std=c++11
 OBJCXXDEPMODE = depmode=gcc3
 OBJCXXFLAGS = -pipe -O2   -Wstack-protector -fstack-protector-all -fPIC
 OBJDUMP = objdump
 OBJEXT = o
-OTOOL = /root/delion/depends/x86_64-apple-darwin11/share/../native/bin/x86_64-apple-darwin11-otool
+OTOOL = /root/akik/depends/x86_64-apple-darwin11/share/../native/bin/x86_64-apple-darwin11-otool
 OTOOL64 = :
-PACKAGE = delion
-PACKAGE_BUGREPORT = www.delion.online
-PACKAGE_NAME = Delion Core
-PACKAGE_STRING = Delion Core 1.0.0
-PACKAGE_TARNAME = delion
+PACKAGE = akik
+PACKAGE_BUGREPORT = www.akikcoin.com
+PACKAGE_NAME = Akik Core
+PACKAGE_STRING = Akik Core 1.0.0
+PACKAGE_TARNAME = akik
 PACKAGE_URL = 
 PACKAGE_VERSION = 1.0.0
 PATH_SEPARATOR = :
 PKG_CONFIG = /usr/bin/pkg-config --static
-PKG_CONFIG_LIBDIR = /root/delion/depends/x86_64-apple-darwin11/share/../lib/pkgconfig
-PKG_CONFIG_PATH = /root/delion/depends/x86_64-apple-darwin11/share/../share/pkgconfig
+PKG_CONFIG_LIBDIR = /root/akik/depends/x86_64-apple-darwin11/share/../lib/pkgconfig
+PKG_CONFIG_PATH = /root/akik/depends/x86_64-apple-darwin11/share/../share/pkgconfig
 PORT = no
-PROTOBUF_CFLAGS = -D_THREAD_SAFE -I/root/delion/depends/x86_64-apple-darwin11/include
-PROTOBUF_LIBS = -L/root/delion/depends/x86_64-apple-darwin11/lib -lprotobuf -D_THREAD_SAFE -lz
-PROTOC = /root/delion/depends/x86_64-apple-darwin11/share/../native/bin/protoc
-PTHREAD_CC = /root/delion/depends/x86_64-apple-darwin11/native/bin/clang -target x86_64-apple-darwin11 -mmacosx-version-min=10.8 --sysroot /root/delion/depends/SDKs/MacOSX10.11.sdk -mlinker-version=253.9
+PROTOBUF_CFLAGS = -D_THREAD_SAFE -I/root/akik/depends/x86_64-apple-darwin11/include
+PROTOBUF_LIBS = -L/root/akik/depends/x86_64-apple-darwin11/lib -lprotobuf -D_THREAD_SAFE -lz
+PROTOC = /root/akik/depends/x86_64-apple-darwin11/share/../native/bin/protoc
+PTHREAD_CC = /root/akik/depends/x86_64-apple-darwin11/native/bin/clang -target x86_64-apple-darwin11 -mmacosx-version-min=10.8 --sysroot /root/akik/depends/SDKs/MacOSX10.11.sdk -mlinker-version=253.9
 PTHREAD_CFLAGS = -D_THREAD_SAFE -pthread
 PTHREAD_LIBS = 
 PYTHON = /usr/bin/python3
-PYTHONPATH = /root/delion/depends/x86_64-apple-darwin11/share/../native/lib/python/dist-packages:
-QR_CFLAGS = -I/root/delion/depends/x86_64-apple-darwin11/include
-QR_LIBS = -L/root/delion/depends/x86_64-apple-darwin11/lib -lqrencode -lpthread
-QTPLATFORM_CFLAGS = -I/root/delion/depends/x86_64-apple-darwin11/include/QtPlatformSupport -I/root/delion/depends/x86_64-apple-darwin11/include/QtGui -I/root/delion/depends/x86_64-apple-darwin11/include/QtCore
-QTPLATFORM_LIBS = -L/root/delion/depends/x86_64-apple-darwin11/lib -lQt5PlatformSupport -lQt5Gui -framework DiskArbitration -framework IOKit -framework Foundation -framework CoreServices -framework AppKit -framework ApplicationServices -framework CoreFoundation -lqtpng -lqtharfbuzzng -framework OpenGL -framework AGL -lQt5Core -lz -lqtpcre -lm -lz -framework AppKit -framework OpenGL -framework ApplicationServices -framework AGL -lQt5Gui -lQt5Core -framework DiskArbitration -framework IOKit -lz -lqtpcre -lm -framework Foundation -framework CoreServices -framework AppKit -framework ApplicationServices -framework CoreFoundation -framework AppKit -framework Foundation -lqtpng -lqtharfbuzzng -framework ApplicationServices -lz -framework OpenGL -framework AGL -lQt5Core -framework DiskArbitration -framework IOKit -lz -lqtpcre -lm -framework Foundation -framework CoreServices -framework AppKit -framework ApplicationServices -framework CoreFoundation
-QTPRINT_CFLAGS = -I/root/delion/depends/x86_64-apple-darwin11/include/QtPrintSupport -I/root/delion/depends/x86_64-apple-darwin11/include/QtWidgets -I/root/delion/depends/x86_64-apple-darwin11/include/QtGui -I/root/delion/depends/x86_64-apple-darwin11/include/QtCore
-QTPRINT_LIBS = -L/root/delion/depends/x86_64-apple-darwin11/lib -lQt5PrintSupport -lQt5Widgets -framework DiskArbitration -framework IOKit -framework Foundation -framework CoreServices -framework AppKit -framework ApplicationServices -framework CoreFoundation -framework OpenGL -framework AGL -framework Carbon -lQt5Gui -lqtpng -lqtharfbuzzng -lQt5Core -lz -lqtpcre -lm -framework AppKit -framework OpenGL -framework AGL -lQt5Widgets -lQt5Gui -framework DiskArbitration -framework IOKit -framework Foundation -framework CoreServices -framework AppKit -framework ApplicationServices -framework CoreFoundation -lqtpng -lqtharfbuzzng -framework OpenGL -framework AGL -lQt5Core -lz -lqtpcre -lm -framework AppKit -lz -framework Carbon -framework OpenGL -framework AGL -lQt5Gui -lQt5Core -framework DiskArbitration -framework IOKit -lz -lqtpcre -lm -framework Foundation -framework CoreServices -framework AppKit -framework ApplicationServices -framework CoreFoundation -framework AppKit -framework Foundation -lqtpng -lqtharfbuzzng -framework ApplicationServices -lz -framework OpenGL -framework AGL -lQt5Core -framework DiskArbitration -framework IOKit -lz -lqtpcre -lm -framework Foundation -framework CoreServices -framework AppKit -framework ApplicationServices -framework CoreFoundation
+PYTHONPATH = /root/akik/depends/x86_64-apple-darwin11/share/../native/lib/python/dist-packages:
+QR_CFLAGS = -I/root/akik/depends/x86_64-apple-darwin11/include
+QR_LIBS = -L/root/akik/depends/x86_64-apple-darwin11/lib -lqrencode -lpthread
+QTPLATFORM_CFLAGS = -I/root/akik/depends/x86_64-apple-darwin11/include/QtPlatformSupport -I/root/akik/depends/x86_64-apple-darwin11/include/QtGui -I/root/akik/depends/x86_64-apple-darwin11/include/QtCore
+QTPLATFORM_LIBS = -L/root/akik/depends/x86_64-apple-darwin11/lib -lQt5PlatformSupport -lQt5Gui -framework DiskArbitration -framework IOKit -framework Foundation -framework CoreServices -framework AppKit -framework ApplicationServices -framework CoreFoundation -lqtpng -lqtharfbuzzng -framework OpenGL -framework AGL -lQt5Core -lz -lqtpcre -lm -lz -framework AppKit -framework OpenGL -framework ApplicationServices -framework AGL -lQt5Gui -lQt5Core -framework DiskArbitration -framework IOKit -lz -lqtpcre -lm -framework Foundation -framework CoreServices -framework AppKit -framework ApplicationServices -framework CoreFoundation -framework AppKit -framework Foundation -lqtpng -lqtharfbuzzng -framework ApplicationServices -lz -framework OpenGL -framework AGL -lQt5Core -framework DiskArbitration -framework IOKit -lz -lqtpcre -lm -framework Foundation -framework CoreServices -framework AppKit -framework ApplicationServices -framework CoreFoundation
+QTPRINT_CFLAGS = -I/root/akik/depends/x86_64-apple-darwin11/include/QtPrintSupport -I/root/akik/depends/x86_64-apple-darwin11/include/QtWidgets -I/root/akik/depends/x86_64-apple-darwin11/include/QtGui -I/root/akik/depends/x86_64-apple-darwin11/include/QtCore
+QTPRINT_LIBS = -L/root/akik/depends/x86_64-apple-darwin11/lib -lQt5PrintSupport -lQt5Widgets -framework DiskArbitration -framework IOKit -framework Foundation -framework CoreServices -framework AppKit -framework ApplicationServices -framework CoreFoundation -framework OpenGL -framework AGL -framework Carbon -lQt5Gui -lqtpng -lqtharfbuzzng -lQt5Core -lz -lqtpcre -lm -framework AppKit -framework OpenGL -framework AGL -lQt5Widgets -lQt5Gui -framework DiskArbitration -framework IOKit -framework Foundation -framework CoreServices -framework AppKit -framework ApplicationServices -framework CoreFoundation -lqtpng -lqtharfbuzzng -framework OpenGL -framework AGL -lQt5Core -lz -lqtpcre -lm -framework AppKit -lz -framework Carbon -framework OpenGL -framework AGL -lQt5Gui -lQt5Core -framework DiskArbitration -framework IOKit -lz -lqtpcre -lm -framework Foundation -framework CoreServices -framework AppKit -framework ApplicationServices -framework CoreFoundation -framework AppKit -framework Foundation -lqtpng -lqtharfbuzzng -framework ApplicationServices -lz -framework OpenGL -framework AGL -lQt5Core -framework DiskArbitration -framework IOKit -lz -lqtpcre -lm -framework Foundation -framework CoreServices -framework AppKit -framework ApplicationServices -framework CoreFoundation
 QTXCBQPA_CFLAGS = 
 QTXCBQPA_LIBS = 
-QT_CFLAGS = -I/root/delion/depends/x86_64-apple-darwin11/include/QtNetwork -I/root/delion/depends/x86_64-apple-darwin11/include/QtWidgets -I/root/delion/depends/x86_64-apple-darwin11/include/QtGui -I/root/delion/depends/x86_64-apple-darwin11/include/QtCore
-QT_DBUS_CFLAGS = -I/root/delion/depends/x86_64-apple-darwin11/include/QtDBus -I/root/delion/depends/x86_64-apple-darwin11/include/QtCore
-QT_DBUS_INCLUDES = -I/root/delion/depends/x86_64-apple-darwin11/include/QtDBus -I/root/delion/depends/x86_64-apple-darwin11/include/QtCore
-QT_DBUS_LIBS = -L/root/delion/depends/x86_64-apple-darwin11/lib -lQt5DBus -lQt5Core -framework DiskArbitration -framework IOKit -lz -lqtpcre -lm -framework Foundation -framework CoreServices -framework AppKit -framework ApplicationServices -framework CoreFoundation -lQt5Core -framework DiskArbitration -framework IOKit -lz -lqtpcre -lm -framework Foundation -framework CoreServices -framework AppKit -framework ApplicationServices -framework CoreFoundation
-QT_INCLUDES = -I/root/delion/depends/x86_64-apple-darwin11/include/QtNetwork -I/root/delion/depends/x86_64-apple-darwin11/include/QtWidgets -I/root/delion/depends/x86_64-apple-darwin11/include/QtGui -I/root/delion/depends/x86_64-apple-darwin11/include/QtCore
+QT_CFLAGS = -I/root/akik/depends/x86_64-apple-darwin11/include/QtNetwork -I/root/akik/depends/x86_64-apple-darwin11/include/QtWidgets -I/root/akik/depends/x86_64-apple-darwin11/include/QtGui -I/root/akik/depends/x86_64-apple-darwin11/include/QtCore
+QT_DBUS_CFLAGS = -I/root/akik/depends/x86_64-apple-darwin11/include/QtDBus -I/root/akik/depends/x86_64-apple-darwin11/include/QtCore
+QT_DBUS_INCLUDES = -I/root/akik/depends/x86_64-apple-darwin11/include/QtDBus -I/root/akik/depends/x86_64-apple-darwin11/include/QtCore
+QT_DBUS_LIBS = -L/root/akik/depends/x86_64-apple-darwin11/lib -lQt5DBus -lQt5Core -framework DiskArbitration -framework IOKit -lz -lqtpcre -lm -framework Foundation -framework CoreServices -framework AppKit -framework ApplicationServices -framework CoreFoundation -lQt5Core -framework DiskArbitration -framework IOKit -lz -lqtpcre -lm -framework Foundation -framework CoreServices -framework AppKit -framework ApplicationServices -framework CoreFoundation
+QT_INCLUDES = -I/root/akik/depends/x86_64-apple-darwin11/include/QtNetwork -I/root/akik/depends/x86_64-apple-darwin11/include/QtWidgets -I/root/akik/depends/x86_64-apple-darwin11/include/QtGui -I/root/akik/depends/x86_64-apple-darwin11/include/QtCore
 QT_LDFLAGS = 
-QT_LIBS = -lqcocoa -L/root/delion/depends/x86_64-apple-darwin11/lib -lQt5PrintSupport -lQt5Widgets -framework DiskArbitration -framework IOKit -framework Foundation -framework CoreServices -framework AppKit -framework ApplicationServices -framework CoreFoundation -framework OpenGL -framework AGL -framework Carbon -lQt5Gui -lqtpng -lqtharfbuzzng -lQt5Core -lz -lqtpcre -lm -framework AppKit -framework OpenGL -framework AGL -lQt5Widgets -lQt5Gui -framework DiskArbitration -framework IOKit -framework Foundation -framework CoreServices -framework AppKit -framework ApplicationServices -framework CoreFoundation -lqtpng -lqtharfbuzzng -framework OpenGL -framework AGL -lQt5Core -lz -lqtpcre -lm -framework AppKit -lz -framework Carbon -framework OpenGL -framework AGL -lQt5Gui -lQt5Core -framework DiskArbitration -framework IOKit -lz -lqtpcre -lm -framework Foundation -framework CoreServices -framework AppKit -framework ApplicationServices -framework CoreFoundation -framework AppKit -framework Foundation -lqtpng -lqtharfbuzzng -framework ApplicationServices -lz -framework OpenGL -framework AGL -lQt5Core -framework DiskArbitration -framework IOKit -lz -lqtpcre -lm -framework Foundation -framework CoreServices -framework AppKit -framework ApplicationServices -framework CoreFoundation -L/root/delion/depends/x86_64-apple-darwin11/lib -lQt5PlatformSupport -lQt5Gui -framework DiskArbitration -framework IOKit -framework Foundation -framework CoreServices -framework AppKit -framework ApplicationServices -framework CoreFoundation -lqtpng -lqtharfbuzzng -framework OpenGL -framework AGL -lQt5Core -lz -lqtpcre -lm -lz -framework AppKit -framework OpenGL -framework ApplicationServices -framework AGL -lQt5Gui -lQt5Core -framework DiskArbitration -framework IOKit -lz -lqtpcre -lm -framework Foundation -framework CoreServices -framework AppKit -framework ApplicationServices -framework CoreFoundation -framework AppKit -framework Foundation -lqtpng -lqtharfbuzzng -framework ApplicationServices -lz -framework OpenGL -framework AGL -lQt5Core -framework DiskArbitration -framework IOKit -lz -lqtpcre -lm -framework Foundation -framework CoreServices -framework AppKit -framework ApplicationServices -framework CoreFoundation -L/root/delion/depends/x86_64-apple-darwin11/lib -lQt5Network -lQt5Core -framework DiskArbitration -framework IOKit -lz -lqtpcre -lm -framework Foundation -framework CoreServices -framework AppKit -framework ApplicationServices -framework CoreFoundation -framework Security -lz -framework SystemConfiguration -framework CoreFoundation -framework CoreServices -lssl -lcrypto -lQt5Widgets -lQt5Gui -framework DiskArbitration -framework IOKit -framework Foundation -framework CoreServices -framework AppKit -framework ApplicationServices -framework CoreFoundation -lqtpng -lqtharfbuzzng -framework OpenGL -framework AGL -lQt5Core -lz -lqtpcre -lm -framework AppKit -lz -framework Carbon -framework OpenGL -framework AGL -lQt5Gui -lQt5Core -framework DiskArbitration -framework IOKit -lz -lqtpcre -lm -framework Foundation -framework CoreServices -framework AppKit -framework ApplicationServices -framework CoreFoundation -framework AppKit -framework Foundation -lqtpng -lqtharfbuzzng -framework ApplicationServices -lz -framework OpenGL -framework AGL -lQt5Core -framework DiskArbitration -framework IOKit -lz -lqtpcre -lm -framework Foundation -framework CoreServices -framework AppKit -framework ApplicationServices -framework CoreFoundation -L/root/delion/depends/x86_64-apple-darwin11/share/../plugins/platforms -framework IOKit -framework Foundation -framework ApplicationServices -framework AppKit
+QT_LIBS = -lqcocoa -L/root/akik/depends/x86_64-apple-darwin11/lib -lQt5PrintSupport -lQt5Widgets -framework DiskArbitration -framework IOKit -framework Foundation -framework CoreServices -framework AppKit -framework ApplicationServices -framework CoreFoundation -framework OpenGL -framework AGL -framework Carbon -lQt5Gui -lqtpng -lqtharfbuzzng -lQt5Core -lz -lqtpcre -lm -framework AppKit -framework OpenGL -framework AGL -lQt5Widgets -lQt5Gui -framework DiskArbitration -framework IOKit -framework Foundation -framework CoreServices -framework AppKit -framework ApplicationServices -framework CoreFoundation -lqtpng -lqtharfbuzzng -framework OpenGL -framework AGL -lQt5Core -lz -lqtpcre -lm -framework AppKit -lz -framework Carbon -framework OpenGL -framework AGL -lQt5Gui -lQt5Core -framework DiskArbitration -framework IOKit -lz -lqtpcre -lm -framework Foundation -framework CoreServices -framework AppKit -framework ApplicationServices -framework CoreFoundation -framework AppKit -framework Foundation -lqtpng -lqtharfbuzzng -framework ApplicationServices -lz -framework OpenGL -framework AGL -lQt5Core -framework DiskArbitration -framework IOKit -lz -lqtpcre -lm -framework Foundation -framework CoreServices -framework AppKit -framework ApplicationServices -framework CoreFoundation -L/root/akik/depends/x86_64-apple-darwin11/lib -lQt5PlatformSupport -lQt5Gui -framework DiskArbitration -framework IOKit -framework Foundation -framework CoreServices -framework AppKit -framework ApplicationServices -framework CoreFoundation -lqtpng -lqtharfbuzzng -framework OpenGL -framework AGL -lQt5Core -lz -lqtpcre -lm -lz -framework AppKit -framework OpenGL -framework ApplicationServices -framework AGL -lQt5Gui -lQt5Core -framework DiskArbitration -framework IOKit -lz -lqtpcre -lm -framework Foundation -framework CoreServices -framework AppKit -framework ApplicationServices -framework CoreFoundation -framework AppKit -framework Foundation -lqtpng -lqtharfbuzzng -framework ApplicationServices -lz -framework OpenGL -framework AGL -lQt5Core -framework DiskArbitration -framework IOKit -lz -lqtpcre -lm -framework Foundation -framework CoreServices -framework AppKit -framework ApplicationServices -framework CoreFoundation -L/root/akik/depends/x86_64-apple-darwin11/lib -lQt5Network -lQt5Core -framework DiskArbitration -framework IOKit -lz -lqtpcre -lm -framework Foundation -framework CoreServices -framework AppKit -framework ApplicationServices -framework CoreFoundation -framework Security -lz -framework SystemConfiguration -framework CoreFoundation -framework CoreServices -lssl -lcrypto -lQt5Widgets -lQt5Gui -framework DiskArbitration -framework IOKit -framework Foundation -framework CoreServices -framework AppKit -framework ApplicationServices -framework CoreFoundation -lqtpng -lqtharfbuzzng -framework OpenGL -framework AGL -lQt5Core -lz -lqtpcre -lm -framework AppKit -lz -framework Carbon -framework OpenGL -framework AGL -lQt5Gui -lQt5Core -framework DiskArbitration -framework IOKit -lz -lqtpcre -lm -framework Foundation -framework CoreServices -framework AppKit -framework ApplicationServices -framework CoreFoundation -framework AppKit -framework Foundation -lqtpng -lqtharfbuzzng -framework ApplicationServices -lz -framework OpenGL -framework AGL -lQt5Core -framework DiskArbitration -framework IOKit -lz -lqtpcre -lm -framework Foundation -framework CoreServices -framework AppKit -framework ApplicationServices -framework CoreFoundation -L/root/akik/depends/x86_64-apple-darwin11/share/../plugins/platforms -framework IOKit -framework Foundation -framework ApplicationServices -framework AppKit
 QT_PIE_FLAGS = 
 QT_SELECT = qt5
-QT_TEST_CFLAGS = -I/root/delion/depends/x86_64-apple-darwin11/include/QtTest -I/root/delion/depends/x86_64-apple-darwin11/include/QtCore
-QT_TEST_INCLUDES = -I/root/delion/depends/x86_64-apple-darwin11/include/QtTest -I/root/delion/depends/x86_64-apple-darwin11/include/QtCore
-QT_TEST_LIBS = -L/root/delion/depends/x86_64-apple-darwin11/lib -lQt5Test -framework Security -framework Foundation -framework ApplicationServices -framework IOKit -lQt5Core -framework DiskArbitration -lz -lqtpcre -lm -framework CoreServices -framework AppKit -framework CoreFoundation -lQt5Core -framework DiskArbitration -framework IOKit -lz -lqtpcre -lm -framework Foundation -framework CoreServices -framework AppKit -framework ApplicationServices -framework CoreFoundation
-QT_TRANSLATION_DIR = /root/delion/depends/x86_64-apple-darwin11/share/../translations
-RANLIB = /root/delion/depends/x86_64-apple-darwin11/native/bin/x86_64-apple-darwin11-ranlib
-RCC = /root/delion/depends/x86_64-apple-darwin11/share/../native/bin/rcc
+QT_TEST_CFLAGS = -I/root/akik/depends/x86_64-apple-darwin11/include/QtTest -I/root/akik/depends/x86_64-apple-darwin11/include/QtCore
+QT_TEST_INCLUDES = -I/root/akik/depends/x86_64-apple-darwin11/include/QtTest -I/root/akik/depends/x86_64-apple-darwin11/include/QtCore
+QT_TEST_LIBS = -L/root/akik/depends/x86_64-apple-darwin11/lib -lQt5Test -framework Security -framework Foundation -framework ApplicationServices -framework IOKit -lQt5Core -framework DiskArbitration -lz -lqtpcre -lm -framework CoreServices -framework AppKit -framework CoreFoundation -lQt5Core -framework DiskArbitration -framework IOKit -lz -lqtpcre -lm -framework Foundation -framework CoreServices -framework AppKit -framework ApplicationServices -framework CoreFoundation
+QT_TRANSLATION_DIR = /root/akik/depends/x86_64-apple-darwin11/share/../translations
+RANLIB = /root/akik/depends/x86_64-apple-darwin11/native/bin/x86_64-apple-darwin11-ranlib
+RCC = /root/akik/depends/x86_64-apple-darwin11/share/../native/bin/rcc
 READELF = /usr/bin/readelf
 RELDFLAGS = 
 RSVG_CONVERT = /usr/bin/rsvg-convert
 SED = /bin/sed
 SET_MAKE = 
 SHELL = /bin/bash
-SSL_CFLAGS = -I/root/delion/depends/x86_64-apple-darwin11/include
-SSL_LIBS = -L/root/delion/depends/x86_64-apple-darwin11/lib -lssl -lcrypto
-STRIP = /root/delion/depends/x86_64-apple-darwin11/share/../native/bin/x86_64-apple-darwin11-strip
+SSL_CFLAGS = -I/root/akik/depends/x86_64-apple-darwin11/include
+SSL_LIBS = -L/root/akik/depends/x86_64-apple-darwin11/lib -lssl -lcrypto
+STRIP = /root/akik/depends/x86_64-apple-darwin11/share/../native/bin/x86_64-apple-darwin11-strip
 TESTDEFS = 
 TIFFCP = /usr/bin/tiffcp
-UIC = /root/delion/depends/x86_64-apple-darwin11/share/../native/bin/uic
+UIC = /root/akik/depends/x86_64-apple-darwin11/share/../native/bin/uic
 USE_QRCODE = 
 USE_UPNP = 
 VERSION = 1.0.0
@@ -421,12 +421,12 @@ WINDRES =
 X11XCB_CFLAGS = 
 X11XCB_LIBS = 
 XGETTEXT = 
-ZMQ_CFLAGS = -I/root/delion/depends/x86_64-apple-darwin11/include
-ZMQ_LIBS = -L/root/delion/depends/x86_64-apple-darwin11/lib -lzmq
-abs_builddir = /root/delion
-abs_srcdir = /root/delion
-abs_top_builddir = /root/delion
-abs_top_srcdir = /root/delion
+ZMQ_CFLAGS = -I/root/akik/depends/x86_64-apple-darwin11/include
+ZMQ_LIBS = -L/root/akik/depends/x86_64-apple-darwin11/lib -lzmq
+abs_builddir = /root/akik
+abs_srcdir = /root/akik
+abs_top_builddir = /root/akik
+abs_top_srcdir = /root/akik
 ac_ct_AR = 
 ac_ct_CC = 
 ac_ct_CXX = 
@@ -458,7 +458,7 @@ host_vendor = apple
 htmldir = ${docdir}
 includedir = ${prefix}/include
 infodir = ${datarootdir}/info
-install_sh = ${SHELL} /root/delion/build-aux/install-sh
+install_sh = ${SHELL} /root/akik/build-aux/install-sh
 libdir = ${exec_prefix}/lib
 libexecdir = ${exec_prefix}/libexec
 localedir = ${datarootdir}/locale
@@ -489,7 +489,7 @@ BITCOIN_CLI_BIN = $(top_builddir)/src/$(BITCOIN_CLI_NAME)$(EXEEXT)
 BITCOIN_WIN_INSTALLER = $(PACKAGE)-$(PACKAGE_VERSION)-win$(WINDOWS_BITS)-setup$(EXEEXT)
 empty := 
 space := $(empty) $(empty)
-OSX_APP = DELION-Qt.app
+OSX_APP = AKIK-Qt.app
 OSX_VOLNAME = $(subst $(space),-,$(PACKAGE_NAME))
 OSX_DMG = $(OSX_VOLNAME).dmg
 OSX_BACKGROUND_SVG = background.svg
@@ -514,13 +514,13 @@ OSX_PACKAGING = $(OSX_DEPLOY_SCRIPT) $(OSX_FANCY_PLIST) $(OSX_INSTALLER_ICONS) \
   $(top_srcdir)/contrib/macdeploy/detached-sig-create.sh
 
 COVERAGE_INFO = baseline_filtered_combined.info baseline.info block_test.info \
-  leveldb_baseline.info test_delion_filtered.info total_coverage.info \
+  leveldb_baseline.info test_akik_filtered.info total_coverage.info \
   baseline_filtered.info block_test_filtered.info \
-  leveldb_baseline_filtered.info test_delion_coverage.info test_delion.info
+  leveldb_baseline_filtered.info test_akik_coverage.info test_akik.info
 
 OSX_APP_BUILT = $(OSX_APP)/Contents/PkgInfo $(OSX_APP)/Contents/Resources/empty.lproj \
   $(OSX_APP)/Contents/Resources/bitcoin.icns $(OSX_APP)/Contents/Info.plist \
-  $(OSX_APP)/Contents/MacOS/DELION-Qt $(OSX_APP)/Contents/Resources/Base.lproj/InfoPlist.strings
+  $(OSX_APP)/Contents/MacOS/AKIK-Qt $(OSX_APP)/Contents/Resources/Base.lproj/InfoPlist.strings
 
 APP_DIST_DIR = $(top_builddir)/dist
 APP_DIST_EXTRAS = $(APP_DIST_DIR)/.background/$(OSX_BACKGROUND_IMAGE) $(APP_DIST_DIR)/.DS_Store $(APP_DIST_DIR)/Applications
@@ -565,20 +565,20 @@ $(ACLOCAL_M4):  $(am__aclocal_m4_deps)
 	$(am__cd) $(srcdir) && $(ACLOCAL) $(ACLOCAL_AMFLAGS)
 $(am__aclocal_m4_deps):
 
-src/config/delion-config.h: src/config/stamp-h1
+src/config/akik-config.h: src/config/stamp-h1
 	@test -f $@ || rm -f src/config/stamp-h1
 	@test -f $@ || $(MAKE) $(AM_MAKEFLAGS) src/config/stamp-h1
 
-src/config/stamp-h1: $(top_srcdir)/src/config/delion-config.h.in $(top_builddir)/config.status
+src/config/stamp-h1: $(top_srcdir)/src/config/akik-config.h.in $(top_builddir)/config.status
 	@rm -f src/config/stamp-h1
-	cd $(top_builddir) && $(SHELL) ./config.status src/config/delion-config.h
-$(top_srcdir)/src/config/delion-config.h.in:  $(am__configure_deps) 
+	cd $(top_builddir) && $(SHELL) ./config.status src/config/akik-config.h
+$(top_srcdir)/src/config/akik-config.h.in:  $(am__configure_deps) 
 	($(am__cd) $(top_srcdir) && $(AUTOHEADER))
 	rm -f src/config/stamp-h1
 	touch $@
 
 distclean-hdr:
-	-rm -f src/config/delion-config.h src/config/stamp-h1
+	-rm -f src/config/akik-config.h src/config/stamp-h1
 share/setup.nsi: $(top_builddir)/config.status $(top_srcdir)/share/setup.nsi.in
 	cd $(top_builddir) && $(SHELL) ./config.status $@
 share/qt/Info.plist: $(top_builddir)/config.status $(top_srcdir)/share/qt/Info.plist.in
@@ -1058,7 +1058,7 @@ $(OSX_APP)/Contents/Resources/bitcoin.icns: $(OSX_INSTALLER_ICONS)
 	$(MKDIR_P) $(@D)
 	$(INSTALL_DATA) $< $@
 
-$(OSX_APP)/Contents/MacOS/DELION-Qt: $(BITCOIN_QT_BIN)
+$(OSX_APP)/Contents/MacOS/AKIK-Qt: $(BITCOIN_QT_BIN)
 	$(MKDIR_P) $(@D)
 	STRIPPROG="$(STRIP)" $(INSTALL_STRIP_PROGRAM)  $< $@
 
@@ -1085,7 +1085,7 @@ $(APP_DIST_DIR)/Applications:
 	@rm -f $@
 	@cd $(@D); $(LN_S) /Applications $(@F)
 
-$(APP_DIST_EXTRAS): $(APP_DIST_DIR)/$(OSX_APP)/Contents/MacOS/DELION-Qt
+$(APP_DIST_EXTRAS): $(APP_DIST_DIR)/$(OSX_APP)/Contents/MacOS/AKIK-Qt
 
 $(OSX_DMG): $(APP_DIST_EXTRAS)
 	$(GENISOIMAGE) -no-cache-inodes -D -l -probe -V "$(OSX_VOLNAME)" -no-pad -r -dir-mode 0755 -apple -o $@ dist
@@ -1099,7 +1099,7 @@ $(APP_DIST_DIR)/.background/$(OSX_BACKGROUND_IMAGE): $(OSX_BACKGROUND_IMAGE_DPIF
 $(APP_DIST_DIR)/.DS_Store: $(OSX_DSSTORE_GEN)
 	$(PYTHON) $< "$@" "$(OSX_VOLNAME)"
 
-$(APP_DIST_DIR)/$(OSX_APP)/Contents/MacOS/DELION-Qt: $(OSX_APP_BUILT) $(OSX_PACKAGING)
+$(APP_DIST_DIR)/$(OSX_APP)/Contents/MacOS/AKIK-Qt: $(OSX_APP_BUILT) $(OSX_PACKAGING)
 	INSTALLNAMETOOL=$(INSTALLNAMETOOL)  OTOOL=$(OTOOL) STRIP=$(STRIP) $(PYTHON) $(OSX_DEPLOY_SCRIPT) $(OSX_APP) -translations-dir=$(QT_TRANSLATION_DIR) -add-qt-tr $(OSX_QT_TRANSLATIONS) -verbose 2
 
 deploydir: $(APP_DIST_EXTRAS)
@@ -1132,16 +1132,16 @@ $(BITCOIN_CLI_BIN): FORCE
 #baseline_filtered_combined.info: leveldb_baseline_filtered.info baseline_filtered.info
 #	$(LCOV) -a leveldb_baseline_filtered.info -a baseline_filtered.info -o $@
 
-#test_delion.info: baseline_filtered_combined.info
+#test_akik.info: baseline_filtered_combined.info
 #	$(MAKE) -C src/ check
-#	$(LCOV) -c -d $(abs_builddir)/src -t test_delion -o $@
+#	$(LCOV) -c -d $(abs_builddir)/src -t test_akik -o $@
 #	$(LCOV) -z -d $(abs_builddir)/src
 #	$(LCOV) -z -d $(abs_builddir)/src/leveldb
 
-#test_delion_filtered.info: test_delion.info
+#test_akik_filtered.info: test_akik.info
 #	$(LCOV) -r $< "/usr/include/*" -o $@
 
-#block_test.info: test_delion_filtered.info
+#block_test.info: test_akik_filtered.info
 #	$(MKDIR_P) qa/tmp
 #	-@TIMEOUT=15 qa/pull-tester/run-bitcoind-for-test.sh $(JAVA) -jar $(JAVA_COMPARISON_TOOL) qa/tmp/compTool 0
 #	$(LCOV) -c -d $(abs_builddir)/src --t BitcoinJBlockTest -o $@
@@ -1151,13 +1151,13 @@ $(BITCOIN_CLI_BIN): FORCE
 #block_test_filtered.info: block_test.info
 #	$(LCOV) -r $< "/usr/include/*" -o $@
 
-#test_delion_coverage.info: baseline_filtered_combined.info test_delion_filtered.info
-#	$(LCOV) -a baseline_filtered.info -a leveldb_baseline_filtered.info -a test_delion_filtered.info -o $@
+#test_akik_coverage.info: baseline_filtered_combined.info test_akik_filtered.info
+#	$(LCOV) -a baseline_filtered.info -a leveldb_baseline_filtered.info -a test_akik_filtered.info -o $@
 
-#total_coverage.info:  baseline_filtered_combined.info test_delion_filtered.info block_test_filtered.info
-#	$(LCOV) -a baseline_filtered.info -a leveldb_baseline_filtered.info -a test_delion_filtered.info -a block_test_filtered.info -o $@ | $(GREP) "\%" | $(AWK) '{ print substr($$3,2,50) "/" $$5 }' > coverage_percent.txt
+#total_coverage.info:  baseline_filtered_combined.info test_akik_filtered.info block_test_filtered.info
+#	$(LCOV) -a baseline_filtered.info -a leveldb_baseline_filtered.info -a test_akik_filtered.info -a block_test_filtered.info -o $@ | $(GREP) "\%" | $(AWK) '{ print substr($$3,2,50) "/" $$5 }' > coverage_percent.txt
 
-#test_delion.coverage/.dirstamp:  test_delion_coverage.info
+#test_akik.coverage/.dirstamp:  test_akik_coverage.info
 #	$(GENHTML) -s $< -o $(@D)
 #	@touch $@
 
@@ -1165,12 +1165,12 @@ $(BITCOIN_CLI_BIN): FORCE
 #	$(GENHTML) -s $< -o $(@D)
 #	@touch $@
 
-#cov: test_delion.coverage/.dirstamp total.coverage/.dirstamp
+#cov: test_akik.coverage/.dirstamp total.coverage/.dirstamp
 
 .INTERMEDIATE: $(COVERAGE_INFO)
 
 clean-local:
-	rm -rf test_delion.coverage/ total.coverage/ $(OSX_APP)
+	rm -rf test_akik.coverage/ total.coverage/ $(OSX_APP)
 
 # Tell versions [3.59,3.63) of GNU make to not export all variables.
 # Otherwise a system limit (for SysV at least) may be exceeded.

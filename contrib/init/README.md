@@ -1,10 +1,10 @@
 Sample configuration files for:
 
-SystemD: deliond.service
-Upstart: deliond.conf
-OpenRC:  deliond.openrc
-         deliond.openrcconf
-CentOS:  deliond.init
+SystemD: akikd.service
+Upstart: akikd.conf
+OpenRC:  akikd.openrc
+         akikd.openrcconf
+CentOS:  akikd.init
 
 have been made available to assist packagers in creating node packages here.
 

@@ -1,19 +1,19 @@
 [Unit]
-Description=Delion's distributed currency daemon
+Description=Akik's distributed currency daemon
 After=network.target
 
 [Service]
-User=delion
-Group=delion
+User=akik
+Group=akik
 
 Type=forking
-PIDFile=/var/lib/deliond/deliond.pid
+PIDFile=/var/lib/akikd/akikd.pid
 
-ExecStart=/usr/bin/deliond -daemon -pid=/var/lib/deliond/deliond.pid \
-          -conf=/etc/delion/delion.conf -datadir=/var/lib/deliond
+ExecStart=/usr/bin/akikd -daemon -pid=/var/lib/akikd/akikd.pid \
+          -conf=/etc/akik/akik.conf -datadir=/var/lib/akikd
 
-ExecStop=-/usr/bin/delion-cli -conf=/etc/delion/delion.conf \
-         -datadir=/var/lib/deliond stop
+ExecStop=-/usr/bin/akik-cli -conf=/etc/akik/akik.conf \
+         -datadir=/var/lib/akikd stop
 
 Restart=always
 PrivateTmp=true

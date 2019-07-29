@@ -1,8 +1,8 @@
-/* src/config/delion-config.h.in.  Generated from configure.ac by autoheader.  */
+/* src/config/akik-config.h.in.  Generated from configure.ac by autoheader.  */
 
-#ifndef DELION_CONFIG_H
+#ifndef AKIK_CONFIG_H
 
-#define DELION_CONFIG_H
+#define AKIK_CONFIG_H
 
 /* Define if building universal (internal helper macro) */
 #undef AC_APPLE_UNIVERSAL_BUILD
@@ -339,4 +339,4 @@
 /* Define for large files, on AIX-style hosts. */
 #undef _LARGE_FILES
 
-#endif //DELION_CONFIG_H
+#endif //AKIK_CONFIG_H

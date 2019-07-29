@@ -2,8 +2,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef DELION_ACCUMULATORS_H
-#define DELION_ACCUMULATORS_H
+#ifndef AKIK_ACCUMULATORS_H
+#define AKIK_ACCUMULATORS_H
 
 #include "libzerocoin/Accumulator.h"
 #include "libzerocoin/Denominations.h"
@@ -22,4 +22,4 @@ uint32_t ParseChecksum(uint256 nChecksum, libzerocoin::CoinDenomination denomina
 uint32_t GetChecksum(const CBigNum &bnValue);
 bool InvalidCheckpointRange(int nHeight);
 
-#endif //DELION_ACCUMULATORS_H
+#endif //AKIK_ACCUMULATORS_H

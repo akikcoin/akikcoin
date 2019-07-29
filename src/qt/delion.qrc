@@ -39,12 +39,12 @@
         <file alias="tx_input">res/icons/tx_input.png</file>
         <file alias="tx_output">res/icons/tx_output.png</file>
         <file alias="tx_inout">res/icons/tx_inout.png</file>
-        <file alias="unit_delion">res/icons/unit_delion.png</file>
-        <file alias="unit_mdelion">res/icons/unit_mdelion.png</file>
-        <file alias="unit_udelion">res/icons/unit_udelion.png</file>
-        <file alias="unit_tdelion">res/icons/unit_tdelion.png</file>
-        <file alias="unit_tmdelion">res/icons/unit_tmdelion.png</file>
-        <file alias="unit_tudelion">res/icons/unit_tudelion.png</file>
+        <file alias="unit_akik">res/icons/unit_akik.png</file>
+        <file alias="unit_makik">res/icons/unit_makik.png</file>
+        <file alias="unit_uakik">res/icons/unit_uakik.png</file>
+        <file alias="unit_takik">res/icons/unit_takik.png</file>
+        <file alias="unit_tmakik">res/icons/unit_tmakik.png</file>
+        <file alias="unit_tuakik">res/icons/unit_tuakik.png</file>
         <file alias="lock_closed">res/icons/lock_closed.png</file>
         <file alias="lock_open">res/icons/lock_open.png</file>
         <file alias="key">res/icons/key.png</file>
@@ -60,7 +60,7 @@
     </qresource>
     <qresource prefix="/images">
         <file alias="about">res/images/about.png</file>
-        <file alias="delion_logo_horizontal">res/images/delion_logo_horizontal.png</file>
+        <file alias="akik_logo_horizontal">res/images/akik_logo_horizontal.png</file>
         <file alias="downArrow">res/images/downArrow.png</file>
         <file alias="downArrow_small">res/images/downArrow_small.png</file>
         <file alias="upArrow_small">res/images/upArrow_small.png</file>

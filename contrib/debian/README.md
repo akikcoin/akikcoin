@@ -1,21 +1,21 @@
 
 Debian
 ====================
-This directory contains files used to package deliond/delion-qt
-for Debian-based Linux systems. If you compile deliond/delion-qt yourself, there are some useful files here.
+This directory contains files used to package akikd/akik-qt
+for Debian-based Linux systems. If you compile akikd/akik-qt yourself, there are some useful files here.
 
-## delion: URI support ##
+## akik: URI support ##
 
 
-delion-qt.desktop  (Gnome / Open Desktop)
+akik-qt.desktop  (Gnome / Open Desktop)
 To install:
 
-	sudo desktop-file-install delion-qt.desktop
+	sudo desktop-file-install akik-qt.desktop
 	sudo update-desktop-database
 
 If you build yourself, you will either need to modify the paths in
-the .desktop file or copy or symlink your delionqt binary to `/usr/bin`
-and the `../../share/pixmaps/delion128.png` to `/usr/share/pixmaps`
+the .desktop file or copy or symlink your akikqt binary to `/usr/bin`
+and the `../../share/pixmaps/akik128.png` to `/usr/share/pixmaps`
 
-delion-qt.protocol (KDE)
+akik-qt.protocol (KDE)
 

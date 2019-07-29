@@ -1,6 +1,6 @@
 [Protocol]
-exec=delion-qt '%u'
-protocol=delion
+exec=akik-qt '%u'
+protocol=akik
 input=none
 output=none
 helper=true

@@ -1,8 +1,8 @@
 // Copyright (c) 2017 The PIVX developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
-#ifndef DELION_ZEROCOIN_H
-#define DELION_ZEROCOIN_H
+#ifndef AKIK_ZEROCOIN_H
+#define AKIK_ZEROCOIN_H
 
 #include <amount.h>
 #include <limits.h>
@@ -189,4 +189,4 @@ public:
     int GetNeededSpends();
 };
 
-#endif //DELION_ZEROCOIN_H
+#endif //AKIK_ZEROCOIN_H

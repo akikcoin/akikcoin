@@ -10,10 +10,10 @@
 
 /**
  * Name of client reported in the 'version' message. Report the same name
- * for both deliond and delion-qt, to make it harder for attackers to
+ * for both akikd and akik-qt, to make it harder for attackers to
  * target servers or GUI users specifically.
  */
-const std::string CLIENT_NAME("Delion Core");
+const std::string CLIENT_NAME("Akik Core");
 
 /**
  * Client version number

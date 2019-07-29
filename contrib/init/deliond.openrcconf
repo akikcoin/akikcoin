@@ -1,25 +1,25 @@
-# /etc/conf.d/deliond: config file for /etc/init.d/deliond
+# /etc/conf.d/akikd: config file for /etc/init.d/akikd
 
 # Config file location
-#BITCOIND_CONFIGFILE="/etc/delion/delion.conf"
+#BITCOIND_CONFIGFILE="/etc/akik/akik.conf"
 
 # What directory to write pidfile to?  (created and owned by $BITCOIND_USER)
-#BITCOIND_PIDDIR="/var/run/deliond"
+#BITCOIND_PIDDIR="/var/run/akikd"
 
 # What filename to give the pidfile
-#BITCOIND_PIDFILE="${BITCOIND_PIDDIR}/deliond.pid"
+#BITCOIND_PIDFILE="${BITCOIND_PIDDIR}/akikd.pid"
 
-# Where to write deliond data (be mindful that the blockchain is large)
-#BITCOIND_DATADIR="/var/lib/deliond"
+# Where to write akikd data (be mindful that the blockchain is large)
+#BITCOIND_DATADIR="/var/lib/akikd"
 
-# User and group to own deliond process
-#BITCOIND_USER="delion"
-#BITCOIND_GROUP="delion"
+# User and group to own akikd process
+#BITCOIND_USER="akik"
+#BITCOIND_GROUP="akik"
 
-# Path to deliond executable
-#BITCOIND_BIN="/usr/bin/deliond"
+# Path to akikd executable
+#BITCOIND_BIN="/usr/bin/akikd"
 
-# Nice value to run deliond under
+# Nice value to run akikd under
 #BITCOIND_NICE=0
 
 # Additional options (avoid -conf and -datadir, use flags above)

@@ -24,11 +24,11 @@ Check out the source code in the following directory hierarchy.
 
     cd /path/to/your/toplevel/build
     git clone https://github.com/eastcoastcrypto/gitian.sigs.git
-    git clone https://github.com/eastcoastcrypto/delion-detached-sigs.git
+    git clone https://github.com/eastcoastcrypto/akik-detached-sigs.git
     git clone https://github.com/devrandom/gitian-builder.git
-    git clone https://github.com/eastcoastcrypto/delion.git
+    git clone https://github.com/eastcoastcrypto/akik.git
 
-### Delion maintainers/release engineers, suggestion for writing release notes
+### Akik maintainers/release engineers, suggestion for writing release notes
 
 Write release notes. git shortlog helps a lot, for example:
 
@@ -49,7 +49,7 @@ If you're using the automated script (found in [contrib/gitian-build.sh](/contri
 
 Setup Gitian descriptors:
 
-    pushd ./delion
+    pushd ./akik
     export SIGNER=(your Gitian key, ie bluematt, sipa, etc)
     export VERSION=(new version, e.g. 0.8.0)
     git fetch
@@ -83,7 +83,7 @@ Create the OS X SDK tarball, see the [OS X readme](README_osx.md) for details, a
 By default, Gitian will fetch source files as needed. To cache them ahead of time:
 
     pushd ./gitian-builder
-    make -C ../delion/depends download SOURCES_PATH=`pwd`/cache/common
+    make -C ../akik/depends download SOURCES_PATH=`pwd`/cache/common
     popd
 
 Only missing files will be fetched, so this is safe to re-run for each build.
@@ -91,55 +91,55 @@ Only missing files will be fetched, so this is safe to re-run for each build.
 NOTE: Offline builds must use the --url flag to ensure Gitian fetches only from local URLs. For example:
 
     pushd ./gitian-builder
-    ./bin/gbuild --url delion=/path/to/delion,signature=/path/to/sigs {rest of arguments}
+    ./bin/gbuild --url akik=/path/to/akik,signature=/path/to/sigs {rest of arguments}
     popd
 
 The gbuild invocations below <b>DO NOT DO THIS</b> by default.
 
-### Build and sign Delion Core for Linux, Windows, and OS X:
+### Build and sign Akik Core for Linux, Windows, and OS X:
 
     pushd ./gitian-builder
-    ./bin/gbuild --memory 3000 --commit delion=v${VERSION} ../delion/contrib/gitian-descriptors/gitian-linux.yml
-    ./bin/gsign --signer $SIGNER --release ${VERSION}-linux --destination ../gitian.sigs/ ../delion/contrib/gitian-descriptors/gitian-linux.yml
-    mv build/out/delion-*.tar.gz build/out/src/delion-*.tar.gz ../
+    ./bin/gbuild --memory 3000 --commit akik=v${VERSION} ../akik/contrib/gitian-descriptors/gitian-linux.yml
+    ./bin/gsign --signer $SIGNER --release ${VERSION}-linux --destination ../gitian.sigs/ ../akik/contrib/gitian-descriptors/gitian-linux.yml
+    mv build/out/akik-*.tar.gz build/out/src/akik-*.tar.gz ../
 
-    ./bin/gbuild --memory 3000 --commit delion=v${VERSION} ../delion/contrib/gitian-descriptors/gitian-win.yml
-    ./bin/gsign --signer $SIGNER --release ${VERSION}-win-unsigned --destination ../gitian.sigs/ ../delion/contrib/gitian-descriptors/gitian-win.yml
-    mv build/out/delion-*-win-unsigned.tar.gz inputs/delion-win-unsigned.tar.gz
-    mv build/out/delion-*.zip build/out/delion-*.exe ../
+    ./bin/gbuild --memory 3000 --commit akik=v${VERSION} ../akik/contrib/gitian-descriptors/gitian-win.yml
+    ./bin/gsign --signer $SIGNER --release ${VERSION}-win-unsigned --destination ../gitian.sigs/ ../akik/contrib/gitian-descriptors/gitian-win.yml
+    mv build/out/akik-*-win-unsigned.tar.gz inputs/akik-win-unsigned.tar.gz
+    mv build/out/akik-*.zip build/out/akik-*.exe ../
 
-    ./bin/gbuild --memory 3000 --commit delion=v${VERSION} ../delion/contrib/gitian-descriptors/gitian-osx.yml
-    ./bin/gsign --signer $SIGNER --release ${VERSION}-osx-unsigned --destination ../gitian.sigs/ ../delion/contrib/gitian-descriptors/gitian-osx.yml
-    mv build/out/delion-*-osx-unsigned.tar.gz inputs/delion-osx-unsigned.tar.gz
-    mv build/out/delion-*.tar.gz build/out/delion-*.dmg ../
+    ./bin/gbuild --memory 3000 --commit akik=v${VERSION} ../akik/contrib/gitian-descriptors/gitian-osx.yml
+    ./bin/gsign --signer $SIGNER --release ${VERSION}-osx-unsigned --destination ../gitian.sigs/ ../akik/contrib/gitian-descriptors/gitian-osx.yml
+    mv build/out/akik-*-osx-unsigned.tar.gz inputs/akik-osx-unsigned.tar.gz
+    mv build/out/akik-*.tar.gz build/out/akik-*.dmg ../
 
-    ./bin/gbuild --memory 3000 --commit delion=v${VERSION} ../delion/contrib/gitian-descriptors/gitian-aarch64.yml
-    ./bin/gsign --signer $SIGNER --release ${VERSION}-linux --destination ../gitian.sigs/ ../delion/contrib/gitian-descriptors/gitian-aarch64.yml
-    mv build/out/delion-*.tar.gz build/out/src/delion-*.tar.gz ../
+    ./bin/gbuild --memory 3000 --commit akik=v${VERSION} ../akik/contrib/gitian-descriptors/gitian-aarch64.yml
+    ./bin/gsign --signer $SIGNER --release ${VERSION}-linux --destination ../gitian.sigs/ ../akik/contrib/gitian-descriptors/gitian-aarch64.yml
+    mv build/out/akik-*.tar.gz build/out/src/akik-*.tar.gz ../
     popd
 
 Build output expected:
 
-  1. source tarball (`delion-${VERSION}.tar.gz`)
-  2. linux 32-bit and 64-bit dist tarballs (`delion-${VERSION}-linux[32|64].tar.gz`)
-  3. windows 32-bit and 64-bit unsigned installers and dist zips (`delion-${VERSION}-win[32|64]-setup-unsigned.exe`, `delion-${VERSION}-win[32|64].zip`)
-  4. OS X unsigned installer and dist tarball (`delion-${VERSION}-osx-unsigned.dmg`, `delion-${VERSION}-osx64.tar.gz`)
+  1. source tarball (`akik-${VERSION}.tar.gz`)
+  2. linux 32-bit and 64-bit dist tarballs (`akik-${VERSION}-linux[32|64].tar.gz`)
+  3. windows 32-bit and 64-bit unsigned installers and dist zips (`akik-${VERSION}-win[32|64]-setup-unsigned.exe`, `akik-${VERSION}-win[32|64].zip`)
+  4. OS X unsigned installer and dist tarball (`akik-${VERSION}-osx-unsigned.dmg`, `akik-${VERSION}-osx64.tar.gz`)
   5. Gitian signatures (in `gitian.sigs/${VERSION}-<linux|{win,osx}-unsigned>/(your Gitian key)/`)
 
 ### Verify other gitian builders signatures to your own. (Optional)
 
 Add other gitian builders keys to your gpg keyring, and/or refresh keys.
 
-    gpg --import delion/contrib/gitian-keys/*.gpg
+    gpg --import akik/contrib/gitian-keys/*.gpg
     gpg --refresh-keys
 
 Verify the signatures
 
     pushd ./gitian-builder
-    ./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-linux ../delion/contrib/gitian-descriptors/gitian-linux.yml
-    ./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-win-unsigned ../delion/contrib/gitian-descriptors/gitian-win.yml
-    ./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-osx-unsigned ../delion/contrib/gitian-descriptors/gitian-osx.yml
-    ./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-aarch64 ../delion/contrib/gitian-descriptors/gitian-aarch64.yml
+    ./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-linux ../akik/contrib/gitian-descriptors/gitian-linux.yml
+    ./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-win-unsigned ../akik/contrib/gitian-descriptors/gitian-win.yml
+    ./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-osx-unsigned ../akik/contrib/gitian-descriptors/gitian-osx.yml
+    ./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-aarch64 ../akik/contrib/gitian-descriptors/gitian-aarch64.yml
     popd
 
 ### Next steps:
@@ -161,22 +161,22 @@ Codesigner only: Create Windows/OS X detached signatures:
 
 Codesigner only: Sign the osx binary:
 
-    transfer delion-osx-unsigned.tar.gz to osx for signing
-    tar xf delion-osx-unsigned.tar.gz
+    transfer akik-osx-unsigned.tar.gz to osx for signing
+    tar xf akik-osx-unsigned.tar.gz
     ./detached-sig-create.sh -s "Key ID"
     Enter the keychain password and authorize the signature
     Move signature-osx.tar.gz back to the gitian host
 
 Codesigner only: Sign the windows binaries:
 
-    tar xf delion-win-unsigned.tar.gz
+    tar xf akik-win-unsigned.tar.gz
     ./detached-sig-create.sh -key /path/to/codesign.key
     Enter the passphrase for the key when prompted
     signature-win.tar.gz will be created
 
 Codesigner only: Commit the detached codesign payloads:
 
-    cd ~/delion-detached-sigs
+    cd ~/akik-detached-sigs
     checkout the appropriate branch for this release series
     rm -rf *
     tar xf signature-osx.tar.gz
@@ -189,25 +189,25 @@ Codesigner only: Commit the detached codesign payloads:
 Non-codesigners: wait for Windows/OS X detached signatures:
 
 - Once the Windows/OS X builds each have 3 matching signatures, they will be signed with their respective release keys.
-- Detached signatures will then be committed to the [delion-detached-sigs](https://github.com/eastcoastcrypto/delion-detached-sigs) repository, which can be combined with the unsigned apps to create signed binaries.
+- Detached signatures will then be committed to the [akik-detached-sigs](https://github.com/eastcoastcrypto/akik-detached-sigs) repository, which can be combined with the unsigned apps to create signed binaries.
 
 Create (and optionally verify) the signed OS X binary:
 
     pushd ./gitian-builder
-    ./bin/gbuild -i --commit signature=v${VERSION} ../delion/contrib/gitian-descriptors/gitian-osx-signer.yml
-    ./bin/gsign --signer $SIGNER --release ${VERSION}-osx-signed --destination ../gitian.sigs/ ../delion/contrib/gitian-descriptors/gitian-osx-signer.yml
-    ./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-osx-signed ../delion/contrib/gitian-descriptors/gitian-osx-signer.yml
-    mv build/out/delion-osx-signed.dmg ../delion-${VERSION}-osx.dmg
+    ./bin/gbuild -i --commit signature=v${VERSION} ../akik/contrib/gitian-descriptors/gitian-osx-signer.yml
+    ./bin/gsign --signer $SIGNER --release ${VERSION}-osx-signed --destination ../gitian.sigs/ ../akik/contrib/gitian-descriptors/gitian-osx-signer.yml
+    ./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-osx-signed ../akik/contrib/gitian-descriptors/gitian-osx-signer.yml
+    mv build/out/akik-osx-signed.dmg ../akik-${VERSION}-osx.dmg
     popd
 
 Create (and optionally verify) the signed Windows binaries:
 
     pushd ./gitian-builder
-    ./bin/gbuild -i --commit signature=v${VERSION} ../delion/contrib/gitian-descriptors/gitian-win-signer.yml
-    ./bin/gsign --signer $SIGNER --release ${VERSION}-win-signed --destination ../gitian.sigs/ ../delion/contrib/gitian-descriptors/gitian-win-signer.yml
-    ./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-win-signed ../delion/contrib/gitian-descriptors/gitian-win-signer.yml
-    mv build/out/delion-*win64-setup.exe ../delion-${VERSION}-win64-setup.exe
-    mv build/out/delion-*win32-setup.exe ../delion-${VERSION}-win32-setup.exe
+    ./bin/gbuild -i --commit signature=v${VERSION} ../akik/contrib/gitian-descriptors/gitian-win-signer.yml
+    ./bin/gsign --signer $SIGNER --release ${VERSION}-win-signed --destination ../gitian.sigs/ ../akik/contrib/gitian-descriptors/gitian-win-signer.yml
+    ./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-win-signed ../akik/contrib/gitian-descriptors/gitian-win-signer.yml
+    mv build/out/akik-*win64-setup.exe ../akik-${VERSION}-win64-setup.exe
+    mv build/out/akik-*win32-setup.exe ../akik-${VERSION}-win32-setup.exe
     popd
 
 Commit your signature for the signed OS X/Windows binaries:
@@ -229,23 +229,23 @@ sha256sum * > SHA256SUMS
 
 The list of files should be:
 ```
-delion-${VERSION}-aarch64-linux-gnu.tar.gz
-delion-${VERSION}-arm-linux-gnueabihf.tar.gz
-delion-${VERSION}-i686-pc-linux-gnu.tar.gz
-delion-${VERSION}-x86_64-linux-gnu.tar.gz
-delion-${VERSION}-osx64.tar.gz
-delion-${VERSION}-osx.dmg
-delion-${VERSION}.tar.gz
-delion-${VERSION}-win32-setup.exe
-delion-${VERSION}-win32.zip
-delion-${VERSION}-win64-setup.exe
-delion-${VERSION}-win64.zip
+akik-${VERSION}-aarch64-linux-gnu.tar.gz
+akik-${VERSION}-arm-linux-gnueabihf.tar.gz
+akik-${VERSION}-i686-pc-linux-gnu.tar.gz
+akik-${VERSION}-x86_64-linux-gnu.tar.gz
+akik-${VERSION}-osx64.tar.gz
+akik-${VERSION}-osx.dmg
+akik-${VERSION}.tar.gz
+akik-${VERSION}-win32-setup.exe
+akik-${VERSION}-win32.zip
+akik-${VERSION}-win64-setup.exe
+akik-${VERSION}-win64.zip
 ```
 The `*-debug*` files generated by the gitian build contain debug symbols
 for troubleshooting by developers. It is assumed that anyone that is interested
 in debugging can run gitian to generate the files for themselves. To avoid
 end-user confusion about which file to pick, as well as save storage
-space *do not upload these to the delion.online.com server*.
+space *do not upload these to the akik.online.com server*.
 
 - GPG-sign it, delete the unsigned file:
 ```
@@ -261,10 +261,10 @@ Note: check that SHA256SUMS itself doesn't end up in SHA256SUMS, which is a spur
 
   - bitcointalk announcement thread
 
-  - Optionally twitter, reddit /r/delion, ... but this will usually sort out itself
+  - Optionally twitter, reddit /r/akik, ... but this will usually sort out itself
 
   - Archive release notes for the new version to `doc/release-notes/` (branch `master` and branch of the release)
 
-  - Create a [new GitHub release](https://github.com/eastcoastcrypto/Delion/releases/new) with a link to the archived release notes.
+  - Create a [new GitHub release](https://github.com/eastcoastcrypto/Akik/releases/new) with a link to the archived release notes.
 
   - Celebrate

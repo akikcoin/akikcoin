@@ -2,24 +2,24 @@
 
 # backward compatibility for existing gentoo layout
 #
-if [ -d "/var/lib/delion/.delion" ]; then
-	BITCOIND_DEFAULT_DATADIR="/var/lib/delion/.delion"
+if [ -d "/var/lib/akik/.akik" ]; then
+	BITCOIND_DEFAULT_DATADIR="/var/lib/akik/.akik"
 else
-	BITCOIND_DEFAULT_DATADIR="/var/lib/deliond"
+	BITCOIND_DEFAULT_DATADIR="/var/lib/akikd"
 fi
 
-BITCOIND_CONFIGFILE=${BITCOIND_CONFIGFILE:-/etc/delion/delion.conf}
-BITCOIND_PIDDIR=${BITCOIND_PIDDIR:-/var/run/deliond}
-BITCOIND_PIDFILE=${BITCOIND_PIDFILE:-${BITCOIND_PIDDIR}/deliond.pid}
+BITCOIND_CONFIGFILE=${BITCOIND_CONFIGFILE:-/etc/akik/akik.conf}
+BITCOIND_PIDDIR=${BITCOIND_PIDDIR:-/var/run/akikd}
+BITCOIND_PIDFILE=${BITCOIND_PIDFILE:-${BITCOIND_PIDDIR}/akikd.pid}
 BITCOIND_DATADIR=${BITCOIND_DATADIR:-${BITCOIND_DEFAULT_DATADIR}}
-BITCOIND_USER=${BITCOIND_USER:-delion}
-BITCOIND_GROUP=${BITCOIND_GROUP:-delion}
-BITCOIND_BIN=${BITCOIND_BIN:-/usr/bin/deliond}
+BITCOIND_USER=${BITCOIND_USER:-akik}
+BITCOIND_GROUP=${BITCOIND_GROUP:-akik}
+BITCOIND_BIN=${BITCOIND_BIN:-/usr/bin/akikd}
 
-name="Delion Core Daemon"
-description="Delion crypto-currency p2p network daemon"
+name="Akik Core Daemon"
+description="Akik crypto-currency p2p network daemon"
 
-command="/usr/bin/deliond"
+command="/usr/bin/akikd"
 command_args="-pid=\"${BITCOIND_PIDFILE}\" \
 		-conf=\"${BITCOIND_CONFIGFILE}\" \
 		-datadir=\"${BITCOIND_DATADIR}\" \
@@ -65,7 +65,7 @@ checkconfig()
 {
 	if ! grep -qs '^rpcpassword=' "${BITCOIND_CONFIGFILE}" ; then
 		eerror ""
-		eerror "ERROR: You must set a secure rpcpassword to run deliond."
+		eerror "ERROR: You must set a secure rpcpassword to run akikd."
 		eerror "The setting must appear in ${BITCOIND_CONFIGFILE}"
 		eerror ""
 		eerror "This password is security critical to securing wallets "
@@ -78,7 +78,7 @@ checkconfig()
 		eerror "It is also recommended that you also set alertnotify so you are "
 		eerror "notified of problems:"
 		eerror ""
-		eerror "ie: alertnotify=echo %%s | mail -s \"Delion Alert\"" \
+		eerror "ie: alertnotify=echo %%s | mail -s \"Akik Alert\"" \
 			"admin@foo.com"
 		eerror ""
 		return 1

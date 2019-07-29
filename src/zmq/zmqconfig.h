@@ -6,7 +6,7 @@
 #define BITCOIN_ZMQ_ZMQCONFIG_H
 
 #if defined(HAVE_CONFIG_H)
-#include "config/delion-config.h"
+#include "config/akik-config.h"
 #endif
 
 #include <stdarg.h>

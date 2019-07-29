@@ -1,5 +1,5 @@
 ---
-name: "delion-dmg-signer"
+name: "akik-dmg-signer"
 suites:
 - "trusty"
 architectures:
@@ -7,10 +7,10 @@ architectures:
 packages:
 - "faketime"
 remotes:
-- "url": "https://github.com/delionproject/delion-detached-sigs.git"
+- "url": "https://github.com/akikproject/akik-detached-sigs.git"
   "dir": "signature"
 files:
-- "delion-osx-unsigned.tar.gz"
+- "akik-osx-unsigned.tar.gz"
 script: |
   WRAP_DIR=$HOME/wrapped
   mkdir -p ${WRAP_DIR}
@@ -27,11 +27,11 @@ script: |
     chmod +x ${WRAP_DIR}/${prog}
   done
 
-  UNSIGNED=delion-osx-unsigned.tar.gz
-  SIGNED=delion-osx-signed.dmg
+  UNSIGNED=akik-osx-unsigned.tar.gz
+  SIGNED=akik-osx-signed.dmg
 
   tar -xf ${UNSIGNED}
   OSX_VOLNAME="$(cat osx_volname)"
   ./detached-sig-apply.sh ${UNSIGNED} signature/osx
-  ${WRAP_DIR}/genisoimage -no-cache-inodes -D -l -probe -V "Delion-Qt" -no-pad -r -dir-mode 0755 -apple -o uncompressed.dmg signed-app
+  ${WRAP_DIR}/genisoimage -no-cache-inodes -D -l -probe -V "Akik-Qt" -no-pad -r -dir-mode 0755 -apple -o uncompressed.dmg signed-app
   ${WRAP_DIR}/dmg dmg uncompressed.dmg ${OUTDIR}/${SIGNED}
