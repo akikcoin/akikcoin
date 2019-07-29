@@ -3490,8 +3490,8 @@ https://www.transifex.com/akik-project/akik-project-translations</translation>
         <translation>Você deve especificar uma masternodeprivkey na configuração. Favor verificar o manual para obter ajuda.</translation>
     </message>
     <message>
-        <source>(15858 could be used only on mainnet)</source>
-        <translation>(15858 could be used only on mainnet)</translation>
+        <source>(1777 could be used only on mainnet)</source>
+        <translation>(1777 could be used only on mainnet)</translation>
     </message>
     <message>
         <source>(default: %s)</source>
@@ -3502,8 +3502,8 @@ https://www.transifex.com/akik-project/akik-project-translations</translation>
         <translation>(padrão: 1)</translation>
     </message>
     <message>
-        <source>(must be 15858 for mainnet)</source>
-        <translation>(deve ser 15858 para mainnet)</translation>
+        <source>(must be 1777 for mainnet)</source>
+        <translation>(deve ser 1777 para mainnet)</translation>
     </message>
     <message>
         <source>Accept connections from outside (default: 1 if no -proxy or -connect)</source>

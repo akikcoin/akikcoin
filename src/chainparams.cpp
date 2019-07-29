@@ -106,7 +106,7 @@ public:
         pchMessageStart[2] = 0x04;
         pchMessageStart[3] = 0x57;
         vAlertPubKey = ParseHex("0480e0e72c17b6205828d44d080648e9c27ab1e2a17ecbaf80962e4f6c2c89ac42862352bf459271886b752cb64784e8b66c01341a9973ada2a7c3b1dc99d32631");
-        nDefaultPort = 15858;
+        nDefaultPort = 1777;
         bnProofOfWorkLimit = ~uint256(0) >> 20; // Akik starting difficulty is 1 / 2^12
         nSubsidyHalvingInterval = 210000;
         nMaxReorganizationDepth = 100;

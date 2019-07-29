@@ -226,10 +226,10 @@ QT_TRANSLATE_NOOP("akik-core", ""
 QT_TRANSLATE_NOOP("akik-core", ""
 "You must specify a masternodeprivkey in the configuration. Please see "
 "documentation for help."),
-QT_TRANSLATE_NOOP("akik-core", "(15858 could be used only on mainnet)"),
+QT_TRANSLATE_NOOP("akik-core", "(1777 could be used only on mainnet)"),
 QT_TRANSLATE_NOOP("akik-core", "(default: %s)"),
 QT_TRANSLATE_NOOP("akik-core", "(default: 1)"),
-QT_TRANSLATE_NOOP("akik-core", "(must be 15858 for mainnet)"),
+QT_TRANSLATE_NOOP("akik-core", "(must be 1777 for mainnet)"),
 QT_TRANSLATE_NOOP("akik-core", "<category> can be:"),
 QT_TRANSLATE_NOOP("akik-core", "Accept command line and JSON-RPC commands"),
 QT_TRANSLATE_NOOP("akik-core", "Accept connections from outside (default: 1 if no -proxy or -connect)"),

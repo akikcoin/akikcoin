@@ -68,13 +68,13 @@ void CActiveMasternode::ManageStatus()
         }
 
         if (Params().NetworkID() == CBaseChainParams::MAIN) {
-            if (service.GetPort() != 15858) {
-                notCapableReason = strprintf("Invalid port: %u - only 15858 is supported on mainnet.", service.GetPort());
+            if (service.GetPort() != 1777) {
+                notCapableReason = strprintf("Invalid port: %u - only 1777 is supported on mainnet.", service.GetPort());
                 LogPrintf("CActiveMasternode::ManageStatus() - not capable: %s\n", notCapableReason);
                 return;
             }
-        } else if (service.GetPort() == 15858) {
-            notCapableReason = strprintf("Invalid port: %u - 15858 is only supported on mainnet.", service.GetPort());
+        } else if (service.GetPort() == 1777) {
+            notCapableReason = strprintf("Invalid port: %u - 1777 is only supported on mainnet.", service.GetPort());
             LogPrintf("CActiveMasternode::ManageStatus() - not capable: %s\n", notCapableReason);
             return;
         }
@@ -267,13 +267,13 @@ bool CActiveMasternode::Register(std::string strService, std::string strKeyMaste
 
     CService service = CService(strService);
     if (Params().NetworkID() == CBaseChainParams::MAIN) {
-        if (service.GetPort() != 15858) {
-            errorMessage = strprintf("Invalid port %u for masternode %s - only 15858 is supported on mainnet.", service.GetPort(), strService);
+        if (service.GetPort() != 1777) {
+            errorMessage = strprintf("Invalid port %u for masternode %s - only 1777 is supported on mainnet.", service.GetPort(), strService);
             LogPrintf("CActiveMasternode::Register() - %s\n", errorMessage);
             return false;
         }
-    } else if (service.GetPort() == 15858) {
-        errorMessage = strprintf("Invalid port %u for masternode %s - 15858 is only supported on mainnet.", service.GetPort(), strService);
+    } else if (service.GetPort() == 1777) {
+        errorMessage = strprintf("Invalid port %u for masternode %s - 1777 is only supported on mainnet.", service.GetPort(), strService);
         LogPrintf("CActiveMasternode::Register() - %s\n", errorMessage);
         return false;
     }
