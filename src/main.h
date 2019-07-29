@@ -58,12 +58,7 @@ struct CBlockTemplate;
 struct CNodeStateStats;
 
 inline int64_t GetMNCollateral(int nHeight) {
-
-  if (nHeight < 260000 ) {
-    return 5000;
-  } else {
-    return 100000;
-  }
+  return 1000;
 }
 
 /** Default for -blockmaxsize and -blockminsize, which control the range of sizes the mining code will create **/
