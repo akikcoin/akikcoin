@@ -119,7 +119,7 @@ public:
         nTargetSpacing = 1 * 60;  // Akik: 60 Seconds
         nMaturity = 20;
         nMasternodeCountDrift = 20;
-        nMaxMoneyOut = 100000000 * COIN;
+        nMaxMoneyOut = 25000000 * COIN;
 
         /** Height or Time Based Activations **/
         nLastPOWBlock = 200;
@@ -214,7 +214,7 @@ public:
         pchMessageStart[2] = 0x04;
         pchMessageStart[3] = 0x57;
         vAlertPubKey = ParseHex("04c1eb45c93f2d5c6857211458fd588901af54903651b4a21921cdf11e702c9ebecddbbbbfe8dc1fb9e79678536720bab21f3a3755160e93d9beaa69acbb1e9b14");
-        nDefaultPort = 25858;
+        nDefaultPort = 2777;
         nEnforceBlockUpgradeMajority = 51;
         nRejectBlockOutdatedMajority = 75;
         nToCheckBlockUpgradeMajority = 100;
