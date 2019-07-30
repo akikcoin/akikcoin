@@ -151,9 +151,9 @@ public:
 		
 		printf("new mainnet genesis merkle root: %s\n", genesis.hashMerkleRoot.ToString().c_str());
 		printf("new mainnet genesis hash: %s\n", genesis.GetHash().ToString().c_str());
-		
-        //assert(hashGenesisBlock == uint256("0xeaaaea7d13c08bff5ba2be83cb558de02a5f872af48a67a9802dd4bc95f0a399"));
-        //assert(genesis.hashMerkleRoot == uint256("0x3540db09006953f2ef04edce58acf06c8f003cb7d2632c8f664cb5e086933fd6"));
+        
+		//assert(hashGenesisBlock == uint256("0xd133cb68c97fd014d9ca7ca695946c87d9cbbf6735c961af62f1eea82cc31f09"));
+        //assert(genesis.hashMerkleRoot == uint256("0xb6e9ed2c032d9ae2bda333488903e64ecb5485911202a7b6c416e99fa29d850b"));
 		
 		vFixedSeeds.clear();
 		vSeeds.clear();
@@ -239,11 +239,11 @@ public:
 
         //! Modify the testnet genesis block so the timestamp is valid for a later start.
         genesis.nTime = 1564491857;
-        genesis.nNonce = 363228;
+        genesis.nNonce = 82893;
         
                        
         hashGenesisBlock = genesis.GetHash();
-		printf("new mainnet genesis hash: %s\n", genesis.GetHash().ToString().c_str());
+		printf("testnet genesis hash: %s\n", genesis.GetHash().ToString().c_str());
 		//assert(hashGenesisBlock == uint256("0x881ec759a95bee06f8b76147ef6e2e99ff487eb92062132dc74055a09d5ef7c6"));
 
         vFixedSeeds.clear();
@@ -311,11 +311,11 @@ public:
         bnProofOfWorkLimit = ~uint256(0) >> 1;
         genesis.nTime = 1537602753;
         genesis.nBits = 0x1e0ffff0;
-        genesis.nNonce = 363228;
+        genesis.nNonce = 995248;
 
         hashGenesisBlock = genesis.GetHash();
         nDefaultPort = 3777;
-        printf("new mainnet genesis hash: %s\n", genesis.GetHash().ToString().c_str());
+        printf("regtest genesis hash: %s\n", genesis.GetHash().ToString().c_str());
 		//assert(hashGenesisBlock == uint256("0x6ae8a8b69440f2ffe28e2e16b50f4d8904877b08ba971e9324a52adf049deb3a"));
 
         vFixedSeeds.clear(); //! Testnet mode doesn't have any fixed seeds.
