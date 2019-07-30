@@ -2133,26 +2133,28 @@ int64_t GetBlockValue(int nHeight)
     }
 
     int64_t nSubsidy = 0;
-	if (nHeight == 0) {
-        nSubsidy = 15000000 * COIN;
-	} else if (nHeight < 57600) {
-        nSubsidy = 0.1 * COIN;
-    } else if (nHeight < 261360 && nHeight >= 57600) {
-        nSubsidy = 100 * COIN;
-	} else if (nHeight < 282960 && nHeight >= 261361) {
-        nSubsidy = 50 * COIN;
-	} else if (nHeight < 304560 && nHeight >= 282961) {
-        nSubsidy = 25 * COIN;
-	} else if (nHeight < 326160 && nHeight >= 304561) {
+	if (nHeight == 0 && nHeight <= Params().LAST_POW_BLOCK()) {
+        nSubsidy = 250 * COIN;
+	} else if (nHeight < 43400 && nHeight > Params().LAST_POW_BLOCK()) {
+        nSubsidy = 20 * COIN;
+    } else if (nHeight < 86600 && nHeight >= 43400) {
+        nSubsidy = 18 * COIN;
+	} else if (nHeight < 129800 && nHeight >= 86600) {
+        nSubsidy = 15 * COIN;
+	} else if (nHeight < 173000 && nHeight >= 129800) {
         nSubsidy = 12 * COIN;
-	} else if (nHeight < 347760 && nHeight >= 326161) {
+	} else if (nHeight < 216200 && nHeight >= 173000) {
+        nSubsidy = 12 * COIN;
+	} else if (nHeight < 259400 && nHeight >= 216200) {
+        nSubsidy = 10 * COIN;
+	} else if (nHeight < 302600 && nHeight >= 259400) {
+        nSubsidy = 8 * COIN;
+    } else if (nHeight < 345800 && nHeight >= 302600) {
         nSubsidy = 6 * COIN;
-	} else if (nHeight < 369360 && nHeight >= 347761) {
-        nSubsidy = 3 * COIN;
-    } else if (nHeight < 801360 && nHeight >= 369361) {
+    } else if (nHeight < 475400 && nHeight >= 345800) {
+        nSubsidy = 4 * COIN;
+    } else if (nHeight >= 475400) {
         nSubsidy = 2 * COIN;
-    } else if (nHeight >= 801361) {
-        nSubsidy = 1 * COIN;
     } else {
 		int64_t nMoneySupply = chainActive.Tip()->nMoneySupply;
 		if (nMoneySupply >= Params().MaxMoneyOut()) {
@@ -2170,10 +2172,10 @@ int64_t GetMasternodePayment(int nHeight, int64_t blockValue, int nMasternodeCou
 {
     int64_t ret = 0;
 
-	if (nHeight <= 100) {
+	if (nHeight <= Params().LAST_POW_BLOCK()) {
 	      ret = blockValue  / 100 * 0;               // %0
 	} else if (nHeight > 100 ) {
-		  ret = blockValue  / 100 * 80;               // %80
+		  ret = blockValue  / 100 * 90;               // %80
 	}
 
     return ret;
