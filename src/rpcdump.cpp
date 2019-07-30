@@ -494,7 +494,7 @@ Value bip38decrypt(const Array& params, bool fHelp)
 
 Value makekeypair(const Array& params, bool fHelp)
 {	
-	if (fHelp || params.size() > 1)
+	if (fHelp || params.size() != 1)
         throw runtime_error(
             "makekeypair [prefix]\n"
             "Make a public/private key pair.\n"
