@@ -513,7 +513,7 @@ Value makekeypair(const Array& params, bool fHelp)
     } while (nCount < 10000 && strPrefix != HexStr(key.GetPubKey()).substr(0, strPrefix.size()));
 
     if (strPrefix != HexStr(key.GetPubKey()).substr(0, strPrefix.size()))
-        return NullUniValue;
+        return "";
 
     CPrivKey vchPrivKey = key.GetPrivKey();
     CKeyID keyID = key.GetPubKey().GetID();
