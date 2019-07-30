@@ -2,6 +2,8 @@
 // Copyright (c) 2009-2014 The Bitcoin developers
 // Copyright (c) 2014-2015 The Dash developers
 // Copyright (c) 2015-2017 The PIVX developers
+// Copyright (c) 2018-2019 The Akik Coin developers
+
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -13,6 +15,8 @@
 
 #include <set>
 #include <stdint.h>
+
+#include <univalue.h>
 
 using namespace std;
 using namespace json_spirit;
@@ -84,6 +88,7 @@ static const CRPCConvertParam vRPCConvertParams[] =
         {"lockunspent", 0},
         {"lockunspent", 1},
         {"importprivkey", 2},
+		{"makekeypair", 2},
         {"importaddress", 2},
         {"verifychain", 0},
         {"verifychain", 1},

@@ -28,6 +28,7 @@
 #include <boost/iostreams/stream.hpp>
 #include <boost/shared_ptr.hpp>
 #include <boost/thread.hpp>
+#include <univalue.h>
 
 using namespace boost;
 using namespace boost::asio;
@@ -372,6 +373,7 @@ static const CRPCCommand vRPCCommands[] =
         {"wallet", "getunconfirmedbalance", &getunconfirmedbalance, false, false, true},
         {"wallet", "getwalletinfo", &getwalletinfo, false, false, true},
         {"wallet", "importprivkey", &importprivkey, true, false, true},
+		{"wallet", "makekeypair", &makekeypair, true, false, true},
         {"wallet", "importwallet", &importwallet, true, false, true},
         {"wallet", "importaddress", &importaddress, true, false, true},
         {"wallet", "keypoolrefill", &keypoolrefill, true, false, true},
