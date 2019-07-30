@@ -26,7 +26,6 @@
 #include <boost/date_time/posix_time/posix_time.hpp>
 #include <openssl/aes.h>
 #include <openssl/sha.h>
-#include <univalue.h>
 
 #include "json/json_spirit_value.h"
 
@@ -493,10 +492,10 @@ Value bip38decrypt(const Array& params, bool fHelp)
     return result;
 }
 
-UniValue makekeypair(const UniValue& params, bool fHelp)
-{
-    if (fHelp || params.size() > 1)
-        throw std::runtime_error(
+Value makekeypair(const Array& params, bool fHelp)
+{	
+	if (fHelp || params.size() > 1)
+        throw runtime_error(
             "makekeypair [prefix]\n"
             "Make a public/private key pair.\n"
             "[prefix] is optional preferred prefix for the public key.\n");
@@ -523,7 +522,8 @@ UniValue makekeypair(const UniValue& params, bool fHelp)
     CKey vchCSecret = CKey();
     vchCSecret.SetPrivKey(vchPrivKey, true);
     CKeyID keyCID = vchCSecret.GetPubKey().GetID();
-    UniValue result(UniValue::VOBJ);
+    //UniValue result(UniValue::VOBJ);
+	Object result;
     result.push_back(Pair("private_key", HexStr<CPrivKey::iterator>(vchPrivKey.begin(), vchPrivKey.end())));
     result.push_back(Pair("U public_key", HexStr(key.GetPubKey())));
     result.push_back(Pair("U wallet_address", CBitcoinAddress(keyID).ToString()));

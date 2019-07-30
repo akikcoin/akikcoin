@@ -28,7 +28,6 @@
 #include <boost/iostreams/stream.hpp>
 #include <boost/shared_ptr.hpp>
 #include <boost/thread.hpp>
-#include <univalue.h>
 
 using namespace boost;
 using namespace boost::asio;

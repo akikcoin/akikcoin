@@ -16,8 +16,6 @@
 #include <set>
 #include <stdint.h>
 
-#include <univalue.h>
-
 using namespace std;
 using namespace json_spirit;
 
