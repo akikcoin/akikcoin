@@ -178,7 +178,7 @@ public:
 
         nPoolMaxTransactions = 3;
         strSporkKey = "0435ec2c1d5336ec5de521f857ddeacbb4d4b1ed8c4aace7d54cc91184e45d638cde6401fc691fe8e710fbf1da56931ce8d4c63addc327125b3a7d42c20beef275";
-        strObfuscationPoolDummyAddress  = "D87q2gC9j6nNrnzCsg4aY6bHMLsT9nUhEw";
+        strObfuscationPoolDummyAddress  = "AGidNxhUrFkAmKTwRUqaV8GLefitUYJUjb";
         nStartMasternodePayments = 1564491857;
         
         /** Zerocoin */
