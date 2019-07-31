@@ -157,11 +157,11 @@ public:
         vSeeds.push_back(CDNSSeedData("seed1.akikcoin.com", "seed2.akikcoin.com"));
 
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 23);
-        base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1, 63);
-        base58Prefixes[SECRET_KEY] = std::vector<unsigned char>(1, 58);
-        base58Prefixes[EXT_PUBLIC_KEY] = boost::assign::list_of(0xb1)(0x9c)(0x11)(0x8c).convert_to_container<std::vector<unsigned char> >();
-        base58Prefixes[EXT_SECRET_KEY] = boost::assign::list_of(0x7f)(0xfd)(0xb7)(0xcc).convert_to_container<std::vector<unsigned char> >();
-        base58Prefixes[EXT_COIN_TYPE] = boost::assign::list_of(0x10)(0xb8)(0xa4)(0x8a).convert_to_container<std::vector<unsigned char> >();
+        base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1, 58);
+        base58Prefixes[SECRET_KEY] = std::vector<unsigned char>(1, 73);
+        base58Prefixes[EXT_PUBLIC_KEY] = boost::assign::list_of(0x19)(0x38)(0xa3)(0x94).convert_to_container<std::vector<unsigned char> >();
+        base58Prefixes[EXT_SECRET_KEY] = boost::assign::list_of(0x08)(0x3a)(0x15)(0x82).convert_to_container<std::vector<unsigned char> >();
+        base58Prefixes[EXT_COIN_TYPE] = boost::assign::list_of(0x18)(0x1b)(0x2c)(0x1d).convert_to_container<std::vector<unsigned char> >();
 
         convertSeed6(vFixedSeeds, pnSeed6_main, ARRAYLEN(pnSeed6_main));
 
